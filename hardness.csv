@@ -1,0 +1,707 @@
+Alloys,Hardness (HV),Phase,Fabrication_type,DOI,Paper
+(CuMnNi)80Zn20,109,FCC,,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+Cu26.6Mn26.6Ni26.6Zn20,109,FCC,CAST,Beniwal: Train,
+CuMnNiZn0.25,109,FCC,CAST,https://www.nature.com/articles/s41597-020-00768-224,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.25CoCrFeNi,111.5,FCC,CAST,Beniwal: Train,
+Al0.1CoCrFeNi,117,,CAST,https://doi.org/10.1016/j.jmst.2021.01.185,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al0.3CoCrFeNi,117,FCC,CAST,https://www.nature.com/articles/s41597-020-00768-202,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al5.66Co18.87Cr18.87Fe18.87Mn18.87Ni18.87,125,,CAST,Beniwal: Test,
+CoFeNi,125,FCC,CAST,https://www.nature.com/articles/s41597-020-00768-353,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.4CoCrFeNi,128,,CAST,https://doi.org/10.1016/j.jmst.2021.01.186,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al8Co25Cu18Fe25Ni25,129,,POWDER,Beniwal: Test,
+CoCr0.2FeNiSi0.2,130.1,FCC,CAST,https://www.nature.com/articles/s41597-020-00768-150,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CoCrCuFe,134,FCC,CAST,https://www.nature.com/articles/s41597-020-00768-49,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.25CoFeNi,138,FCC,CAST,https://www.nature.com/articles/s41597-020-00768-357,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Co0.139Cr0.446Cu0.99NiSi0.277,142.5,,WROUGHT,https://www.nature.com/articles/s41597-020-00768-63,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+(CuMnNi)75Zn25,147,FCC,,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+Cu25Mn25Ni25Zn25,147,FCC,CAST,Beniwal: Train,
+CuMnNiZn0.333,147,FCC,CAST,https://www.nature.com/articles/s41597-020-00768-225,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CoFeNiSi0.25,149,FCC,CAST,https://www.nature.com/articles/s41597-020-00768-352,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CoCrFeMnNiV0.25,151,FCC,CAST,https://www.nature.com/articles/s41597-020-00768-301,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Cr20Co19.3Fe19.6Mn17Ni19.52V4.6,151,,CAST,https://doi.org/10.3390/cryst11010046,Deep Learning-Based Hardness Prediction of Novel Refractory High-Entropy Alloys with Experimental Validation
+CoCrFeNi,156,,CAST,Beniwal: Test,
+Al0.5CoCrCuFeNi,160,FCC,CAST,https://www.nature.com/articles/s41597-020-00768-195,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CoCrFeMn0.8NiPd,160,FCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-145,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CoCrFeMnNi,160,FCC,CAST,Beniwal: Train,
+Al0.2CrCuFeNi2,161,,CAST,https://doi.org/10.1016/j.jmst.2021.01.190,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al0.3CoCrFeMo0.1Ni,162,,CAST,https://doi.org/10.1016/j.jmst.2021.01.191,Machine learning of phases and mechanical properties in complexconcentrated alloys
+FeCoNiCuMo0.2,162,,CAST,Beniwal: Test,
+Al0.375CoCrFeNi,163.5,FCC,CAST,Beniwal: Train,
+(CuMnNi)95Al5,166,FCC,,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+Al0.053CuMnNi,166,FCC,CAST,https://www.nature.com/articles/s41597-020-00768-221,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Cu31.6Mn31.6Ni31.6Al5,166,FCC,CAST,Beniwal: Train,
+AlCo3.0CuFeNi,166.4,,CAST,https://doi.org/10.1016/j.jmst.2021.01.192,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al0.3CrCuFeNi2,168,,CAST,https://doi.org/10.1016/j.jmst.2021.01.193,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al0.04(CoCrFeMnNi),171,,CAST,https://doi.org/10.1016/j.jmst.2021.01.194,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al0.20CoCrFeMnNi,171,FCC,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+Al0.2CoCrFeMnNi,171,FCC,CAST,https://www.nature.com/articles/s41597-020-00768-313,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CoCrCu0.5FeNi,172,FCC,CAST,https://www.nature.com/articles/s41597-020-00768-291,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCoCrFeNiTi0.5,178,BCC+BCC,CAST,https://www.nature.com/articles/s41597-020-00768-323,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.02(CoCrFeMnNi),180,,CAST,https://doi.org/10.1016/j.jmst.2021.01.196,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al0.10CoCrFeMnNi,180,FCC,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+Al0.3CoCrCuFe,180,FCC,CAST,https://www.nature.com/articles/s41597-020-00768-61,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.3CoCrCuFeNi,180,FCC,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+CoCrFeMn0.6NiPd,180,FCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-146,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CoCrFeNiTa0.1,180,,CAST,https://doi.org/10.1016/j.jmst.2021.01.198,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al0.07(CoCrFeMnNi),182,,CAST,https://doi.org/10.1016/j.jmst.2021.01.199,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al0.38CoCrFeMnNi,182,FCC,CAST,https://www.nature.com/articles/s41597-020-00768-312,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al10Co17Fe35Mo6Ni34,182,,CAST,Beniwal: Test,
+Al0.08(CoCrFeMnNi),183,,CAST,https://doi.org/10.1016/j.jmst.2021.01.200,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al0.43CoCrFeMnNi,183,FCC+BCC,CAST,https://www.nature.com/articles/s41597-020-00768-311,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CoCrFeMnNiV0.5,186,FCC,CAST,https://www.nature.com/articles/s41597-020-00768-300,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CrFeNi,187,,CAST,Beniwal: Test,
+CoCuFeMnNiSn0.03,192,FCC,CAST,https://www.nature.com/articles/s41597-020-00768-262,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al11Co18Cr22Fe22Mn5Ni22,198,,CAST,Beniwal: Test,
+Al0.3CoCrFeNiTi0.1,199,,CAST,https://doi.org/10.1016/j.jmst.2021.01.201,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al0.4CrCuFeNi2,199,,CAST,https://doi.org/10.1016/j.jmst.2021.01.202,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al0.3CoCrFeMo0.Ni,200,FCC,,https://www.nature.com/articles/s41597-020-00768-6,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CoCrFeMnNiTa0.2,200,FCC+BCC,,https://www.nature.com/articles/s41597-020-00768-2,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.5CoCrFeNi,200.7,,CAST,https://doi.org/10.1016/j.jmst.2021.01.203,Machine learning of phases and mechanical properties in complexconcentrated alloys
+FeCoNiCuMo0.4,203,,CAST,Beniwal: Test,
+Al0.5CoCrCuFeNiV0.2,204,FCC,CAST,https://www.nature.com/articles/s41597-020-00768-277,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+(CuMnNi)95Sn5,205,FCC + Im,,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+CoCuFeMnNiSn0.05,205,FCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-261,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Cu31.6Mn31.6Ni31.6Sn5,205,FCC + Im,CAST,Beniwal: Train,
+CuMnNiSn0.053,205,FCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-220,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.242Co0.515Cr0.515Cu0.242Fe0.515Ni,206,,ANNEAL,https://www.nature.com/articles/s41597-020-00768-369,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.5CoCrCuFe,207,FCC,CAST,https://www.nature.com/articles/s41597-020-00768-60,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Cr16.67Co25.81Ni25.81Fe24.58C5.92,207,,CAST,https://doi.org/10.3390/cryst11010046,Deep Learning-Based Hardness Prediction of Novel Refractory High-Entropy Alloys with Experimental Validation
+Al0.5CoCrCuNi,208,,CAST,https://doi.org/10.1016/j.jmst.2021.01.205,Machine learning of phases and mechanical properties in complexconcentrated alloys
+CoCuFeMnNi,208,FCC,CAST,https://www.nature.com/articles/s41597-020-00768-263,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CoCrFeMo0.149Ni,210,FCC+Sec.,POWDER,https://www.nature.com/articles/s41597-020-00768-70,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CoCrFeMo0.5Ni,210,FCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-346,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+HfTiZr,211,Other,CAST,https://www.nature.com/articles/s41597-020-00768-135,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.5CoFeNi,212,FCC+BCC,CAST,https://www.nature.com/articles/s41597-020-00768-356,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CoCrFeNiHf0.1,213,,CAST,Beniwal: Test,
+CrFeNiAl0.2,215,,CAST,Beniwal: Test,
+CoCuFeMnNiSn0.08,219,FCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-260,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.09(CoCrFeMnNi),220,,CAST,https://doi.org/10.1016/j.jmst.2021.01.206,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al0.49CoCrFeMnNi,220,FCC+BCC,CAST,https://www.nature.com/articles/s41597-020-00768-310,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.6CrCuFeMnNi,220,,CAST,Beniwal: Test,
+CoCrFeMo0.3Ni,220,,CAST,https://doi.org/10.1016/j.jmst.2021.01.207,Machine learning of phases and mechanical properties in complexconcentrated alloys
+AlCoCr0.5Fe3.5Ni2.5,224,,CAST,Beniwal: Test,
+Al0.5CrCuFeNi,226,FCC,CAST,https://www.nature.com/articles/s41597-020-00768-118,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.6CoCrFeNi,228,FCC+BCC+B2,CAST,https://www.nature.com/articles/s41597-020-00768-201,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.229Co0.486Cr0.4Cu0.229Fe0.486Mo0.003NiTi0.029W0.003,231,,CAST,https://www.nature.com/articles/s41597-020-00768-209,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.5CoCrCuFeNiV0.4,231,FCC+BCC,CAST,https://www.nature.com/articles/s41597-020-00768-276,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+HfScTiZr,233,Other,CAST,https://www.nature.com/articles/s41597-020-00768-134,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CoCrCuFeNi,234.6,FCC,CAST,Beniwal: Train,
+CoFeNiV,238,FCC,CAST,https://www.nature.com/articles/s41597-020-00768-226,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.5CrCuFeNi2,239,,CAST,https://doi.org/10.1016/j.jmst.2021.01.208,Machine learning of phases and mechanical properties in complexconcentrated alloys
+(CuMnNi)90Al10,241,FCC + Im,,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+Al0.11CuMnNi,241,FCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-223,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Cu30Mn30Ni30Al10,241,FCC + Im,CAST,Beniwal: Train,
+HfTiYZr,241,Other,CAST,https://www.nature.com/articles/s41597-020-00768-133,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CoCrFeNiW0.2,244,FCC,CAST,https://www.nature.com/articles/s41597-020-00768-177,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+NbTaTi,246,BCC,CAST,https://www.nature.com/articles/s41597-020-00768-125,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCoCr0.5Fe2.5Ni2.5,247,,CAST,Beniwal: Test,
+AlCo2.0CuFeNi,249.3,,CAST,https://doi.org/10.1016/j.jmst.2021.01.209,Machine learning of phases and mechanical properties in complexconcentrated alloys
+CoCuFeMnNiSn0.,253,FCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-259,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CoCuFeMnNiSn0.10,253,FCC + Im,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+HfScTiYZr,256,Other,CAST,https://www.nature.com/articles/s41597-020-00768-132,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CrCuFeMoNi,263,FCC,CAST,https://www.nature.com/articles/s41597-020-00768-339,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CoFeMo0.2NiV,267,FCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-236,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.8CoCrCuFeNi,270,FCC+BCC,CAST,https://www.nature.com/articles/s41597-020-00768-335,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+HfNbTaTi,270,BCC,CAST,https://www.nature.com/articles/s41597-020-00768-105,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.8CoCrCuFe,271,FCC+BCC,CAST,https://www.nature.com/articles/s41597-020-00768-59,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.5CoCrCuFeNiTi0.2,272,FCC,CAST,https://www.nature.com/articles/s41597-020-00768-286,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlAuCoCrCuNi,276,,CAST,https://doi.org/10.1016/j.jmst.2021.01.211,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Co0.564Nb0.795Ta0.103TiW0.103,277,,CAST,https://www.nature.com/articles/s41597-020-00768-161,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CoCrFeNiTa0.2,277,,CAST,https://doi.org/10.1016/j.jmst.2021.01.212,Machine learning of phases and mechanical properties in complexconcentrated alloys
+FeCoNiCuMo0.6,277,,CAST,Beniwal: Test,
+Al0.10(CoCrFeMnNi),278,,CAST,https://doi.org/10.1016/j.jmst.2021.01.213,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al0.56CoCrFeMnNi,278,FCC+BCC,CAST,https://www.nature.com/articles/s41597-020-00768-309,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.6CrCuFeNi2,279,,CAST,https://doi.org/10.1016/j.jmst.2021.01.214,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al0.333Co0.333Cu0.333Fe0.333Ni,279.6,FCC,CAST,https://www.nature.com/articles/s41597-020-00768-155,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al8Co17Cr17Cu8Fe17Ni33,280,,CAST,https://doi.org/10.1016/j.jmst.2021.01.215,Machine learning of phases and mechanical properties in complexconcentrated alloys
+B0.006Co0.20Cr0.20FeMn0.604,282,FCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-138,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CoFeNiSi0.50,286,,CAST,https://doi.org/10.1016/j.jmst.2021.01.216,Machine learning of phases and mechanical properties in complexconcentrated alloys
+CoFeNiSi0.5,287,FCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-351,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CoCrFeMnNiTa0.4,290,FCC+BCC,,https://www.nature.com/articles/s41597-020-00768-3,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.7CrCuFeNi2,291,,CAST,https://doi.org/10.1016/j.jmst.2021.01.217,Machine learning of phases and mechanical properties in complexconcentrated alloys
+AlCoCr0.5Fe1.5Ni2.5,294,,CAST,Beniwal: Test,
+NbTa0.667Ti0.667Zr0.333,294,BCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-123,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CoCrFeNiPd,295,FCC,CAST,https://www.nature.com/articles/s41597-020-00768-149,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Co0.2Cr0.2FeMn0.6,296,FCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-139,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CrCuFeMnNi,296,FCC+BCC,CAST,https://www.nature.com/articles/s41597-020-00768-340,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.2Cr0.667FeMn0.667Ni0.333,297,FCC+BCC,CAST,https://www.nature.com/articles/s41597-020-00768-297,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.3CrFe1.5MnNi0.5,297,FCC + BCC,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+NbTaTiV,298,,CAST,https://doi.org/10.1016/j.jmst.2021.01.218,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al0.5Co0.5Cu0.5Fe0.5Ni,299.2,FCC+BCC+B2,CAST,https://www.nature.com/articles/s41597-020-00768-156,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Hf0.333Nb0.333Ta0.333TiZr0.667,301,BCC,CAST,https://www.nature.com/articles/s41597-020-00768-239,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Hf0.5Nb0.5Ta0.5Ti1.5Zr,301,BCC,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+Al0.2CrFe1.5Ni0.5,303.8,,CAST,https://doi.org/10.1016/j.jmst.2021.01.220,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Nb0.5Ti0.5VZr0.5,304,BCC,OTHER,https://www.nature.com/articles/s41597-020-00768-94,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+NbTiV2Zr,304,BCC,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+Al0.562Co0.938Cr0.312Fe0.312Ni,305.4,FCC+BCC,CAST,https://www.nature.com/articles/s41597-020-00768-131,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+B0.012Co0.202Cr0.202FeMn0.607,306,FCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-137,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CoCrFeNb0.25Ni,309,,CAST,https://doi.org/10.1016/j.jmst.2021.01.221,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al0.774FeMn0.903Ni0.484,310,,CAST,https://www.nature.com/articles/s41597-020-00768-121,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Hf0.25Nb0.5TiV0.5Zr0.5,310.4,BCC,CAST,https://www.nature.com/articles/s41597-020-00768-168,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.8CrCuFeNi2,316,,CAST,https://doi.org/10.1016/j.jmst.2021.01.222,Machine learning of phases and mechanical properties in complexconcentrated alloys
+(CuMnNi)90Sn10,318,FCC + Im,,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+Cu30Mn30Ni30Sn10,318,FCC + Im,CAST,Beniwal: Train,
+CuMnNiSn0.11,318,FCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-222,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Hf0.25Nb0.375TiV0.5Zr0.5,318.9,BCC,CAST,https://www.nature.com/articles/s41597-020-00768-169,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CoCuFeMnNiSn0.2,319,FCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-258,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CoCuFeMnNiSn0.20,319,FCC + Im,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+Al0.5CoCrCuFeNiTi0.4,321,FCC,CAST,https://www.nature.com/articles/s41597-020-00768-285,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Hf0.25Nb0.25TiV0.5Zr0.5,322.5,BCC,CAST,https://www.nature.com/articles/s41597-020-00768-170,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.667Co0.667Cu0.667Fe0.667Ni,323.8,FCC+BCC+B2,CAST,https://www.nature.com/articles/s41597-020-00768-157,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.3CrCuFeMnNi,327,,CAST,https://doi.org/10.1016/j.jmst.2021.01.223,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al0.5CoCrCuFeNiV0.6,328,FCC+BCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-275,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.774FeMn0.903Ni0.484Ti0.026,330,,CAST,https://www.nature.com/articles/s41597-020-00768-120,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Hf0.25Nb0.125TiV0.5Zr0.5,332.4,BCC,CAST,https://www.nature.com/articles/s41597-020-00768-171,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CoCrFeNiHf0.2,333,,CAST,Beniwal: Test,
+Al0.75CoCrFeNi,334,FCC + BCC,CAST,Beniwal: Train,
+Hf21Nb19.1Ta20.1Ti19.3V23Zr20.5,335,,CAST,https://doi.org/10.3390/cryst11010046,Deep Learning-Based Hardness Prediction of Novel Refractory High-Entropy Alloys with Experimental Validation
+Nb25Ti25V25Zr25,335,,CAST,https://doi.org/10.3390/cryst11010046,Deep Learning-Based Hardness Prediction of Novel Refractory High-Entropy Alloys with Experimental Validation
+NbTiVZr,335,BCC,OTHER,https://www.nature.com/articles/s41597-020-00768-93,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.7CoCrFeNi,337,,CAST,https://doi.org/10.1016/j.jmst.2021.01.224,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al0.9CrCuFeNi2,338,,CAST,https://doi.org/10.1016/j.jmst.2021.01.225,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Hf0.25TiV0.5Zr0.5,338.3,BCC,CAST,https://www.nature.com/articles/s41597-020-00768-172,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCrCuFeNi,342,FCC+BCC,CAST,https://www.nature.com/articles/s41597-020-00768-341,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CoCrFeMnNiV0.75,342,FCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-299,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.278Co0.694Cr0.222Fe0.417NiTi0.167,343,,CAST,https://www.nature.com/articles/s41597-020-00768-208,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCoCr0.5Fe0.5Ni2.5,343,,CAST,Beniwal: Test,
+AlCr0.5CuFeNiTi,343.7,,CAST,https://doi.org/10.1016/j.jmst.2021.01.226,Machine learning of phases and mechanical properties in complexconcentrated alloys
+CoCrFeMnNiTa0.6,345,FCC+BCC,,https://www.nature.com/articles/s41597-020-00768-4,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+FeCoNiCuMo0.8,347,,CAST,Beniwal: Test,
+AlCoCuNi,348,,CAST,https://doi.org/10.1016/j.jmst.2021.01.227,Machine learning of phases and mechanical properties in complexconcentrated alloys
+AlCrCuFeNiTi,348.8,,CAST,https://doi.org/10.1016/j.jmst.2021.01.228,Machine learning of phases and mechanical properties in complexconcentrated alloys
+HfNbTiZr,351,BCC,CAST,https://www.nature.com/articles/s41597-020-00768-179,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.3HfNbTaTiZr,353,BCC,CAST,https://www.nature.com/articles/s41597-020-00768-254,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.5CrFeMnNi,353,BCC+B2,CAST,https://www.nature.com/articles/s41597-020-00768-154,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Hf0.75NbTa0.5Ti1.5Zr1.25,356.9,,CAST,https://doi.org/10.1016/j.jmst.2021.01.229,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al0.58Co0.968Cr0.323Fe0.323Mo0.032Ni,357.3,FCC+BCC,CAST,https://www.nature.com/articles/s41597-020-00768-130,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CoCrFeNiW0.5,357.9,FCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-176,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+NbTaTiZr,358,BCC,CAST,https://www.nature.com/articles/s41597-020-00768-126,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+HfNbTaTiZr,359,BCC,CAST,https://www.nature.com/articles/s41597-020-00768-127,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCr1.5CuFeNiTi,359.3,,CAST,https://doi.org/10.1016/j.jmst.2021.01.230,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al0.6CoCr0.333Fe0.333Mo0.Ni0.967,359.7,FCC+BCC,CAST,https://www.nature.com/articles/s41597-020-00768-128,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.6CrFeMnNi,361,BCC+B2,CAST,https://www.nature.com/articles/s41597-020-00768-153,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CrFeNiTi0.2,362.2,BCC+FCC,CAST,https://www.nature.com/articles/s41597-020-00768-144,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.6CoCr0.333Fe0.333Mo0.067Ni,362.6,FCC+BCC,CAST,https://www.nature.com/articles/s41597-020-00768-129,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CoCrFeNiTa0.3,365,,CAST,https://doi.org/10.1016/j.jmst.2021.01.231,Machine learning of phases and mechanical properties in complexconcentrated alloys
+HfNbTaZr,365,BCC,CAST,https://www.nature.com/articles/s41597-020-00768-213,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCo1.5CuFeNi,366.4,,CAST,https://doi.org/10.1016/j.jmst.2021.01.232,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al0.714Cr0.714Cu0.714Fe0.714Ni,367,FCC+BCC,ANNEAL,https://www.nature.com/articles/s41597-020-00768-373,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCoCr0.5CuFeNi,367,,CAST,https://doi.org/10.1016/j.jmst.2021.01.233,Machine learning of phases and mechanical properties in complexconcentrated alloys
+AlCrCuFeNi1.4,367,FCC + BCC,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+AlCr2CuFeNiTi,368.3,,CAST,https://doi.org/10.1016/j.jmst.2021.01.234,Machine learning of phases and mechanical properties in complexconcentrated alloys
+AlCr3CuFeNiTi,369.3,,CAST,https://doi.org/10.1016/j.jmst.2021.01.235,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Mo0.5VNbTi,370,,CAST,Beniwal: Test,
+Al0.3CrFe1.5Ni0.5,371.3,,CAST,https://doi.org/10.1016/j.jmst.2021.01.236,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al0.7CrFeMnNi,375,BCC+B2,CAST,https://www.nature.com/articles/s41597-020-00768-152,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCuNi,379,,CAST,https://doi.org/10.1016/j.jmst.2021.01.237,Machine learning of phases and mechanical properties in complexconcentrated alloys
+AlCrCoFeNiTi,380,,CAST,Beniwal: Test,
+CoCrFeMn0.4NiPd,380,FCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-147,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Co0.5Fe0.5Mo0.5NiV0.5,382,FCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-228,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CoFeMoNi2V,382,FCC + Im,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+FeCoNiCuMo,382,,CAST,Beniwal: Test,
+CoFeMoNi2.0V,382.3,,CAST,https://doi.org/10.1016/j.jmst.2021.01.238,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al0.5CoCrFeMnNiTa0.2,385,FCC+BCC+Sec.,,https://www.nature.com/articles/s41597-020-00768-1,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.75CoFeNi,385,FCC+BCC,CAST,https://www.nature.com/articles/s41597-020-00768-355,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.8CrFeMnNi,386,BCC+B2,CAST,https://www.nature.com/articles/s41597-020-00768-151,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.8CoCrFeNi,388,,CAST,https://doi.org/10.1016/j.jmst.2021.01.241,Machine learning of phases and mechanical properties in complexconcentrated alloys
+HfNbTiVZr,388,BCC + lm,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+Al0.5CrCuFeMnNi,390,,CAST,https://doi.org/10.1016/j.jmst.2021.01.242,Machine learning of phases and mechanical properties in complexconcentrated alloys
+AlCoCuFeNi,391.4,FCC+BCC+B2,CAST,https://www.nature.com/articles/s41597-020-00768-158,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.8CrCu1.5FeMnNi,393,,CAST,https://doi.org/10.1016/j.jmst.2021.01.243,Machine learning of phases and mechanical properties in complexconcentrated alloys
+AlCrCuFeNi2,393,,CAST,https://doi.org/10.1016/j.jmst.2021.01.244,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al0.5Co0.5Cr0.5Fe0.5Mo0.25Ni,395,FCC+B2+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-324,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCoCrFeMo0.5Ni2,395,FCC + BCC + Im,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+HfMo0.25NbTaTiZr,395,BCC,CAST,https://www.nature.com/articles/s41597-020-00768-245,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.333Cr0.667FeMn0.667Ni0.333,396,BCC,CAST,https://www.nature.com/articles/s41597-020-00768-296,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.5CrFe1.5MnNi0.5,396,BCC,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+Al0.5HfNbTaTiZr,396,BCC,CAST,https://www.nature.com/articles/s41597-020-00768-253,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Hf0.5Mo0.5NbTiZr,400,BCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-214,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCo0.667Cr0.667Fe0.667Ni0.667,402,BCC,CAST,https://www.nature.com/articles/s41597-020-00768-344,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CoFeMo0.4NiV,402,FCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-235,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+HfMo0.5NbTiV0.5,403,,CAST,https://doi.org/10.1016/j.jmst.2021.01.245,Machine learning of phases and mechanical properties in complexconcentrated alloys
+AlCoCrFeMo0.5Ni2.0,404,,CAST,https://doi.org/10.1016/j.jmst.2021.01.246,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al0.11(CoCrFeMnNi),405,,CAST,https://doi.org/10.1016/j.jmst.2021.01.247,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al0.62CoCrFeMnNi,405,FCC+BCC,CAST,https://www.nature.com/articles/s41597-020-00768-308,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.833Cr0.833Cu0.833Fe0.833Ni,407,FCC+BCC,ANNEAL,https://www.nature.com/articles/s41597-020-00768-374,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCoCrCuFe,407,FCC+BCC,CAST,https://www.nature.com/articles/s41597-020-00768-50,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCrCuFeNi1.2,407,FCC + BCC,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+Al0.667NbTa0.333TiZr0.333,408,BCC,OTHER,https://www.nature.com/articles/s41597-020-00768-98,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlNb1.5Ta0.5Ti1.5Zr0.5,408,BCC,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+Mo0.5VNbTiCr0.25,410,,CAST,Beniwal: Test,
+Al0.5CrFeMnNi0.5,412,,CAST,Beniwal: Test,
+Al0.5B0.2CoCrCuFeNi,415,,CAST,https://www.nature.com/articles/s41597-020-00768-290,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CoCrFeNiHf0.3,417,,CAST,Beniwal: Test,
+AlCoCrCuFe0.5Ni,418,,CAST,https://doi.org/10.1016/j.jmst.2021.01.248,Machine learning of phases and mechanical properties in complexconcentrated alloys
+AlCoCrCuNi,418,,CAST,https://doi.org/10.1016/j.jmst.2021.01.249,Machine learning of phases and mechanical properties in complexconcentrated alloys
+CrNbTiZr,418,BCC+Sec.,OTHER,https://www.nature.com/articles/s41597-020-00768-95,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCoCuFeNi0.8,420,FCC+BCC+B2,CAST,https://www.nature.com/articles/s41597-020-00768-159,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CoCrFeMo0.85Ni,420,,CAST,https://doi.org/10.1016/j.jmst.2021.01.250,Machine learning of phases and mechanical properties in complexconcentrated alloys
+AlNbTiZr,422,B2,CAST,https://www.nature.com/articles/s41597-020-00768-117,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Co0.273Cr0.477Nb0.477Ni0.045Ti,422,,CAST,https://www.nature.com/articles/s41597-020-00768-163,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCoCrCuFeNi0.5,423,,CAST,https://doi.org/10.1016/j.jmst.2021.01.251,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al0.5CoCrFeMo0.5Ni,425,FCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-349,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.75HfNbTaTiZr,427,BCC,CAST,https://www.nature.com/articles/s41597-020-00768-252,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+C0.CoCrFeMnNiTi0.,428,FCC+Sec.,POWDER,https://www.nature.com/articles/s41597-020-00768-75,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCoCuFeNi0.5,430.9,FCC+BCC+B2,CAST,https://www.nature.com/articles/s41597-020-00768-160,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+MoNbTaTi,431,BCC,CAST,https://www.nature.com/articles/s41597-020-00768-104,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.CoCrFeMnNi,432,FCC+BCC,CAST,https://www.nature.com/articles/s41597-020-00768-207,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+MoTaTiV,433.2,,CAST,https://doi.org/10.1016/j.jmst.2021.01.252,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al0.8CrCuFeMnNi,436,,CAST,https://doi.org/10.1016/j.jmst.2021.01.253,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al0.33CrCuFeMn0.33NiSi0.33,441,,CAST,Beniwal: Test,
+Al0.8CrCuFeMn1.5Ni,441,,CAST,https://doi.org/10.1016/j.jmst.2021.01.254,Machine learning of phases and mechanical properties in complexconcentrated alloys
+AlHfNbTaTiZr,441,BCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-251,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+MoNbTiV,441,BCC,CAST,https://www.nature.com/articles/s41597-020-00768-246,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Hf0.5Mo0.5NbSi0.1TiZr,442,BCC + Im,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+Hf0.5Mo0.5NbSi0.TiZr,442,BCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-219,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+MoNbTaTiV,443,,CAST,https://doi.org/10.1016/j.jmst.2021.01.255,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al0.15CrFe1.5Ni0.5,443.2,,CAST,https://doi.org/10.1016/j.jmst.2021.01.256,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al0.5CoCrCuFeNiV0.8,447,FCC+BCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-274,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+NbTaTiVW,447,BCC+HCP,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+AlNbTiV,448,BCC,ANNEAL,https://www.nature.com/articles/s41597-020-00768-372,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.2MoTaTiV,450,,CAST,https://doi.org/10.1016/j.jmst.2021.01.257,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al0.4CrFe1.5Ni0.5,450.1,,CAST,https://doi.org/10.1016/j.jmst.2021.01.258,Machine learning of phases and mechanical properties in complexconcentrated alloys
+AgAlCoCrCuNi,451,,CAST,https://doi.org/10.1016/j.jmst.2021.01.259,Machine learning of phases and mechanical properties in complexconcentrated alloys
+B0.035Co0.207Cr0.207FeMn0.62,452,FCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-136,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Mo25.6Nb22.7Ta24.4W27.3,454,,CAST,https://doi.org/10.3390/cryst11010046,Deep Learning-Based Hardness Prediction of Novel Refractory High-Entropy Alloys with Experimental Validation
+MoNbTaW,454,BCC,CAST,https://www.nature.com/articles/s41597-020-00768-237,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCoFeNi,456,BCC,CAST,https://www.nature.com/articles/s41597-020-00768-354,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Mo0.5VNbTiCr0.5,456,,CAST,Beniwal: Test,
+Al0.5CoCrCuFeNiTi0.6,458,FCC+BCC,CAST,https://www.nature.com/articles/s41597-020-00768-284,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCoCrCu0.5FeNi,458,,CAST,https://doi.org/10.1016/j.jmst.2021.01.260,Machine learning of phases and mechanical properties in complexconcentrated alloys
+AlCoCrCuFeNi,458,FCC+BCC,CAST,https://www.nature.com/articles/s41597-020-00768-194,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlNbTaTi,458,BCC,CAST,https://www.nature.com/articles/s41597-020-00768-109,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.25MoNbTiV,460,BCC,CAST,https://www.nature.com/articles/s41597-020-00768-250,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al35Cr14Mg6Ti35V10,460,,POWDER,Beniwal: Test,
+Al7.95Cr15.32Fe16.45Mn16.19Ni17.29W26.8,461,,CAST,Beniwal: Test,
+Al0.8CrCuFe1.5MnNi,462,,CAST,https://doi.org/10.1016/j.jmst.2021.01.261,Machine learning of phases and mechanical properties in complexconcentrated alloys
+CrHfNbTiZr,464,BCC + lm,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+HfNbSi0.5TiVZr,464,BCC + lm,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+Al1.5CoCrFeNi,467.7,BCC,CAST,Beniwal: Train,
+Al1.3CoCrCuFeNi,470,FCC + BCC,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+CoCrFeMn0.2NiPd,470,FCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-148,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCoCuFeNiZr,472,FCC+BCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-264,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCrFeNi,472,BCC+B2,CAST,https://www.nature.com/articles/s41597-020-00768-295,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCo0.5CrCuFeNi,473,,CAST,https://doi.org/10.1016/j.jmst.2021.01.262,Machine learning of phases and mechanical properties in complexconcentrated alloys
+MoNbRe0.5W,473,BCC,CAST,https://www.nature.com/articles/s41597-020-00768-190,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+C0.11CoCrFeNiW0.11,475,FCC,POWDER,https://www.nature.com/articles/s41597-020-00768-68,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al1.3CoCrCuFe,476,FCC + BCC,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+AlCo0.769Cr0.769Cu0.769Fe0.769,476,FCC+BCC,,https://www.nature.com/articles/s41597-020-00768-58,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al1.2CoCrFeNi,478,,CAST,https://doi.org/10.1016/j.jmst.2021.01.263,Machine learning of phases and mechanical properties in complexconcentrated alloys
+AlTiV,478,,CAST,https://doi.org/10.1016/j.jmst.2021.01.264,Machine learning of phases and mechanical properties in complexconcentrated alloys
+MoNbTaTi0.25W,478.3,BCC,CAST,https://www.nature.com/articles/s41597-020-00768-212,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Ti0.25NbMoTaW,478.3,BCC,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+HfMo0.50NbTaTiZr,480,,CAST,https://doi.org/10.1016/j.jmst.2021.01.265,Machine learning of phases and mechanical properties in complexconcentrated alloys
+HfMo0.5NbTaTiZr,480,BCC,CAST,https://www.nature.com/articles/s41597-020-00768-244,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+MoNbTaTi0.5W,481.2,BCC,CAST,https://www.nature.com/articles/s41597-020-00768-211,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Ti0.5NbMoTaW,481.2,BCC,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+CrNbTiVZr,482,BCC + Im,CAST,Beniwal: Train,
+Al0.6MoTaTiV,483.3,,CAST,https://doi.org/10.1016/j.jmst.2021.01.267,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al1.8CoCrFeNi,484,,CAST,https://doi.org/10.1016/j.jmst.2021.01.268,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al2CoCrFeNi,484.3,BCC,CAST,Beniwal: Train,
+TaTiZr,485,BCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-124,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.12(CoCrFeMnNi),486,,CAST,https://doi.org/10.1016/j.jmst.2021.01.269,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al0.5CoCrFeMnNiTa0.4,486,FCC+BCC+Sec.,,https://www.nature.com/articles/s41597-020-00768-0,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.68CoCrFeMnNi,486,FCC+BCC,CAST,https://www.nature.com/articles/s41597-020-00768-307,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCrCuFeNi0.8,486,FCC + BCC,CAST,Beniwal: Train,
+Al0.50MoNbTiV,486.5,,CAST,https://doi.org/10.1016/j.jmst.2021.01.271,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al0.133CoCr0.667Fe0.667NiTi0.333,487,FCC,ANNEAL,https://www.nature.com/articles/s41597-020-00768-385,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.2Co1.5CrFeNi1.5Ti0.5,487,FCC,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+Al0.5MoNbTiV,487,BCC,CAST,https://www.nature.com/articles/s41597-020-00768-249,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al2.5CoCrFeNi,487,BCC,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+AlCo0.4Cr0.4Fe0.4Ni0.4,487,BCC,CAST,https://www.nature.com/articles/s41597-020-00768-343,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Mo0.5VNbTiCr0.75,488,,CAST,Beniwal: Test,
+AlMoTiV,489,,CAST,https://doi.org/10.1016/j.jmst.2021.01.273,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Nb0.333Ta0.667Ti0.667Zr,489,BCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-122,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.214Nb0.714Ta0.714TiZr0.929,490,BCC,OTHER,https://www.nature.com/articles/s41597-020-00768-102,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.3NbTaTi1.4Zr1.3,490,BCC,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+Al10.11Cr19.49Fe20.93Mn20.59Ni22W6.89,490,,CAST,Beniwal: Test,
+HfNbSi0.5TiV,490,BCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-240,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CoCrFeNiTa0.4,492,,CAST,https://doi.org/10.1016/j.jmst.2021.01.274,Machine learning of phases and mechanical properties in complexconcentrated alloys
+HfMo0.75NbTaTiZr,492,BCC,CAST,https://www.nature.com/articles/s41597-020-00768-243,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+NbTaVW,492,BCC,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+Al1.25CoCrFeNi,493,BCC,CAST,Beniwal: Train,
+AlCoCrFeNi,493,B2+BCC,CAST,https://www.nature.com/articles/s41597-020-00768-191,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Hf0.5Mo0.5NbSi0.3TiZr,494,BCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-218,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCrCuFeMnNi,495,,CAST,https://doi.org/10.1016/j.jmst.2021.01.276,Machine learning of phases and mechanical properties in complexconcentrated alloys
+CrNbTaTi,495,BCC,CAST,https://www.nature.com/articles/s41597-020-00768-107,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CuHfNiTiZr,495,,CAST,https://doi.org/10.1016/j.jmst.2021.01.277,Machine learning of phases and mechanical properties in complexconcentrated alloys
+MoNbTaTi0.75W,495.6,BCC,CAST,https://www.nature.com/articles/s41597-020-00768-210,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Ti0.75NbMoTaW,495.6,BCC,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+AlCoCrCu0.5Ni,496,,CAST,https://doi.org/10.1016/j.jmst.2021.01.278,Machine learning of phases and mechanical properties in complexconcentrated alloys
+AlCrCuFeNi0.6,496,FCC + BCC,CAST,Beniwal: Train,
+AlCo0.667Cr0.667Cu0.667Fe0.667Ni0.667,498,FCC+BCC,CAST,https://www.nature.com/articles/s41597-020-00768-193,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CoCrFeNiTa0.5,498,,CAST,https://doi.org/10.1016/j.jmst.2021.01.280,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Mo40Nb10V20Ta20W20,498,,CAST,https://doi.org/10.3390/cryst11010046,Deep Learning-Based Hardness Prediction of Novel Refractory High-Entropy Alloys with Experimental Validation
+MoNbTaTiW,498.7,,CAST,https://doi.org/10.1016/j.jmst.2021.01.281,Machine learning of phases and mechanical properties in complexconcentrated alloys
+AlCo0.8Cr0.8Fe0.8Ni0.8,499,BCC,ANNEAL,https://www.nature.com/articles/s41597-020-00768-391,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+MoNbTaTiZr,499.6,,CAST,https://doi.org/10.1016/j.jmst.2021.01.282,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al0.214Nb0.714Ta0.57TiV0.143Zr0.929,500,BCC,OTHER,https://www.nature.com/articles/s41597-020-00768-103,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.3NbTa0.8Ti1.4V0.2Zr1.3,500,BCC,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+Al0.4Hf0.6NbTaTiZr,500,BCC,CAST,Beniwal: Train,
+Al0.774FeMn0.903Ni0.484Ti0.097,500,,CAST,https://www.nature.com/articles/s41597-020-00768-119,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+HfMo0.5NbSi0.3TiV0.5,500,,CAST,https://doi.org/10.1016/j.jmst.2021.01.283,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al10.47Cr20.18Fe20.67Mn21.32Ni22.78W3.59,503,,CAST,Beniwal: Test,
+MoNbTaV,504,BCC,CAST,Beniwal: Train,
+Al0.5B0.6CoCrCuFeNi,505,,CAST,https://www.nature.com/articles/s41597-020-00768-289,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+HfMoNbTaTiZr,505,BCC,CAST,https://www.nature.com/articles/s41597-020-00768-242,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al1.5CoCrCuFeNi,506,FCC + BCC,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+Al3CoCrFeNi,506,BCC,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+AlCo0.333Cr0.333Fe0.333Ni0.333,506,BCC,CAST,https://www.nature.com/articles/s41597-020-00768-342,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al2.0CoCrFeNi,506.5,,CAST,https://doi.org/10.1016/j.jmst.2021.01.285,Machine learning of phases and mechanical properties in complexconcentrated alloys
+TiNbMoTaW,507.5,BCC,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+AlMoNbTi,509,BCC,CAST,https://www.nature.com/articles/s41597-020-00768-110,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Co1.5CrFeNi1.5Ti0.5,509,FCC,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+CoCr0.667Fe0.667NiTi0.333,509,FCC,ANNEAL,https://www.nature.com/articles/s41597-020-00768-383,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlMoTaTiV,509.5,,CAST,https://doi.org/10.1016/j.jmst.2021.01.287,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al1.5CoCrCuFe,510,FCC + BCC,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+AlCo0.667Cr0.667Cu0.667Fe0.667,510,FCC+BCC,,https://www.nature.com/articles/s41597-020-00768-57,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+C0.2MoNbRe0.5Ta0.2W,510,BCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-189,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Co0.556Fe0.556Mo0.556NiV0.556,510,FCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-229,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CoFeMoNi1.8V,510,FCC + Im,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+CrFeNiTi0.3,510.3,BCC+FCC,CAST,https://www.nature.com/articles/s41597-020-00768-143,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+MoNbTaTiVW,510.3,,CAST,https://doi.org/10.1016/j.jmst.2021.01.288,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al0.3CoCrFeMnNi,511,FCC+BCC,CAST,https://www.nature.com/articles/s41597-020-00768-206,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.9CoCrFeNi,511,FCC+BCC+B2,CAST,https://www.nature.com/articles/s41597-020-00768-200,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CrFeNiNb0.1Ti0.2,512,,CAST,Beniwal: Test,
+Al0.267CoCr0.667Fe0.667Ni0.667Ti0.2,515,FCC+BCC,POWDER,https://www.nature.com/articles/s41597-020-00768-66,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al1.125CuFe0.75NiTi1.125,516,FCC,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+Al22.5Cu20Fe15Ni20Ti22.5,516,FCC,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+AlCu0.889Fe0.667Ni0.889Ti,516,FCC,CAST,https://www.nature.com/articles/s41597-020-00768-257,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCuFeNiTi,516,FCC,CAST,https://www.nature.com/articles/s41597-020-00768-256,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.75MoNbTiV,517,BCC,CAST,https://www.nature.com/articles/s41597-020-00768-248,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al14.2Mo22.2Nb22.2Ti21.5V20.95,517,,CAST,https://doi.org/10.3390/cryst11010046,Deep Learning-Based Hardness Prediction of Novel Refractory High-Entropy Alloys with Experimental Validation
+CoCrFeNb0.5Ni,518,,CAST,https://doi.org/10.1016/j.jmst.2021.01.289,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Mo0.5VNbTiCr,518,,CAST,Beniwal: Test,
+Al1.2CrCuFeNi2,520,,CAST,https://doi.org/10.1016/j.jmst.2021.01.290,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Co0.625Fe0.625Mo0.625NiV0.625,520,FCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-230,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CoFeMoNi1.6V,520,FCC + Im,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+CoCrFeNb0.45Ni,521,,CAST,https://doi.org/10.1016/j.jmst.2021.01.291,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al30.5Co16Cr18.5Fe16.5Mn5Ni13.5,522,,CAST,Beniwal: Test,
+AlCrCuFeNiV0.2,522,,CAST,Beniwal: Test,
+AlMoTi,524,,CAST,https://doi.org/10.1016/j.jmst.2021.01.292,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Hf0.5Mo0.5NbSi0.5TiZr,524,BCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-217,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.13(CoCrFeMnNi),530,,CAST,https://doi.org/10.1016/j.jmst.2021.01.293,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al0.333Nb0.667Ta0.533TiV0.133Zr0.667,530,BCC,OTHER,https://www.nature.com/articles/s41597-020-00768-100,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.5NbTa0.8Ti1.5V0.2Zr,530,BCC,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+Al0.75CoCrFeMnNi,530,FCC+BCC,CAST,https://www.nature.com/articles/s41597-020-00768-306,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+C0.429CoCrFeNiW0.429,531,FCC,POWDER,https://www.nature.com/articles/s41597-020-00768-67,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCo0.2CuFeNi,531.4,,CAST,https://doi.org/10.1016/j.jmst.2021.01.294,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al0.15(CoCrFeMnNi),533,,CAST,https://doi.org/10.1016/j.jmst.2021.01.295,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al0.88CoCrFeMnNi,533,FCC+BCC,CAST,https://www.nature.com/articles/s41597-020-00768-304,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.16(CoCrFeMnNi),535,,CAST,https://doi.org/10.1016/j.jmst.2021.01.296,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al0.95CoCrFeMnNi,535,FCC+BCC,CAST,https://www.nature.com/articles/s41597-020-00768-303,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al14.4Co16.9Cr 18.3Fe 16.8Mn 16.9Ni16.7,535,,CAST,https://doi.org/10.3390/cryst11010046,Deep Learning-Based Hardness Prediction of Novel Refractory High-Entropy Alloys with Experimental Validation
+Mo21.7Nb20.6Ta15.6V21W21.1,535,,CAST,https://doi.org/10.3390/cryst11010046,Deep Learning-Based Hardness Prediction of Novel Refractory High-Entropy Alloys with Experimental Validation
+MoNbTaVW,536,BCC,CAST,https://www.nature.com/articles/s41597-020-00768-238,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCuNiTi,537,FCC,CAST,https://www.nature.com/articles/s41597-020-00768-255,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlMoNbTiV,537,BCC,CAST,https://www.nature.com/articles/s41597-020-00768-247,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.875CoCrFeNi,538,,CAST,https://doi.org/10.1016/j.jmst.2021.01.297,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Co0.714Fe0.714Mo0.714NiV0.714,538,FCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-231,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CoFeMoNi1.4V,538,FCC + Im,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+Al0.14(CoCrFeMnNi),539,,CAST,https://doi.org/10.1016/j.jmst.2021.01.298,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al0.20(CoCrFeMnNi),539,,CAST,https://doi.org/10.1016/j.jmst.2021.01.299,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al0.81CoCrFeMnNi,539,FCC + BCC,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+Al0.8CoCrFeMnNi,539,FCC+BCC,CAST,https://www.nature.com/articles/s41597-020-00768-305,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al1.25CoCrFeMnNi,539,BCC,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+AlCo0.8Cr0.8Fe0.8Mn0.8Ni0.8,539,BCC,CAST,https://www.nature.com/articles/s41597-020-00768-302,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CrMoTaTi,539,BCC,CAST,https://www.nature.com/articles/s41597-020-00768-108,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CrMo0.5NbTa0.5TiZr,540,BCC + Im,CAST,Beniwal: Train,
+CrFeNiAl0.4,542,,CAST,Beniwal: Test,
+HfMoTaTiZr,542,BCC,CAST,https://www.nature.com/articles/s41597-020-00768-241,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCo0.5CuFeNi,544.9,,CAST,https://doi.org/10.1016/j.jmst.2021.01.300,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al1.5CrCuFeNi2,549,,CAST,https://doi.org/10.1016/j.jmst.2021.01.301,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al1.8CrCuFeNi2,549,,CAST,https://doi.org/10.1016/j.jmst.2021.01.302,Machine learning of phases and mechanical properties in complexconcentrated alloys
+AlCrCuFeNiV,549,,CAST,Beniwal: Test,
+AlCrFeMo0.2Ni,549,BCC+B2,CAST,https://www.nature.com/articles/s41597-020-00768-293,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCrFeNiMo0.2,549,BCC,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+CoCrFeNiTa0.75,550,,CAST,https://doi.org/10.1016/j.jmst.2021.01.303,Machine learning of phases and mechanical properties in complexconcentrated alloys
+CrFeNiAl0.3Ti0.3,551,,CAST,Beniwal: Test,
+Al0.5CoCrFeMnNi,553,FCC+BCC,CAST,https://www.nature.com/articles/s41597-020-00768-205,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al1.6CrCuFeNi2,553,,CAST,https://doi.org/10.1016/j.jmst.2021.01.304,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al10.86Cr20.93Fe22.48Mn22.11Ni23.62,553,,CAST,Beniwal: Test,
+AlCrTiV,555,,CAST,https://doi.org/10.1016/j.jmst.2021.01.305,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al19.2Co28Fe28Ni24.8,556,,POWDER,Beniwal: Test,
+AlCrMoTiV,556,,CAST,https://doi.org/10.1016/j.jmst.2021.01.306,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al1.50MoNbTiV,556.4,,CAST,https://doi.org/10.1016/j.jmst.2021.01.307,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al1.8CoCrCuFe,557,FCC + BCC,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+AlCo0.556Cr0.556Cu0.556Fe0.556,557,FCC+BCC,,https://www.nature.com/articles/s41597-020-00768-56,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CoFeMo0.6NiV,557,FCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-234,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+C0.4MoNbRe0.5Ta0.4W,558,BCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-188,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+HfNbTaTiVZr,558,,CAST,https://doi.org/10.1016/j.jmst.2021.01.309,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al2CoCrCuFeNi,560,FCC + BCC,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+AlCo0.5Cr0.5Cu0.5Fe0.5Ni0.5,560,FCC+BCC,CAST,https://www.nature.com/articles/s41597-020-00768-192,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCoCrCuFeNiTiV,560,,CAST,https://doi.org/10.1016/j.jmst.2021.01.310,Machine learning of phases and mechanical properties in complexconcentrated alloys
+AlCrCuFeNiV0.6,560,,CAST,Beniwal: Test,
+Al2.0CoCrCuFeNi,562,,CAST,https://doi.org/10.1016/j.jmst.2021.01.311,Machine learning of phases and mechanical properties in complexconcentrated alloys
+AlCoCrCuFeNiSi,566,,CAST,https://doi.org/10.1016/j.jmst.2021.01.312,Machine learning of phases and mechanical properties in complexconcentrated alloys
+CrCuFeNiZr,566,,CAST,https://doi.org/10.1016/j.jmst.2021.01.313,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al2.0CoCrCuFe,567,FCC + BCC,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+Al2.0CrCuFeNi2,567,,CAST,https://doi.org/10.1016/j.jmst.2021.01.314,Machine learning of phases and mechanical properties in complexconcentrated alloys
+AlCo0.5Cr0.5Cu0.5Fe0.5,567,FCC+BCC,,https://www.nature.com/articles/s41597-020-00768-55,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+MoNbSi0.25TaW,567,BCC+Sec.,POWDER,https://www.nature.com/articles/s41597-020-00768-78,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCoCrFeNb0.1Ni,569,BCC,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+AlCoCrFeNb0.Ni,569,BCC,CAST,https://www.nature.com/articles/s41597-020-00768-338,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CoCrFeNiHf0.4,569,,CAST,Beniwal: Test,
+Al0.55CoCrFeMnNiTa0.6,570,FCC+BCC+Sec.,,https://www.nature.com/articles/s41597-020-00768-1,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CoFeNiSi0.75,570,FCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-350,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.357Co0.714Cr0.714Cu0.714Fe0.714Ni0.714V,577,BCC,CAST,https://www.nature.com/articles/s41597-020-00768-271,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.5CoCrCuFeNiV1.4,577,BCC,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+Al2.2CrCuFeNi2,578,,CAST,https://doi.org/10.1016/j.jmst.2021.01.315,Machine learning of phases and mechanical properties in complexconcentrated alloys
+AlCoCuFeNbNi,578,Im,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+AlCoCuFeNdNi,578,Other,CAST,https://www.nature.com/articles/s41597-020-00768-267,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.417Co0.833Cr0.833Cu0.833Fe0.833Ni0.833V,579,BCC,CAST,https://www.nature.com/articles/s41597-020-00768-272,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.5CoCrCuFeNiV1.2,579,BCC,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+Al23Co15Cr23Cu8Fe15Ni16,580,,CAST,https://doi.org/10.1016/j.jmst.2021.01.316,Machine learning of phases and mechanical properties in complexconcentrated alloys
+CrFeNiAl0.4Ti0.2,580,,CAST,Beniwal: Test,
+Hf0.5Mo0.5NbSi0.7TiZr,580,BCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-216,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Mo0.5VNbTiCr1.5,580,,CAST,Beniwal: Test,
+AlCo0.5Cr0.5Fe0.5Ni0.5,581.7,BCC+B2,CAST,https://www.nature.com/articles/s41597-020-00768-185,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+HfMo0.5NbSi0.5TiV0.5,582,,CAST,https://doi.org/10.1016/j.jmst.2021.01.317,Machine learning of phases and mechanical properties in complexconcentrated alloys
+C0.5MoNbRe0.5Ta0.5W,583,BCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-187,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.5CoCr0.5Fe0.5Mo0.25Ni0.5,586,FCC+BCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-332,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.667Co0.667Cr0.667Fe0.667Mo0.333Ni,586,FCC+B2+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-325,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCo2CrFeMo0.5Ni,586,FCC + BCC + Im,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+AlCoCrFeMo0.5Ni1.5,586,FCC + BCC + Im,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+Al0.25Co0.5Cr0.5Cu0.5Fe0.5Ni0.5V,587,BCC,CAST,https://www.nature.com/articles/s41597-020-00768-268,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.5CoCrCuFeNiV2.0,587,BCC,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+Al0.5CoCrCuFeNiTi0.8,590,FCC+BCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-283,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CuFeNiTiVZr,590,,CAST,https://www.nature.com/articles/s41597-020-00768-315,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.667Li0.667Mg0.333Sc0.667Ti,591,FCC+HCP,,https://www.nature.com/articles/s41597-020-00768-47,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlLiMg0.5ScTi1.5,591,FCC + HCP,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+AlMo0.5NbTa0.5TiZr,591,BCC+B2,OTHER,https://www.nature.com/articles/s41597-020-00768-99,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.312Co0.625Cr0.625Cu0.625Fe0.625Ni0.625V,594,BCC,CAST,https://www.nature.com/articles/s41597-020-00768-270,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.5CoCrCuFeNiV1.6,594,BCC,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+Al2.5CrCuFeNi2,596,,CAST,https://doi.org/10.1016/j.jmst.2021.01.318,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Fe40Mn14Ni10Cr10Al15Si10C1,596,,POWDER,Beniwal: Test,
+Al0.278Co0.556Cr0.556Cu0.556Fe0.556Ni0.556V,597,BCC,CAST,https://www.nature.com/articles/s41597-020-00768-269,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.5CoCrCuFeNiV1.8,597,BCC,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+Al2.3CoCrCuFeNi,600,FCC + BCC,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+AlCoFeMo0.5Ni,600,,CAST,https://doi.org/10.1016/j.jmst.2021.01.320,Machine learning of phases and mechanical properties in complexconcentrated alloys
+CoCrFeNb0.75Ni,600,,CAST,https://doi.org/10.1016/j.jmst.2021.01.321,Machine learning of phases and mechanical properties in complexconcentrated alloys
+CrFeNiTi0.4,600.3,BCC,CAST,https://www.nature.com/articles/s41597-020-00768-142,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Cr1.6Mo8.9Nb20Re15Ta30W20,601,,CAST,https://doi.org/10.3390/cryst11010046,Deep Learning-Based Hardness Prediction of Novel Refractory High-Entropy Alloys with Experimental Validation
+AlCoCr0.5FeMo0.5Ni,602,,CAST,https://doi.org/10.1016/j.jmst.2021.01.322,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Co0.833Fe0.833Mo0.833NiV0.833,602,FCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-232,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CoCrFeNbNi,602,,CAST,https://doi.org/10.1016/j.jmst.2021.01.323,Machine learning of phases and mechanical properties in complexconcentrated alloys
+CoFeMoNi1.2V,602,FCC + Im,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+Al2.3CoCrCuFe,603,FCC + BCC,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+AlCo0.435Cr0.435Cu0.435Fe0.435,603,FCC+BCC,,https://www.nature.com/articles/s41597-020-00768-54,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCo0.289Cr0.158Cu0.237Fe0.816Ni0.132,604,,,https://www.nature.com/articles/s41597-020-00768-44,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al2.0CoCrFeMo0.5Ni,605,,CAST,https://doi.org/10.1016/j.jmst.2021.01.325,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al2CoCrFeMo0.5Ni,605,BCC,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+Al30Co6Cr35Fe6Mn18Ni5,605,,CAST,Beniwal: Test,
+AlCo0.5Cr0.5Fe0.5Mo0.25Ni0.5,605,BCC+B2,CAST,https://www.nature.com/articles/s41597-020-00768-347,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCo0.556Cr0.556Fe0.556Ni0.556Ti0.11,605.5,BCC+B2,CAST,https://www.nature.com/articles/s41597-020-00768-184,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCrMoTi,606,,CAST,https://doi.org/10.1016/j.jmst.2021.01.326,Machine learning of phases and mechanical properties in complexconcentrated alloys
+CoFeMo0.8NiV,606,FCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-233,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+HfMo0.5NbSi0.7TiV0.5,612,,CAST,https://doi.org/10.1016/j.jmst.2021.01.327,Machine learning of phases and mechanical properties in complexconcentrated alloys
+C0.6MoNbRe0.5Ta0.6W,615,BCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-186,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CoCrCuNiZn,615,FCC+FCC,POWDER,https://www.nature.com/articles/s41597-020-00768-69,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CoCrFeNiTi0.5,616.8,,CAST,https://doi.org/10.1016/j.jmst.2021.01.328,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al2.5CoCrCuFeNi,620,FCC + BCC,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+Al0.7CoCrFeMnNi,622,FCC+BCC,CAST,https://www.nature.com/articles/s41597-020-00768-204,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.9CoCrFeNiTi0.5,623,BCC+B2+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-199,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCrFeMo0.5Ni,623.7,BCC+B2,CAST,https://www.nature.com/articles/s41597-020-00768-116,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCrFeNiMo0.5,623.7,BCC + Im,,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+Al0.7Co0.3CrFeNi,624,FCC + BCC + B2,CAST,Beniwal: Train,
+Al2.5CoCrCuFe,624,FCC + BCC,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+AlCo0.4Cr0.4Cu0.4Fe0.4,624,FCC+BCC,,https://www.nature.com/articles/s41597-020-00768-53,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CoFeMoNiV,625,FCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-227,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCoCuFeNiTi,626,FCC+BCC,CAST,https://www.nature.com/articles/s41597-020-00768-265,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al25.5Co9Cr35Fe10Mn15.5Ni5,628,,CAST,Beniwal: Test,
+CrFeNiNb0.1Ti0.3,629,,CAST,Beniwal: Test,
+CoCuFeNiTiVZr,630,,CAST,https://www.nature.com/articles/s41597-020-00768-317,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CrNbTiW,630,BCC,CAST,https://www.nature.com/articles/s41597-020-00768-106,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCrCuFeMn,633,Other,POWDER,https://www.nature.com/articles/s41597-020-00768-74,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.667Co0.667Cr0.667FeMo0.333Ni0.667,635,BCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-329,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCoCrFe1.5Mo0.5Ni,635,BCC + Im,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+AlCoFeNiTi,635,,CAST,Beniwal: Test,
+Al0.5CoCrCuFeNiTi,636,FCC+BCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-287,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.5CoCrCuFeNiTi1.0,636,,CAST,https://doi.org/10.1016/j.jmst.2021.01.331,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al0.5Co0.5Cr0.5FeMo0.25Ni0.5,639,BCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-328,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.5CoCrCuFeNiV,639,FCC+BCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-273,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.5CoCrCuFeNiV1.0,639,FCC + BCC + Im,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+Al17.6Co22.6Fe24.2Ni22.1Mo13.5,639,,POWDER,Beniwal: Test,
+AlCoCrFe2Mo0.5Ni,639,BCC + Im,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+AlCo0.833Cr0.833Fe0.833Ni0.833Ti0.667,639.6,BCC+B2,CAST,https://www.nature.com/articles/s41597-020-00768-182,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.5CoCrFeNiTi0.5,640,FCC+FCC,,https://www.nature.com/articles/s41597-020-00768-2,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al3CoCrCuFeNi,640,BCC,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+Hf0.5Mo0.5NbSi0.9TiZr,640,BCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-215,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCo0.667Cr0.667Fe0.667Ni0.667Ti0.333,641.7,BCC+B2,CAST,https://www.nature.com/articles/s41597-020-00768-183,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al2CoCrFeNiTi,643,BCC,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+AlCo0.5Cr0.5Fe0.5Ni0.5Ti0.5,643,BCC+BCC,CAST,https://www.nature.com/articles/s41597-020-00768-345,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al3.0CoCrCuFe,644,BCC,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+Al3.0CoCrCuFeNi,644,,CAST,https://doi.org/10.1016/j.jmst.2021.01.332,Machine learning of phases and mechanical properties in complexconcentrated alloys
+AlCo0.333Cr0.333Cu0.333Fe0.333,644,BCC,,https://www.nature.com/articles/s41597-020-00768-51,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.417Co0.833Cr0.833Cu0.833Fe0.833Ni0.833Ti,646,FCC+BCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-282,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.5CoCrCuFeNiTi1.2,646,FCC + BCC + Im,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+Al1.8CoCrCuFeNi,650,FCC + BCC,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+Al2.8CoCrCuFeNi,650,BCC,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+Al24Co18Cr35Fe10Mn7.5Ni5.5,650,,CAST,Beniwal: Test,
+CoCrFeMnNiV,650,FCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-298,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CoCrFeMnNiV1.0,650,FCC + Im,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+Co1.5CrFeNi1.5Ti,654,FCC + Im,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+CoCr0.667Fe0.667NiTi0.667,654,FCC+Sec.,ANNEAL,https://www.nature.com/articles/s41597-020-00768-384,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al1.5CoCrFeMo0.5Ni,655,BCC + Im,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+AlCo0.667Cr0.667Fe0.667Mo0.333Ni0.667,655,B2+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-348,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.312Co0.625Cr0.625Cu0.625Fe0.625Ni0.625Ti,657,FCC+BCC+B2+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-280,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.5CoCrCuFeNiTi1.6,657,FCC + BCC + Im,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+Al2.8CoCrCuFe,657,BCC,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+AlCo0.357Cr0.357Cu0.357Fe0.357,657,BCC,,https://www.nature.com/articles/s41597-020-00768-52,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.357Co0.714Cr0.714Cu0.714Fe0.714Ni0.714Ti,664,FCC+BCC+B2+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-281,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.5CoCrCuFeNiTi1.4,664,FCC + BCC + Im,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+AlFeNiTi,666,BCC+B2,POWDER,https://www.nature.com/articles/s41597-020-00768-83,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.278Co0.556Cr0.556Cu0.556Fe0.556Ni0.556Ti,667,FCC+BCC+B2+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-279,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.5CoCrCuFeNiTi1.8,667,FCC + BCC + Im,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+AlCoCrFeNb0.25Ni,668,BCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-337,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Mo0.5VNbTiCr2,668,,CAST,Beniwal: Test,
+AlCoNiTi,672,BCC+B2,POWDER,https://www.nature.com/articles/s41597-020-00768-84,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Cr0.5MoNbTaVW,675.5,,CAST,https://doi.org/10.1016/j.jmst.2021.01.334,Machine learning of phases and mechanical properties in complexconcentrated alloys
+AlCrCuFeMnW0.05,680,BCC+Sec.,POWDER,https://www.nature.com/articles/s41597-020-00768-73,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CoCrCuFeNiTiVZr,680,,CAST,https://www.nature.com/articles/s41597-020-00768-319,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al14.6Co21.5Fe22.6Ni20.4Ti20.9,681,,POWDER,Beniwal: Test,
+AlCoCuFeNiSi,682,FCC+BCC,CAST,https://www.nature.com/articles/s41597-020-00768-266,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Co12.9Fe10.8Ni10.8Cu40.1Al16.2Si9.2,682,,CAST,https://doi.org/10.3390/cryst11010046,Deep Learning-Based Hardness Prediction of Novel Refractory High-Entropy Alloys with Experimental Validation
+MoNbSi0.75TaW,682.6,BCC+Sec.,POWDER,https://www.nature.com/articles/s41597-020-00768-76,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCoCrFeMnNi,684,FCC+BCC,CAST,https://www.nature.com/articles/s41597-020-00768-203,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.25Co0.5Cr0.5Cu0.5Fe0.5Ni0.5Ti,696,FCC+BCC+B2+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-278,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.5CoCrCuFeNiTi2,696,FCC + BCC + Im,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+Al0.5CoCrCuFeNiTi2.0,696,,CAST,https://doi.org/10.1016/j.jmst.2021.01.335,Machine learning of phases and mechanical properties in complexconcentrated alloys
+MoNbSi0.5TaW,697,BCC+Sec.,POWDER,https://www.nature.com/articles/s41597-020-00768-77,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.853Co0.647CrFe0.147Ni0.294,699,,,https://www.nature.com/articles/s41597-020-00768-22,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCo0.5CrFe0.147Ni0.294,699,,,https://www.nature.com/articles/s41597-020-00768-46,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+FeMoNbTiV,699,BCC+B2,CAST,https://www.nature.com/articles/s41597-020-00768-173,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCoCrFeNiTi,703,BCC+B2+Laves,CAST,https://www.nature.com/articles/s41597-020-00768-181,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCrTi,704,,CAST,https://doi.org/10.1016/j.jmst.2021.01.336,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Cr20Mo20.2Nb20.4Ta20.6V13W20,704,,CAST,https://doi.org/10.3390/cryst11010046,Deep Learning-Based Hardness Prediction of Novel Refractory High-Entropy Alloys with Experimental Validation
+CrMoNbTaVW,704.6,,CAST,https://www.nature.com/articles/s41597-020-00768-197,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCrCuFeMnW0.,705,BCC+Sec.,POWDER,https://www.nature.com/articles/s41597-020-00768-72,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCoCrFeMo0.5Ni0.5,708,B2+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-326,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CrFeNiTi0.5,709.6,BCC,CAST,https://www.nature.com/articles/s41597-020-00768-141,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCrFeMo0.5NiTi0.25,712,BCC+B2,CAST,https://www.nature.com/articles/s41597-020-00768-115,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCrFeNiMo0.5Ti0.25,712,BCC + Im,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+CrTaTi0.17VW,715,BCC+Laves,POWDER,https://www.nature.com/articles/s41597-020-00768-90,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CrTaVW,715,BCC+Laves,POWDER,https://www.nature.com/articles/s41597-020-00768-88,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.133CoCr0.667Fe0.667NiTi0.667,717,FCC+Sec.,ANNEAL,https://www.nature.com/articles/s41597-020-00768-386,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.2Co1.5CrFeNi1.5Ti,717,FCC + Im,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+CrFeNiTi0.6,718.2,BCC,CAST,https://www.nature.com/articles/s41597-020-00768-140,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.947Co0.158MoNi0.289W0.237,725,,CAST,https://www.nature.com/articles/s41597-020-00768-165,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCo0.298Cr0.319Cu0.106Fe0.277Ni0.128,728,,,https://www.nature.com/articles/s41597-020-00768-45,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCrFeMo0.5NiTi0.4,731.9,BCC+B2,CAST,https://www.nature.com/articles/s41597-020-00768-114,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCrFeNiMo0.5Ti0.4,731.9,BCC + Im,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+Al0.5CoFeNiTi0.5,733,FCC+BCC,,https://www.nature.com/articles/s41597-020-00768-3,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.5BCoCrCuFeNi,736,,CAST,https://www.nature.com/articles/s41597-020-00768-288,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+FeMoNiTiVZr,740,BCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-314,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.667CoCr0.667Fe0.667Mo0.333Ni0.667,741,BCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-333,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCo1.5CrFeMo0.5Ni,741,BCC + Im,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+Cr0.286Mo0.476NbTa0.024Ti0.3V0.286,741,BCC+Sec.,POWDER,https://www.nature.com/articles/s41597-020-00768-85,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCoCrFeNb0.5Ni,747,BCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-336,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCo0.149Cr0.34Cu0.19Fe0.34Ni0.106,749,,,https://www.nature.com/articles/s41597-020-00768-21,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Ti0.25AlMoSi0.25W0.1,750,,POWDER,Beniwal: Test,
+AlCrFeMo0.5NiTi0.5,751.7,BCC+B2,CAST,https://www.nature.com/articles/s41597-020-00768-113,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCrFeNiMo0.5Ti0.5,751.7,BCC + Im,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+AlCoCrFe0.6Mo0.5Ni,754,BCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-330,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Cr2MoNbTaVW,754.9,,CAST,https://doi.org/10.1016/j.jmst.2021.01.338,Machine learning of phases and mechanical properties in complexconcentrated alloys
+AlCoCrFe0.5Mo0.5Ni,755,BCC + Im,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+AlCrFeMo0.5NiTi0.6,756.1,BCC+B2,CAST,https://www.nature.com/articles/s41597-020-00768-112,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCrFeNiMo0.5Ti0.6,756.1,BCC + Im,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+Ti0.3AlMoSi0.3W0.1,765,,POWDER,Beniwal: Test,
+AlCrFeMo0.5NiTi0.75,766.2,BCC+B2,CAST,https://www.nature.com/articles/s41597-020-00768-111,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCrFeNiMo0.5Ti0.75,766.2,BCC + Im,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+Mo30Nb10V20Ta20W20,770,,CAST,https://doi.org/10.3390/cryst11010046,Deep Learning-Based Hardness Prediction of Novel Refractory High-Entropy Alloys with Experimental Validation
+AlCoCrFeNiTiVZr,780,,CAST,https://www.nature.com/articles/s41597-020-00768-322,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCrCuFeMnW0.5,780,BCC+Sec.,POWDER,https://www.nature.com/articles/s41597-020-00768-71,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CrTaTi0.3VW,780,BCC+Laves,POWDER,https://www.nature.com/articles/s41597-020-00768-89,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCo0.674Cr0.419Fe0.116Ni0.116,782,,,https://www.nature.com/articles/s41597-020-00768-7,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCo0.238Cr0.714Cu0.119Fe0.167Ni0.143,783,,,https://www.nature.com/articles/s41597-020-00768-25,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCo0.278Cr0.86Cu0.167Fe0.25Ni0.222,790,,,https://www.nature.com/articles/s41597-020-00768-43,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCo0.318Cr0.5Cu0.114Fe0.205Ni0.136,790,,,https://www.nature.com/articles/s41597-020-00768-33,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCoFeNiTiVZr,790,BCC,CAST,https://www.nature.com/articles/s41597-020-00768-321,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CoFeMoNiTiVZr,790,,CAST,https://www.nature.com/articles/s41597-020-00768-316,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CrFeMoNbTi,792,BCC+Laves,CAST,https://www.nature.com/articles/s41597-020-00768-174,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCo0.349Cr0.395Cu0.116Fe0.326Ni0.14,794,,,https://www.nature.com/articles/s41597-020-00768-26,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCoCrFeMo0.5Ni,796,BCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-331,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCo0.234Cr0.468Cu0.106Fe0.213Ni0.106,797,,,https://www.nature.com/articles/s41597-020-00768-24,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCo0.277Cr0.277Cu0.106Fe0.255Ni0.213,799,,,https://www.nature.com/articles/s41597-020-00768-38,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCoCr1.5FeMo0.5Ni,800,,CAST,https://doi.org/10.1016/j.jmst.2021.01.339,Machine learning of phases and mechanical properties in complexconcentrated alloys
+AlFeNiTiVZr,800,BCC,CAST,https://www.nature.com/articles/s41597-020-00768-320,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCo0.5CrFeMo0.5Ni,801,BCC+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-334,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCo0.256Cr0.795Cu0.128Fe0.205Ni0.179,802,,,https://www.nature.com/articles/s41597-020-00768-39,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+TiAlMoSiW,803,,POWDER,Beniwal: Test,
+AlCo0.277Cr0.426Cu0.106Fe0.213Ni0.106,805,,,https://www.nature.com/articles/s41597-020-00768-23,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCo0.395Cr0.349Fe0.326Ni0.256,806,,,https://www.nature.com/articles/s41597-020-00768-42,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCo0.255Cr0.255Cu0.106Fe0.277Ni0.234,811,,,https://www.nature.com/articles/s41597-020-00768-41,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCo0.304Cr0.5Cu0.109Fe0.152Ni0.109,811,,,https://www.nature.com/articles/s41597-020-00768-34,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Co0.043Nb0.638NiTa0.255Ti0.19,815,,CAST,https://www.nature.com/articles/s41597-020-00768-164,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCo0.465Cr0.442Fe0.209Ni0.209,816,,,https://www.nature.com/articles/s41597-020-00768-35,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CoCrFeNb1.2Ni,817,,CAST,https://doi.org/10.1016/j.jmst.2021.01.340,Machine learning of phases and mechanical properties in complexconcentrated alloys
+CrFeMoNbV,826,BCC+Laves,CAST,https://www.nature.com/articles/s41597-020-00768-175,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCo0.326Cr0.488Cu0.116Fe0.279Ni0.116,828,,,https://www.nature.com/articles/s41597-020-00768-20,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCo0.465Cr0.488Fe0.209Ni0.163,828,,,https://www.nature.com/articles/s41597-020-00768-10,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CoCrMoNbTi0.4,829.6,,CAST,https://doi.org/10.1016/j.jmst.2021.01.341,Machine learning of phases and mechanical properties in complexconcentrated alloys
+AlCo0.457Cr0.39Cu0.109Fe0.109Ni0.109,840,,,https://www.nature.com/articles/s41597-020-00768-13,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCo0.362Cr0.34Cu0.106Fe0.213Ni0.106,841,,,https://www.nature.com/articles/s41597-020-00768-16,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCo0.255Cr0.426Cu0.106Fe0.234Ni0.106,843,,,https://www.nature.com/articles/s41597-020-00768-27,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CoCrMoNbTi0.5,844.9,,CAST,https://doi.org/10.1016/j.jmst.2021.01.342,Machine learning of phases and mechanical properties in complexconcentrated alloys
+AlCo0.512Cr0.58Fe0.116Ni0.116,848,,,https://www.nature.com/articles/s41597-020-00768-9,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCo0.383Cr0.319Cu0.106Fe0.213Ni0.106,849,,,https://www.nature.com/articles/s41597-020-00768-19,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CoCrMoNbTi,849.6,,CAST,https://doi.org/10.1016/j.jmst.2021.01.343,Machine learning of phases and mechanical properties in complexconcentrated alloys
+AlCoCr2FeMo0.5Ni,850,,CAST,https://doi.org/10.1016/j.jmst.2021.01.344,Machine learning of phases and mechanical properties in complexconcentrated alloys
+CoCrFeMoNiTiVZr,850,,CAST,https://www.nature.com/articles/s41597-020-00768-318,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCrFeMo0.8Ni,854,B2+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-292,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCrFeNiMo0.8,854,BCC + Im,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+AlCo0.298Cr0.404Cu0.106Fe0.213Ni0.106,855,,,https://www.nature.com/articles/s41597-020-00768-36,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCo0.442Cr0.442Fe0.256Ni0.186,855,,,https://www.nature.com/articles/s41597-020-00768-40,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCo0.442Cr0.558Fe0.186Ni0.14,855,,,https://www.nature.com/articles/s41597-020-00768-32,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCo0.419Cr0.558Fe0.233Ni0.116,856,,,https://www.nature.com/articles/s41597-020-00768-31,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CoCr0.487Nb0.23Ta0.026Ti0.82,856,,CAST,https://www.nature.com/articles/s41597-020-00768-162,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+Al0.667Co0.833Cr0.833Fe0.833Ni0.833Ti,856.9,BCC+B2+Laves,CAST,https://www.nature.com/articles/s41597-020-00768-180,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCo0.465Cr0.512Fe0.186Ni0.163,857,,,https://www.nature.com/articles/s41597-020-00768-37,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCoCrFeMo0.5,857,B2+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-327,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCo0.298Cr0.426Cu0.106Fe0.19Ni0.106,859,,,https://www.nature.com/articles/s41597-020-00768-30,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCoCrCu0.5FeNiSi,860,,CAST,https://doi.org/10.1016/j.jmst.2021.01.345,Machine learning of phases and mechanical properties in complexconcentrated alloys
+AlCo0.535Cr0.488Fe0.186Ni0.116,863,,,https://www.nature.com/articles/s41597-020-00768-28,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCo0.419Cr0.465Fe0.279Ni0.163,864,,,https://www.nature.com/articles/s41597-020-00768-17,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCo0.58Cr0.512Fe0.116Ni0.116,865,,,https://www.nature.com/articles/s41597-020-00768-14,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+CrFeNiNb0.1Ti0.4,867,,CAST,Beniwal: Test,
+AlCo0.558Cr0.535Fe0.116Ni0.116,868,,,https://www.nature.com/articles/s41597-020-00768-15,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCo0.558Cr0.512Fe0.116Ni0.14,875,,,https://www.nature.com/articles/s41597-020-00768-29,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCo0.404Cr0.404Cu0.106Fe0.106Ni0.106,878,,,https://www.nature.com/articles/s41597-020-00768-8,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCo0.512Cr0.512Fe0.186Ni0.116,882,,,https://www.nature.com/articles/s41597-020-00768-12,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCo0.426Cr0.383Cu0.106Fe0.106Ni0.106,883,BCC+B2,,https://www.nature.com/articles/s41597-020-00768-18,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCo0.512Cr0.535Fe0.163Ni0.116,883,BCC+B2,,https://www.nature.com/articles/s41597-020-00768-11,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCoCrCuFeMoNiTiVZr,890,,CAST,https://doi.org/10.1016/j.jmst.2021.01.346,Machine learning of phases and mechanical properties in complexconcentrated alloys
+Al13.7Co18.3Fe19.5Ni17.9Mo14.4Ti16.2,894,,POWDER,Beniwal: Test,
+AlCrFeMoNi,905,B2+Sec.,CAST,https://www.nature.com/articles/s41597-020-00768-294,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCrFeNiMo,905,BCC + Im,CAST,https://doi.org/10.1016/j.dib.2018.11.111,Database on the mechanical properties of high entropy alloys and complex concentrated alloys
+CoCrMoNbTi0.2,916.2,,CAST,https://doi.org/10.1016/j.jmst.2021.01.347,Machine learning of phases and mechanical properties in complexconcentrated alloys
+CoCrMoNb,959.6,,CAST,https://doi.org/10.1016/j.jmst.2021.01.348,Machine learning of phases and mechanical properties in complexconcentrated alloys
+CoCr0.917NiTa0.5Ti0.75,1011,,CAST,https://www.nature.com/articles/s41597-020-00768-166,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+AlCoCr0.09Nb0.727W0.212,1084,,CAST,https://www.nature.com/articles/s41597-020-00768-167,Expanded dataset of mechanical properties and observed phases of multi-principal element alloys
+FeNiCrCuCo,286,FCC,CAT-A,https://doi.org/10.1016/j.jallcom.2008.07.124,Effect of alloying elements on microstructure and properties of multiprincipal elements high-entropy alloys
+FeNiCrCuMo,263,FCC,CAT-A,https://doi.org/10.1016/j.jallcom.2008.07.124,Effect of alloying elements on microstructure and properties of multiprincipal elements high-entropy alloys
+FeNiCrCuAl,342,FCC + BCC,CAT-A,https://doi.org/10.1016/j.jallcom.2008.07.124,Effect of alloying elements on microstructure and properties of multiprincipal elements high-entropy alloys
+FeNiCrCuMn,296,FCC + BCC,CAT-A,https://doi.org/10.1016/j.jallcom.2008.07.124,Effect of alloying elements on microstructure and properties of multiprincipal elements high-entropy alloys
+FeNiCrCoAl,395,BCC,CAT-A,https://doi.org/10.1016/j.jallcom.2008.07.124,Effect of alloying elements on microstructure and properties of multiprincipal elements high-entropy alloys
+FeNiCrCoAl1.5,402,BCC,CAT-A,https://doi.org/10.1016/j.jallcom.2008.07.124,Effect of alloying elements on microstructure and properties of multiprincipal elements high-entropy alloys
+FeNiCrCoAl2,432,BCC,CAT-A,https://doi.org/10.1016/j.jallcom.2008.07.124,Effect of alloying elements on microstructure and properties of multiprincipal elements high-entropy alloys
+FeNiCrCoAl2.5,487,BCC,CAT-A,https://doi.org/10.1016/j.jallcom.2008.07.124,Effect of alloying elements on microstructure and properties of multiprincipal elements high-entropy alloys
+FeNiCrCoAl3,506,BCC,CAT-A,https://doi.org/10.1016/j.jallcom.2008.07.124,Effect of alloying elements on microstructure and properties of multiprincipal elements high-entropy alloys
+FeNiCrCuZr,566,BCC +Im,CAT-A,https://doi.org/10.1016/j.jallcom.2008.07.124,Effect of alloying elements on microstructure and properties of multiprincipal elements high-entropy alloys
+CoCrFeNiMn,170,,CAT-A,https://doi.org/10.1016/j.jallcom.2013.12.210,Effect of Mn and V on structure and mechanical properties of high-entropy alloys based on CoCrFeNi system
+CoCrFeNiV,524,,CAT-A,https://doi.org/10.1016/j.jallcom.2013.12.210,Effect of Mn and V on structure and mechanical properties of high-entropy alloys based on CoCrFeNi system
+CoCrFeNiMnV,650,,CAT-A,https://doi.org/10.1016/j.jallcom.2013.12.210,Effect of Mn and V on structure and mechanical properties of high-entropy alloys based on CoCrFeNi system
+CuTiVFeNiZr,590,,CAST,https://doi.org/10.1002/adem.200300567,Nanostructured High-Entropy Alloys with Multiple Principal Elements: Novel Alloy Design Concepts and Outcomes
+AlTiVFeNiZr,800,,CAST,https://doi.org/10.1002/adem.200300567,Nanostructured High-Entropy Alloys with Multiple Principal Elements: Novel Alloy Design Concepts and Outcomes
+MoTiVFeNiZr,740,,CAST,https://doi.org/10.1002/adem.200300567,Nanostructured High-Entropy Alloys with Multiple Principal Elements: Novel Alloy Design Concepts and Outcomes
+CuTiVFeNiZrCo,630,,CAST,https://doi.org/10.1002/adem.200300567,Nanostructured High-Entropy Alloys with Multiple Principal Elements: Novel Alloy Design Concepts and Outcomes
+AlTiVFeNiZrCo,790,,CAST,https://doi.org/10.1002/adem.200300567,Nanostructured High-Entropy Alloys with Multiple Principal Elements: Novel Alloy Design Concepts and Outcomes
+MoTiVFeNiZrCo,790,,CAST,https://doi.org/10.1002/adem.200300567,Nanostructured High-Entropy Alloys with Multiple Principal Elements: Novel Alloy Design Concepts and Outcomes
+CuTiVFeNiZrCoCr,680,,CAST,https://doi.org/10.1002/adem.200300567,Nanostructured High-Entropy Alloys with Multiple Principal Elements: Novel Alloy Design Concepts and Outcomes
+AlTiVFeNiZrCoCr,780,,CAST,https://doi.org/10.1002/adem.200300567,Nanostructured High-Entropy Alloys with Multiple Principal Elements: Novel Alloy Design Concepts and Outcomes
+MoTiVFeNiZrCoCr,850,,CAST,https://doi.org/10.1002/adem.200300567,Nanostructured High-Entropy Alloys with Multiple Principal Elements: Novel Alloy Design Concepts and Outcomes
+Hf0.5Nb0.5Ta0.5TiZr,376,,CAST,237688.pdf (chalmers.se),
+Al0.5NbTiV2Zr0.5,622.9,BCC +Im,CAT-A,https://doi.org/10.1016/j.jallcom.2022.166767,Microstructure and mechanical properties of AlNbTiVZr system refractory high entropy alloys
+Al0.5NbTiV2Zr1.5,613.7,BCC +Im,CAT-A,https://doi.org/10.1016/j.jallcom.2022.166767,Microstructure and mechanical properties of AlNbTiVZr system refractory high entropy alloys
+Al0.5Nb0.5TiV2Zr,587.1,BCC +Im,CAT-A,https://doi.org/10.1016/j.jallcom.2022.166767,Microstructure and mechanical properties of AlNbTiVZr system refractory high entropy alloys
+Al0.5Nb0.5TiV2Zr1.5,583,BCC +Im,CAT-A,https://doi.org/10.1016/j.jallcom.2022.166767,Microstructure and mechanical properties of AlNbTiVZr system refractory high entropy alloys
