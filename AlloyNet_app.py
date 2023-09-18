@@ -95,7 +95,7 @@ if selected_tab == "New alloy design":
 
     
     # Display other content as needed
-    st.markdown("<h3 style='color:red;'>Additional Information:</h3>", unsafe_allow_html=True)
+    st.markdown("<h3 style='color:red;'>Composition-based feature vector</h3>", unsafe_allow_html=True)
     st.write(df_input_target)
     import streamlit as st
 
@@ -145,8 +145,7 @@ if selected_tab == "New alloy design":
 
        
 #####################################################################
-    # In[15]:
-    print("Tensor Predictionsin Progress")
+
      
 ###############################################
 
