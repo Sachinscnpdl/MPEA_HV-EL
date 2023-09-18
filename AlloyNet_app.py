@@ -119,7 +119,7 @@ if selected_tab == "New alloy design":
     # ]
 
     property_names_latex = [
-        r"Mean Atomic Radius difference (\delta) ",
+        r"Mean Atomic Radius difference ($\delta$) ",
         r"Electronegativity asymmetry  (\Delta \chi ",
         r"Melting Temperature asymmetry  (\Delta T_m) ",
         r"Average Melting Temperature  (T_{m}(K)) ",
