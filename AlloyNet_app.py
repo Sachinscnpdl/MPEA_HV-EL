@@ -121,7 +121,9 @@ if selected_tab == "New alloy design":
     # for property_name_latex in property_names_latex:
     #     st.latex(property_name_latex)
 
-    
+    for index, row in df_input_target.iterrows():
+    st.latex("{} : {}".format(row["Property"], row["Value"]))
+
     # Define the indices to include
     indices_to_include = [1, 2,3,4,5,6,7,8,9,10,11,12,13,14,15]  # Include values at indices 1 and 2
     
