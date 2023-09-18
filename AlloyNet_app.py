@@ -101,8 +101,8 @@ if selected_tab == "New alloy design":
 
     # Define the property names
     property_names = [
-        "Mean Atomic Radius difference ($\delta$)",
-        "Electronegativity asymmetry ($\Delta \chi$)",
+        r"Mean Atomic Radius difference ($\delta$)",
+        r"Electronegativity asymmetry ($\Delta \chi$)",
         "Average Melting Temperature ($T_{m}(K)$)",
         "Melting Temperature asymmetry ($\Delta T_m$)",
         "Valence Electron Concentration (VEC)",
