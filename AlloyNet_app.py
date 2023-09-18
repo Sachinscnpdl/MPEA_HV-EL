@@ -83,12 +83,18 @@ if selected_tab == "New alloy design":
     """ 
     # Prediction Results!
     """
-    
+
     # Display text with style using Markdown
-    st.markdown("<h2 style='color:blue;'>The hardness is:</h2> The hardness is: {}".format(hardness[0]), unsafe_allow_html=True)
-    st.markdown("<h2 style='color:green;'>The elongation is:</h2> The elongation is: {}".format(elongation[0]), unsafe_allow_html=True)
-    st.markdown("<h3 style='color:red;'>The elongation is:</h3> {}".format(df_input_target), unsafe_allow_html=True)
-    st.markdown("<p style='font-size:20px;'>Mean Atomic Radius difference (&Delta;):</p> {}".format(df_input_target[1][1]), unsafe_allow_html=True)
+    st.markdown("<h2 style='color:blue;'>The hardness is:</h2>", unsafe_allow_html=True)
+    st.write("The hardness is: {}".format(hardness[0]))
+    
+    st.markdown("<h2 style='color:green;'>The elongation is:</h2>", unsafe_allow_html=True)
+    st.write("The elongation is: {}".format(elongation[0]))
+    
+    # Display other content as needed
+    st.markdown("<h3 style='color:red;'>Additional Information:</h3>", unsafe_allow_html=True)
+    st.write(df_input_target)
+
 
     #####################################################################
     # In[15]:
