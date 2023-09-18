@@ -130,9 +130,9 @@ if selected_tab == "New alloy design":
         r"Bulk Modulus Asymmetry  (Δ B) ",
         r"Average Shear Modulus  (G) ",
         r"Shear Modulus Asymmetry  (Δ G) ",
-        r"Entropy of Mixing asymmetry (Δ S_{mix}) ",
+        r"Entropy of Mixing asymmetry (Δ S) ",
         r"Geometrical Parameter  (λ) ",
-        r"Enthalpy of Mixing asymmetry  (Δ H_{mix}) ",
+        r"Enthalpy of Mixing asymmetry  (Δ H) ",
         r"Dimensionless parameter  (Ω) ",
     ]
 
