@@ -122,17 +122,10 @@ if selected_tab == "New alloy design":
     # Create a list of values (replace this with your actual values)
     values = df_input_target.iloc[0, 1:].tolist()
     
-    # Display the property names with left alignment and values with center alignment in LaTeX formatting
+    # Display the property names and their corresponding values in LaTeX formatting
     for i in range(len(property_names_latex)):
-        property_name = property_names_latex[i]
-        formatted_value = "{:.4f}".format(values[i])  # Format value to 4 decimal places
-        
-        # Combine property name and formatted value with appropriate alignments
-        latex_string = r"\begin{align*}" + \
-                       r"\text{" + property_name + r"} & : \text{" + formatted_value + r"}" + \
-                       r"\end{align*}"
-        
-        st.latex(latex_string)
+        st.latex("{} : {:.4f}".format(property_names_latex[i], values[i]))
+
         
     st.write("\t \t \t \t  Pugh's Ratio:", round(df_input_target.iloc[0, 8] / df_input_target.iloc[0, 7],3))
 
