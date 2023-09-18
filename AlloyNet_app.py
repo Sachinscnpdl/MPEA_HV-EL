@@ -180,10 +180,10 @@ if selected_tab == "Synergy Optimization":
     fabrication_type_options = ["CAST", "POWDER", "ANNEAL", "WROUGHT", "OTHER"]
     fab_type = st.sidebar.selectbox('Select Fabrication Type:', fabrication_type_options)
 
-    first_dopants_options = ["Cr", "W", "Ti", "Zr", "Hg"]
+    first_dopants_options = ["Ti", "W", "Ta", "Zr", "Hg"]
     first_dopant = st.sidebar.selectbox("First Dopants", first_dopants_options)
 
-    second_dopants_options = ["Mo", "Mg", "Ti", "Zr", "Hg"]
+    second_dopants_options = ["Ta", "Mg", "Ti", "Zr", "Hg"]
     second_dopant = st.sidebar.selectbox("Second Dopants", second_dopants_options)
     
     # Perform actions or display content based on the selected options
