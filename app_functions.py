@@ -1141,6 +1141,8 @@ def prediction_model_new(df, predict='hardness'):
     ###############################################
     
     import pickle
+    from sklearn.preprocessing import OneHotEncoder
+    
     enc = pickle.load(open(path+'fab_encoding.pkl','rb'))
     # Cluster WROUGHT and Unknown into Other
     
