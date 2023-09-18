@@ -78,16 +78,16 @@ if selected_tab == "New alloy design":
     print("Properties Calculated")
     hardness = prediction_model_new(df_mpea, predict='hardness')
     elongation = prediction_model_new(df_mpea, predict='elongation')
-    hardness = round(hardness,2)
-    elongation = round(elongation,2)
+    hardness = round(hardness[0],2)
+    elongation = round(elongation[0],2)
 
     
     """ 
     # Prediction Results!
     """
     # Define the text style for hardness and elongation
-    hardness_style = "<h2 style='color:blue; font-size:24px;'>{} HV</h2>".format(hardness[0])
-    elongation_style = "<h2 style='color:green; font-size:24px;'>{} %</h2>".format(elongation[0])
+    hardness_style = "<h2 style='color:blue; font-size:24px;'>{} HV</h2>".format(hardness)
+    elongation_style = "<h2 style='color:green; font-size:24px;'>{} %</h2>".format(elongation)
 
     
     # Display text with style using Markdown
