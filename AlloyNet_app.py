@@ -79,13 +79,6 @@ if selected_tab == "New alloy design":
     hardness = prediction_model_new(df_mpea, predict='hardness')
     elongation = prediction_model_new(df_mpea, predict='elongation')
 
-
-# Add a dropdown to select Fabrication_type
-
-    
-
-
-
     
     """
     
@@ -96,7 +89,7 @@ if selected_tab == "New alloy design":
     st.write("The hardness is :", hardness[0])
     st.write("The elongation is :", elongation[0])
     st.write("The elongation is :", df_input_target)
-    st.write("Mean Atomic Radius difference (d) :", df_input_target[1][1])
+    st.write("Mean Atomic Radius difference (d) :", df_input_target[0][1])
     #####################################################################
     # In[15]:
     print("Tensor Predictionsin Progress")
