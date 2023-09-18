@@ -131,8 +131,8 @@ if selected_tab == "New alloy design":
     if len(property_names_latex) != len(values):
         st.error("The number of property names and values should be the same.")
     else:
-        # Create a DataFrame with property names and values
-        df = pd.DataFrame({"Property Name": property_names_latex, "Value": values})
+        # Create a DataFrame with LaTeX-formatted property names and values
+        df = pd.DataFrame({"Property Name (LaTeX)": property_names_latex, "Value": values})
     
         # Add an index starting from 1
         df.index = range(1, len(df) + 1)
@@ -151,6 +151,7 @@ if selected_tab == "New alloy design":
         # Display the DataFrame as a beautiful table
         st.dataframe(df, height=400)  # You can adjust the height as needed
     
+        
 
        
 #####################################################################
