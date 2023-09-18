@@ -195,24 +195,6 @@ if selected_tab == "Synergy Optimization":
     # st.write("Selected Second Dopant:", second_dopant)
     # Additional code for this tab
 
-    if second_dopant:
-        # Both element 1 and element 2 are supplied
-        cat = 'B'
-        point = 'hextetramm'
-        order = [2, 0]
-        cat, sub, tensor_eo = two_dopants_ternary(base_composition, first_dopant, second_dopant, cat, point, order)
-        st.write("Results for two dopants:")
-        st.write("Category:", cat)
-        st.write("Subcategory:", sub)
-        st.write("Tensor EO:", tensor_eo)
-    else:
-        # Only element 1 is supplied
-        cat = 'B'
-        point = 'hextetramm'
-        order = [2, 2]
-        tensor_eo, target_1, target_33_1, target_31_1 = single_dopants_new(base_composition, first_dopant, cat, point, order)
-        st.write("Results for single dopant:")
-        st.write("Tensor EO:", tensor_eo)
-        st.write("Target 1:", target_1)
-        st.write("Target 33_1:", target_33_1)
-        st.write("Target 31_1:", target_31_1)
+    HV_1g = ternary_plot(df_plot,fab_cat=fab_category, pole_labels=[ base_composition,first_dopant,second_dopant],model_of='hv', colorscale='Picnic')
+    
+    st.write(HV_1g)
