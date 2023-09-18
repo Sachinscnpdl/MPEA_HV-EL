@@ -140,7 +140,7 @@ if selected_tab == "New alloy design":
         # Define custom CSS styles for the table cells (increased font size)
         cell_style = (
             "<style>"
-            "table.dataframe th, table.dataframe td {font-size: 16px;}"  # Adjust font size as needed
+            "table.dataframe th, table.dataframe td {font-size: 26px;}"  # Adjust font size as needed
             "</style>"
         )
         st.markdown(cell_style, unsafe_allow_html=True)
