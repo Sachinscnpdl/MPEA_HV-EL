@@ -195,6 +195,6 @@ if selected_tab == "Synergy Optimization":
     # st.write("Selected Second Dopant:", second_dopant)
     # Additional code for this tab
 
-    HV_1g = ternary_plot(df_plot,fab_cat=fab_category, pole_labels=[ base_composition,first_dopant,second_dopant],model_of='hv', colorscale='Picnic')
+    HV_1g = ternary_plot(fab_cat=fab_category, pole_labels=[ base_composition,first_dopant,second_dopant],model_of='hv', colorscale='Picnic')
     
     st.write(HV_1g)
