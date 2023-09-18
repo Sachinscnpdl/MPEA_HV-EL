@@ -189,10 +189,10 @@ if selected_tab == "Synergy Optimization":
 
 
     colorset_1 = ['Picnic', 'Viridis', 'Rainbow', 'Blackbody', 'Jet', 'Portland', 'Cividis', 'Electric']
-    hv_colorset = st.sidebar.selectbox('Select Fabrication Type:', colorset_1)
+    hv_colorset = st.sidebar.selectbox('Select Colorset for HV:', colorset_1)
 
     colorset_2 = ['Jet', 'Picnic', 'Viridis', 'Rainbow', 'Blackbody',  'Portland', 'Cividis', 'Electric']
-    el_colorset = st.sidebar.selectbox('Select Fabrication Type:', colorset_1)
+    el_colorset = st.sidebar.selectbox('Select Colorset for EL:', colorset_2)
     
     # Perform actions or display content based on the selected options
     # st.write("Selected Base Piezo-material:", base_composition)
