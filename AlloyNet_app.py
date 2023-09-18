@@ -119,7 +119,7 @@ if selected_tab == "New alloy design":
     ]
     
     # Define the indices to include
-    indices_to_include = [1, 2]  # Include values at indices 1 and 2
+    indices_to_include = [1, 2,3,4,5,6,7,8,9,10,11,12,13,14,15]  # Include values at indices 1 and 2
     
     # Display the selected property names with specific indices in Streamlit format
     for index in indices_to_include:
