@@ -146,7 +146,7 @@ if selected_tab == "New alloy design":
         st.markdown(cell_style, unsafe_allow_html=True)
     
         # Display the DataFrame as a beautiful table
-        st.dataframe(df, height=400)  # You can adjust the height as needed
+        st.dataframe(df, height=700)  # You can adjust the height as needed
 
        
 #####################################################################
