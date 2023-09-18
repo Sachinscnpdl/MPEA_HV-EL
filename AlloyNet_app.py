@@ -119,21 +119,21 @@ if selected_tab == "New alloy design":
     # ]
 
     property_names_latex = [
-        r"Mean Atomic Radius difference  ",
-        r"Electronegativity asymmetry   ",
-        r"Melting Temperature asymmetry   ",
-        r"Average Melting Temperature  (K) ",
+        r"Mean Atomic Radius difference (δ) ",
+        r"Electronegativity asymmetry (Δ χ) ",
+        r"Melting Temperature asymmetry (Δ T)  ",
+        r"Average Melting Temperature  (T, K) ",
         r"Valence Electron Concentration  (VEC) ",
         r"Average Atomic Number  (AN) ",
         r"Thermal Conductivity  (K) ",
         r"Average Bulk Modulus  (B) ",
         r"Bulk Modulus Asymmetry  (Δ B) ",
         r"Average Shear Modulus  (G) ",
-        r"Shear Modulus Asymmetry  (\Delta G) ",
-        r"Entropy of Mixing asymmetry (\Delta S_{mix}) ",
-        r"Geometrical Parameter  (\lambda) ",
-        r"Enthalpy of Mixing asymmetry  (\Delta H_{mix}) ",
-        r"Dimensionless parameter  (\Omega) ",
+        r"Shear Modulus Asymmetry  (Δ G) ",
+        r"Entropy of Mixing asymmetry (Δ S_{mix}) ",
+        r"Geometrical Parameter  (λ) ",
+        r"Enthalpy of Mixing asymmetry  (Δ H_{mix}) ",
+        r"Dimensionless parameter  (Ω) ",
     ]
 
     
