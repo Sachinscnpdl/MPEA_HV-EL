@@ -1302,42 +1302,7 @@ def ternary_plot(fab_cat="CAT-A", pole_labels=['Al','Ti', '(CrFeNi)'],model_of='
 
     print(predicted_value.shape,element1.shape,comp.shape)
 
-    # fig = ff.create_ternary_contour(np.array([comp,element1,element2]), predicted_value,
-    #                                 pole_labels=pole_labels,
-    #                                 interp_mode='cartesian',
-    #                                 ncontours=12,
-    #                                 colorscale=colorscale,
-    #                                 showscale=True,
-    #                                 width=500, height=400)
-
-    # fig.update_ternaries(baxis_nticks=5)
-    # fig.update_ternaries(aaxis_nticks=5)
-    # fig.update_ternaries(caxis_nticks=5)
-
-    # fig.update_layout(
-    #     #title=title,
-    #     title_font_size=20,
-    #     xaxis_title="X Axis Title",
-    #     yaxis_title="Y Axis Title",
-    #     legend_title="Legend Title",
-    #     #value_title = "a"
-    #     font=dict(
-    #         #family="Courier New, monospace",
-    #         size=24,
-    #         color="black"
-    #     )
-    # )
-    # fig.update_ternaries(sum=1, baxis_min=baxis_min);
-
-    # fig.update_layout(coloraxis_colorbar=dict(yanchor="top", y=0.05, x=1, 
-    #               ticks="outside", ticksuffix=ticksuffix))
-
-    # # Axis labels. (See below for corner labels.)
-    # fontsize = 28
-    # offset = 0.08
-
-
-    # fig.show()
+    
 
     return predicted_value
     
