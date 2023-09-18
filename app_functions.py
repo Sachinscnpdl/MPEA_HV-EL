@@ -1290,7 +1290,7 @@ def ternary_plot(fab_cat="CAT-A", pole_labels=['Al','Ti', '(CrFeNi)'],model_of='
     df_prop, df_input_target = properties_calculation(df)
     
     #print(df_plot.head())
-    predicted_value =prediction_model_new(df_prop, path=model_path)
+    predicted_value =prediction_model_new(df_prop, predict='hardness')
     df_result_ternary = pd.DataFrame(predicted_value)
     
     import plotly.figure_factory as ff
