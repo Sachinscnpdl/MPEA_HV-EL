@@ -99,24 +99,28 @@ if selected_tab == "New alloy design":
     st.write(df_input_target)
     import streamlit as st
 
-    # Define the property names
-    property_names = [
+    property_names_latex = [
         r"Mean Atomic Radius difference ($\delta$)",
         r"Electronegativity asymmetry ($\Delta \chi$)",
-        "Average Melting Temperature ($T_{m}(K)$)",
-        "Melting Temperature asymmetry ($\Delta T_m$)",
-        "Valence Electron Concentration (VEC)",
-        "Average Atomic Number (AN)",
-        "Thermal Conductivity (K)",
-        "Average Bulk Modulus (B)",
-        "Bulk Modulus Asymmetry ($\Delta B$)",
-        "Average Shear Modulus (G)",
-        "Shear Modulus Asymmetry ($\Delta G$)",
-        "Entropy of Mixing asymmetry ($\Delta S_{mix}$)",
-        "Enthalpy of Mixing asymmetry ($\Delta H_{mix}$)",
-        "Geometrical Parameter ($\lambda$)",
-        "Dimensionless parameter ($\Omega$)",
+        r"Average Melting Temperature ($T_{m}(K)$)",
+        r"Melting Temperature asymmetry ($\Delta T_m$)",
+        r"Valence Electron Concentration (VEC)",
+        r"Average Atomic Number (AN)",
+        r"Thermal Conductivity (K)",
+        r"Average Bulk Modulus (B)",
+        r"Bulk Modulus Asymmetry ($\Delta B$)",
+        r"Average Shear Modulus (G)",
+        r"Shear Modulus Asymmetry ($\Delta G$)",
+        r"Entropy of Mixing asymmetry ($\Delta S_{mix}$)",
+        r"Enthalpy of Mixing asymmetry ($\Delta H_{mix}$)",
+        r"Geometrical Parameter ($\lambda$)",
+        r"Dimensionless parameter ($\Omega$)",
     ]
+    
+    # Display the property names in LaTeX formatting using st.latex()
+    for property_name_latex in property_names_latex:
+        st.latex(property_name_latex)
+
     
     # Define the indices to include
     indices_to_include = [1, 2,3,4,5,6,7,8,9,10,11,12,13,14,15]  # Include values at indices 1 and 2
