@@ -89,13 +89,14 @@ if selected_tab == "New alloy design":
     
     """
     
-    # Welcome to PiezoTensorNet!
+    # Prediction Results!
     
     """
     
     st.write("The hardness is :", hardness[0])
     st.write("The elongation is :", elongation[0])
     st.write("The elongation is :", df_input_target)
+    st.write("Mean Atomic Radius difference (d) :", df_input_target[1][1])
     #####################################################################
     # In[15]:
     print("Tensor Predictionsin Progress")
