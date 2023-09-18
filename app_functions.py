@@ -1286,7 +1286,7 @@ def ternary_plot(fab_cat="CAT-A", pole_labels=['Al','Ti', '(CrFeNi)'],model_of='
     #     baxis_min=0.1
     #     ideal_weights=[0.3,0.3,0.2,0.3]
     #     input_pcc = ['$\delta$', 'ΔTm', 'VEC', 'ΔB', 'ΔG', 'ΔSmix', 'ΔHmix']
-
+    comp = 1 - element1 - element2
     fig = ff.create_ternary_contour(np.array([comp,element1,element2]), predicted_value,
                                     pole_labels=pole_labels,
                                     interp_mode='cartesian',
@@ -1334,7 +1334,7 @@ def ternary_plot(fab_cat="CAT-A", pole_labels=['Al','Ti', '(CrFeNi)'],model_of='
 
     #Al = np.array([0,0,0,0,0,0,0,0.1,0.2, 0.3, 0.4, 0.5, 0.6, 0.1, 0.1, 0.1, 0.1, 0.1, 0.2, 0.3, 0.4, 0.5])
     #Ti = np.array([0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0, 0, 0, 0,0,0,0.1, 0.2, 0.3, 0.4, 0.5, 0.1, 0.1, 0.1, 0.1])
-    comp = 1 - element1 - element2
+    
 
     print(predicted_value.shape,element1.shape,comp.shape)
 
