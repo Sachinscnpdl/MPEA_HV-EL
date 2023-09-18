@@ -229,6 +229,28 @@ if selected_tab == "Synergy Optimization":
     
     # Assign the custom hover text to the figure
     fig.update_traces(text=hover_text, hoverinfo="text")
+
+    # Add horizontal and vertical dashed lines
+    fig.add_shape(
+        type="line",
+        x0=22.16,
+        x1=22.16,
+        y0=min(dopant_pred_el),
+        y1=max(dopant_pred_el),
+        line=dict(color="red", width=3, dash="dash"),
+    )
+    
+    fig.add_shape(
+        type="line",
+        x0=min(dopant_pred_hv),
+        x1=max(dopant_pred_hv),
+        y0=495.3,
+        y1=495.3,
+        line=dict(color="blue", width=3, dash="dash"),
+    )
+
+
+
     
     # Set the plot title
     fig.update_layout(title='Scatter Plot of comp vs. predicted_value')
