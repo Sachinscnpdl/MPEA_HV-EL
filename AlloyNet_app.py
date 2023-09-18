@@ -62,7 +62,7 @@ if selected_tab == "New alloy design":
     df= fab_cluster(df)
     df, df_input_target = properties_calculation(df)
     print("Properties Calculated")
-    hardness = prediction_model_new(df,input_pcc,ideal_weights, path='hardness_model_files\\')
+    hardness = prediction_model_new(df,input_pcc,ideal_weights, path='hardness_model_files//')
 
 
 
