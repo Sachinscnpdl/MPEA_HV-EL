@@ -100,21 +100,21 @@ if selected_tab == "New alloy design":
     import streamlit as st
 
     property_names_latex = [
-        r"\text{Mean Atomic Radius difference} (\delta)",
-        r"Electronegativity asymmetry ($\Delta \chi$)",
-        r"Average Melting Temperature ($T_{m}(K)$)",
-        r"Melting Temperature asymmetry ($\Delta T_m$)",
-        r"Valence Electron Concentration (VEC)",
-        r"Average Atomic Number (AN)",
-        r"Thermal Conductivity (K)",
-        r"Average Bulk Modulus (B)",
-        r"Bulk Modulus Asymmetry ($\Delta B$)",
-        r"Average Shear Modulus (G)",
-        r"Shear Modulus Asymmetry ($\Delta G$)",
-        r"Entropy of Mixing asymmetry ($\Delta S_{mix}$)",
-        r"Enthalpy of Mixing asymmetry ($\Delta H_{mix}$)",
-        r"Geometrical Parameter ($\lambda$)",
-        r"Dimensionless parameter ($\Omega$)",
+        r"\text{Mean Atomic Radius difference } (\delta)",
+        r"\text{Electronegativity asymmetry } (\Delta \chi)",
+        r"\text{Average Melting Temperature } (T_{m}(K))",
+        r"\text{Melting Temperature asymmetry } (\Delta T_m)",
+        r"\text{Valence Electron Concentration } (VEC)",
+        r"\text{Average Atomic Number } (AN)",
+        r"\text{Thermal Conductivity } (K)",
+        r"\text{Average Bulk Modulus } (B)",
+        r"\text{Bulk Modulus Asymmetry } (\Delta B)",
+        r"\text{Average Shear Modulus } (G)",
+        r"\text{Shear Modulus Asymmetry } (\Delta G)",
+        r"\text{Entropy of Mixing asymmetry } (\Delta S_{mix})",
+        r"\text{Enthalpy of Mixing asymmetry } (\Delta H_{mix})",
+        r"\text{Geometrical Parameter } (\lambda)",
+        r"\text{Dimensionless parameter } (\Omega)",
     ]
     
     # Display the property names in LaTeX formatting using st.latex()
