@@ -17,6 +17,7 @@ def featurization(df):
 # In[ ]:
 
 # Import csv files "Midema" to calculte input features
+import pandas as pd
 elem_prop_data = pd.read_csv('Miedema.csv')
 VEC_elements = elem_prop_data.set_index('element')['valence_electrons'].to_dict()
 shear_modulus_g = elem_prop_data.set_index('element')['shear_modulus'].to_dict()
