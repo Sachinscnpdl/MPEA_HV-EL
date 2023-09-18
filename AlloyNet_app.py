@@ -118,8 +118,8 @@ if selected_tab == "New alloy design":
     ]
     
     # Display the property names in LaTeX formatting using st.latex()
-    for property_name_latex in property_names_latex:
-        st.latex(property_name_latex)
+    # for property_name_latex in property_names_latex:
+    #     st.latex(property_name_latex)
 
     
     # Define the indices to include
