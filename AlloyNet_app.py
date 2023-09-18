@@ -38,7 +38,6 @@ selected_tab = st.sidebar.radio("Select Tab", tab_options)
 # Initialize empty DataFrame to store selected formulas
 df_selected_formulas = pd.DataFrame()
 
-
 # Add input block for "New alloy design"
 if selected_tab == "New alloy design":
     # Add a dropdown to select a pre-defined formula
@@ -60,7 +59,6 @@ if selected_tab == "New alloy design":
     if selected_fabrication_type:
         df_selected_formulas.at[len(df_selected_formulas)-1, 'Fabrication_type'] = selected_fabrication_type
 
-
 ################################################################################################
 
     # Display the selected formulas
@@ -80,7 +78,6 @@ if selected_tab == "New alloy design":
     elongation = prediction_model_new(df_mpea, predict='elongation')
     hardness = round(hardness[0],2)
     elongation = round(elongation[0],2)
-
     
     """ 
     # Prediction Results!
@@ -88,10 +85,9 @@ if selected_tab == "New alloy design":
     # Define the text style for hardness and elongation
     hardness_style = "<h2 style='color:blue; font-size:24px;'>{} HV</h2>".format(hardness)
     elongation_style = "<h2 style='color:green; font-size:24px;'>{} %</h2>".format(elongation)
-
     
     # Display text with style using Markdown
-    st.markdown("<h2 style='color:blue;'>The hardness is:</h2>", unsafe_allow_html=True)
+    st.markdown("<h2 style='color:blue;'>The hardness is:</h2>",hardness_style, unsafe_allow_html=True)
     st.markdown(hardness_style, unsafe_allow_html=True)
     
     st.markdown("<h2 style='color:green;'>The elongation is:</h2>", unsafe_allow_html=True)
@@ -100,12 +96,6 @@ if selected_tab == "New alloy design":
     # Display other content as needed
     st.markdown("<h3 style='color:red;'>Additional Information:</h3>", unsafe_allow_html=True)
     st.write(df_input_target)
-
-
-
-    
- 
-    
     
     
 
