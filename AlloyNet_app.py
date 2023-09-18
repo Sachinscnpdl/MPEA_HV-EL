@@ -168,11 +168,8 @@ if selected_tab == "New alloy design":
         # Display the DataFrame as a beautiful table
         st.dataframe(df, height=570)  # You can adjust the height as needed
         st.write("Pugh's Ratio:", round(df_input_target.iloc[0, 8] / df_input_target.iloc[0, 7],2))
-
-    
        
-#####################################################################
-     
+##################################################################### ##################################################################### 
 ###############################################
 
 if selected_tab == "Synergy Optimization":
@@ -181,7 +178,7 @@ if selected_tab == "Synergy Optimization":
     base_composition = st.sidebar.selectbox("Base Piezo-material", base_material_options)
 
     fabrication_type_options = ["CAST", "POWDER", "ANNEAL", "WROUGHT", "OTHER"]
-    selected_fabrication_type = st.sidebar.selectbox('Select Fabrication Type:', fabrication_type_options)
+    fab_type = st.sidebar.selectbox('Select Fabrication Type:', fabrication_type_options)
 
     first_dopants_options = ["Mo", "Mg", "Ti", "Zr", "Hg"]
     first_dopant = st.sidebar.selectbox("First Dopants", first_dopants_options)
@@ -195,6 +192,6 @@ if selected_tab == "Synergy Optimization":
     # st.write("Selected Second Dopant:", second_dopant)
     # Additional code for this tab
 
-    HV_1g = ternary_plot(fab_cat=fab_category, pole_labels=[ base_composition,first_dopant,second_dopant],model_of='hv', colorscale='Picnic')
+    HV_1g = ternary_plot(fab_cat=fab_type, pole_labels=[ base_composition,first_dopant,second_dopant],model_of='hv', colorscale='Picnic')
     
     st.write(HV_1g)
