@@ -121,9 +121,11 @@ if selected_tab == "New alloy design":
     # Create a list of values (replace this with your actual values)
     values = df_input_target.iloc[0, 1:].tolist()
     
-    # Display the property names and their corresponding values in LaTeX formatting using st.latex()
+    # Display the property names with left alignment and values rounded to 4 decimal places
     for i in range(len(property_names_latex)):
-        st.latex(r"\noindent{} : {}".format(property_names_latex[i], values[i]))
+        formatted_value = "{:.4f}".format(values[i])  # Format value to 4 decimal places
+        st.latex(r"\noindent {} : {}".format(property_names_latex[i], formatted_value))
+
 
 
 
