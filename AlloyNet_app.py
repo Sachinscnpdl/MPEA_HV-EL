@@ -78,31 +78,34 @@ if selected_tab == "New alloy design":
     print("Properties Calculated")
     hardness = prediction_model_new(df_mpea, predict='hardness')
     elongation = prediction_model_new(df_mpea, predict='elongation')
+    hardness = round(hardness,2)
+    elongation = round(elongation,2)
 
     
     """ 
     # Prediction Results!
     """
-
+    # Define the text style for hardness and elongation
+    hardness_style = "<h2 style='color:blue; font-size:24px;'>{}</h2>".format(hardness[0])
+    elongation_style = "<h2 style='color:green; font-size:24px;'>{}</h2>".format(elongation[0])
+    
     # Display text with style using Markdown
     st.markdown("<h2 style='color:blue;'>The hardness is:</h2>", unsafe_allow_html=True)
-    st.write("The hardness is: {}".format(hardness[0]))
+    st.markdown(hardness_style, unsafe_allow_html=True)
     
     st.markdown("<h2 style='color:green;'>The elongation is:</h2>", unsafe_allow_html=True)
-    st.write("The elongation is: {}".format(elongation[0]))
+    st.markdown(elongation_style, unsafe_allow_html=True)
     
     # Display other content as needed
     st.markdown("<h3 style='color:red;'>Additional Information:</h3>", unsafe_allow_html=True)
     st.write(df_input_target)
 
 
-    # Define the text style for hardness and elongation
-    hardness_style = "<h2 style='color:blue; font-size:24px;'>{}</h2>".format(hardness[0])
-    elongation_style = "<h2 style='color:green; font-size:24px;'>{}</h2>".format(elongation[0])
+
     
-    # Display the styled text using st.markdown
-    st.markdown(hardness_style, unsafe_allow_html=True)
-    st.markdown(elongation_style, unsafe_allow_html=True)
+ 
+    
+    
     
 
     #####################################################################
