@@ -121,14 +121,14 @@ if selected_tab == "New alloy design":
     
     # Create a list of values (replace this with your actual values)
     values = df_input_target.iloc[0, 1:].tolist()
-    
+    print("XXXXXXXX:::", len(property_names_latex), len(values))
     # Display the property names and their corresponding values in LaTeX formatting
     for i in range(len(property_names_latex)):
         st.latex("{} : {:.4g}".format(property_names_latex[i], values[i]))
 
     # Ensure that property_names_latex and values have the same length
     if len(property_names_latex) != len(values):
-        st.error("The number of property names and values should be the same.", len(property_names_latex), len(values))
+        st.error("The number of property names and values should be the same.")
     else:
         # Create a DataFrame with property names and values
         df = pd.DataFrame({"Property Name": property_names_latex, "Value": values})
