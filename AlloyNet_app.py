@@ -101,21 +101,22 @@ if selected_tab == "New alloy design":
 
     # Define the property names in LaTeX format
     property_names_latex = [
-        r"\text{Mean Atomic Radius difference } (\delta)",
-        r"\text{Electronegativity asymmetry } (\Delta \chi)",
-        r"\text{Melting Temperature asymmetry } (\Delta T_m)",
-        r"\text{Average Melting Temperature } (T_{m}(K))",
-        r"\text{Valence Electron Concentration } (VEC)",
-        r"\text{Average Atomic Number } (AN)",
-        r"\text{Thermal Conductivity } (K)",
-        r"\text{Average Bulk Modulus } (B)",
-        r"\text{Bulk Modulus Asymmetry } (\Delta B)",
-        r"\text{Average Shear Modulus } (G)",
-        r"\text{Shear Modulus Asymmetry } (\Delta G)",
-        r"\text{Entropy of Mixing asymmetry } (\Delta S_{mix})",
-        r"\text{Geometrical Parameter } (\lambda)",
-        r"\text{Enthalpy of Mixing asymmetry } (\Delta H_{mix})",
-        r"\text{Dimensionless parameter } (\Omega)",
+        r"\text{Mean Atomic Radius difference } (\delta) ",
+        r"\text{Electronegativity asymmetry } (\Delta \chi ",
+        r"\text{Melting Temperature asymmetry } (\Delta T_m) ",
+        r"\text{Average Melting Temperature } (T_{m}(K)) ",
+        r"\text{Valence Electron Concentration } (VEC) ",
+        r"\text{Average Atomic Number } (AN) ",
+        r"\text{Thermal Conductivity } (K) ",
+        r"\text{Average Bulk Modulus } (B) ",
+        r"\text{Bulk Modulus Asymmetry } (\Delta B) ",
+        r"\text{Average Shear Modulus } (G) ",
+        r"\text{Shear Modulus Asymmetry } (\Delta G) ",
+        r"\text{Entropy of Mixing asymmetry } (\Delta S_{mix}) ",
+        r"\text{Geometrical Parameter } (\lambda) ",
+        r"\text{Enthalpy of Mixing asymmetry } (\Delta H_{mix}) ",
+        r"\text{Dimensionless parameter } (\Omega) ",
+        r"\text{Pugh's Ratio } "
     ]
     
     # Create a list of values (replace this with your actual values)
@@ -123,8 +124,8 @@ if selected_tab == "New alloy design":
     
     # Display the property names with left alignment and values rounded to 4 decimal places
     for i in range(len(property_names_latex)):
-        formatted_value = "{:.3}".format(values[i])  # Format value to 4 decimal places
-        st.latex(r"\quad {} : {}".format(property_names_latex[i], formatted_value))
+        formatted_value = "{:.3f}".format(values[i])  # Format value to 4 decimal places
+        st.latex("\quad {} : {}".format(property_names_latex[i], formatted_value))
 
 
 
