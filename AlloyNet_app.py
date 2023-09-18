@@ -97,8 +97,8 @@ if selected_tab == "New alloy design":
     # Display other content as needed
     st.markdown("<h3 style='color:red;'>Composition-based feature vector</h3>", unsafe_allow_html=True)
     st.write(df_input_target)
-    import streamlit as st
-
+    
+    # Define the property names in LaTeX format
     property_names_latex = [
         r"\text{Mean Atomic Radius difference } (\delta)",
         r"\text{Electronegativity asymmetry } (\Delta \chi)",
@@ -116,15 +116,7 @@ if selected_tab == "New alloy design":
         r"\text{Geometrical Parameter } (\lambda)",
         r"\text{Dimensionless parameter } (\Omega)",
     ]
-
     
-    # Display the property names in LaTeX formatting using st.latex()
-    # for property_name_latex in property_names_latex:
-    #     st.latex(property_name_latex)
-
-    # for index, row in df_input_target.iterrows():
-    #     st.latex("{} : {}".format(row["Property"], row["Value"]))
-
     # Create a list of values (replace this with your actual values)
     values = [df_input_target[0][1], df_input_target[0][2], df_input_target[0][3], df_input_target[0][4],
               df_input_target[0][5], df_input_target[0][6], df_input_target[0][7], df_input_target[0][8],
@@ -133,15 +125,8 @@ if selected_tab == "New alloy design":
     
     # Display the property names and their corresponding values in LaTeX formatting using st.latex()
     for i in range(len(property_names_latex)):
-        st.latex("{} : {}".format(property_names_latex[i], values[i])
+        st.latex("{} : {}".format(property_names_latex[i], values[i]))
 
-    
-    # # Define the indices to include
-    # indices_to_include = [1, 2,3,4,5,6,7,8,9,10,11,12,13,14,15]  # Include values at indices 1 and 2
-    
-    # # Display the selected property names with specific indices in Streamlit format
-    # for index in indices_to_include:
-    #     st.latex("{} : df_input_target[0][{}]".format(property_names[index], index))
 
        
 #####################################################################
