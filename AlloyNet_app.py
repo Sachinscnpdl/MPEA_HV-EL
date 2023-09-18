@@ -80,16 +80,16 @@ if selected_tab == "New alloy design":
     elongation = prediction_model_new(df_mpea, predict='elongation')
 
     
-    """
-    
+    """ 
     # Prediction Results!
-    
     """
     
-    st.write("The hardness is :", hardness[0])
-    st.write("The elongation is :", elongation[0])
-    st.write("The elongation is :", df_input_target)
-    st.write("Mean Atomic Radius difference (d) :", df_input_target[0][1])
+    # Display text with style using Markdown
+    st.markdown("<h2 style='color:blue;'>The hardness is:</h2> The hardness is: {}".format(hardness[0]), unsafe_allow_html=True)
+    st.markdown("<h2 style='color:green;'>The elongation is:</h2> The elongation is: {}".format(elongation[0]), unsafe_allow_html=True)
+    st.markdown("<h3 style='color:red;'>The elongation is:</h3> {}".format(df_input_target), unsafe_allow_html=True)
+    st.markdown("<p style='font-size:20px;'>Mean Atomic Radius difference (&Delta;):</p> {}".format(df_input_target[1][1]), unsafe_allow_html=True)
+
     #####################################################################
     # In[15]:
     print("Tensor Predictionsin Progress")
