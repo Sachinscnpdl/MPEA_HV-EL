@@ -1129,10 +1129,17 @@ stc = StrToComposition()
 #########################################################################################################
 def prediction_model_new(df, predict='hardness'): 
     # For hardness
-    input_pcc = ['$\delta$', 'Δ$\chi$', 'ΔTm', 'VEC', 'ΔB', 'ΔG', '$\lambda$', 'ΔHmix']
-    path='hardness_model_files/'
-    ideal_weights = [0.3,0.3,0.1,0.3]
-    
+    if predict=='hardness':
+        input_pcc = ['$\delta$', 'Δ$\chi$', 'ΔTm', 'VEC', 'ΔB', 'ΔG', '$\lambda$', 'ΔHmix']
+        path='hardness_model_files/'
+        ideal_weights = [0.3,0.3,0.1,0.3]
+    elif predict =='elongation':
+        ideal_weights=[0.3,0.3,0.2,0.3]
+        input_pcc = ['$\delta$', 'ΔTm', 'VEC', 'ΔB', 'ΔG', 'ΔSmix', 'ΔHmix']
+        path='elongation_model_files/'
+
+
+        
     input_name = ['$\delta$', 'Δ$\chi$', 'ΔTm','Tm(K)', 'VEC', 'AN', 'K', 'B', 'ΔB', 'G', 'ΔG','ΔSmix','$\lambda$', 'ΔHmix','$\Omega$']
     datasets = df.iloc[:,[-15,-14,-13,-12,-11,-10, -9, -8, -7, -6,-5, -4, -3, -2, -1]]
 
