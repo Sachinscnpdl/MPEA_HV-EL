@@ -1104,7 +1104,7 @@ def prediction_model(df,input_pcc,prop="Hardness (HV)", path='hardness_model_fil
 def prediction_model_new(df, predict='hardness'): 
     # For hardness
     input_pcc = ['$\delta$', 'Δ$\chi$', 'ΔTm', 'VEC', 'ΔB', 'ΔG', '$\lambda$', 'ΔHmix']
-    path='hardness_model_files\\
+    path='hardness_model_files\\'
     ideal_weights = [0.3,0.3,0.1,0.3]
     
     input_name = ['$\delta$', 'Δ$\chi$', 'ΔTm','Tm(K)', 'VEC', 'AN', 'K', 'B', 'ΔB', 'G', 'ΔG','ΔSmix','$\lambda$', 'ΔHmix','$\Omega$']
