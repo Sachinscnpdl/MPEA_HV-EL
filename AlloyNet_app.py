@@ -96,7 +96,7 @@ if selected_tab == "New alloy design":
     
     # Display other content as needed
     st.markdown("<h3 style='color:red;'>Composition-based feature vector</h3>", unsafe_allow_html=True)
-    st.write(df_input_target)
+    # st.write(df_input_target)
 
 
     # Define the property names in LaTeX format
