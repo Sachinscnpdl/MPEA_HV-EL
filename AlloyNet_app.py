@@ -46,7 +46,7 @@ if selected_tab == "New alloy design":
 
     # If a pre-defined formula is selected, add it to the DataFrame
     if selected_predefined_formula:
-        df_selected_formulas = pd.concat([df_selected_formulas, pd.DataFrame({'S.N': [len(df_selected_formulas) + 1], 'formula_pretty': [selected_predefined_formula]})], ignore_index=True)
+        df_selected_formulas = pd.concat([df_selected_formulas, pd.DataFrame({'S.N': [len(df_selected_formulas) + 1], 'Alloys': [selected_predefined_formula]})], ignore_index=True)
 ################################################################
     
     # Display the selected formulas
