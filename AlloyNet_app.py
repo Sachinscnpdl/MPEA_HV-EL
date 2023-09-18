@@ -21,7 +21,7 @@ import matplotlib.pyplot as plt
 # stc = StrToComposition()
 
 # Add the function.py file
-from functions import *
+from app_functions import *
 # from prediction_ML import *
 #############################################################################
 #Header for the website
