@@ -124,7 +124,7 @@ if selected_tab == "New alloy design":
     st.write("XXXXXXXX:::", len(property_names_latex), len(values))
     # Display the property names and their corresponding values in LaTeX formatting
     for i in range(len(property_names_latex)):
-        st.latex("{} : {:.4g}".format(property_names_latex[i], values[i]))
+        st.latex("{} : {}".format(property_names_latex[i], values[i]))
 
     # Ensure that property_names_latex and values have the same length
     if len(property_names_latex) != len(values):
