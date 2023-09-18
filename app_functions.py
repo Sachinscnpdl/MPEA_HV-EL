@@ -1322,7 +1322,7 @@ def ternary_plot(fab_cat="CAT-A", pole_labels=['Al','Ti', '(CrFeNi)'],model_of='
     fig.update_ternaries(sum=1, baxis_min=baxis_min);
 
     fig.update_layout(coloraxis_colorbar=dict(yanchor="top", y=0.05, x=1, 
-                  ticks="outside", ticksuffix=ticksuffix))
+                  ticks="outside"))
 
     # Axis labels. (See below for corner labels.)
     fontsize = 28
