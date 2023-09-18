@@ -1269,7 +1269,7 @@ def ternary_plot(fab_cat="CAT-A", pole_labels=['Al','Ti', '(CrFeNi)'],model_of='
         fab_cat="CAT-D"
 
     df["Fabrication_type"]=fab_cat
-    
+    baxis_min=0.1
     df = featurization(df)
     #colorscale='Jet'
     # if model_of=="hv":
