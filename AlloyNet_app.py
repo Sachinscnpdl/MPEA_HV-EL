@@ -123,6 +123,9 @@ if selected_tab == "New alloy design":
               df_input_target[0][9], df_input_target[0][10], df_input_target[0][11], df_input_target[0][12],
               df_input_target[0][13], df_input_target[0][14], df_input_target[0][15]]
     
+    # Create a list of values from the first row of the DataFrame (replace this with your actual DataFrame)
+    values = df_input_target.iloc[0, 1:].tolist()
+    
     # Display the property names and their corresponding values in LaTeX formatting using st.latex()
     for i in range(len(property_names_latex)):
         st.latex("{} : {}".format(property_names_latex[i], values[i]))
