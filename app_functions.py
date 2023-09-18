@@ -1100,15 +1100,19 @@ def prediction_model(df,input_pcc,prop="Hardness (HV)", path='hardness_model_fil
 
 # In[ ]:
 
-
-def prediction_model_new(df,input_pcc,ideal_weights, path='hardness_model_files\\'):    
+#########################################################################################################
+def prediction_model_new(df, predict='hardness'): 
+    # For hardness
+    input_pcc = ['$\delta$', 'Δ$\chi$', 'ΔTm', 'VEC', 'ΔB', 'ΔG', '$\lambda$', 'ΔHmix']
+    path='hardness_model_files\\
+    ideal_weights = [0.3,0.3,0.1,0.3]
+    
     input_name = ['$\delta$', 'Δ$\chi$', 'ΔTm','Tm(K)', 'VEC', 'AN', 'K', 'B', 'ΔB', 'G', 'ΔG','ΔSmix','$\lambda$', 'ΔHmix','$\Omega$']
     datasets = df.iloc[:,[-15,-14,-13,-12,-11,-10, -9, -8, -7, -6,-5, -4, -3, -2, -1]]
 
     ##############################################
     # One-hot encoding transform from train-model
     ###############################################
-
     
     import pickle
     enc = pickle.load(open(path+'fab_encoding.pkl','rb'))
@@ -1125,7 +1129,6 @@ def prediction_model_new(df,input_pcc,ideal_weights, path='hardness_model_files\
     std_input = scaler.transform(datasets)
 
     std_df = pd.DataFrame(data=std_input, columns=input_name)
-
 
     #########################################################
     # Feature Selected
@@ -1166,7 +1169,6 @@ def prediction_model_new(df,input_pcc,ideal_weights, path='hardness_model_files\
     load_model_pca_1 = load_model(path+'best_model_pca_1.h5')
     load_model_pca_2 = load_model(path+'best_model_pca_2.h5')
 
-
     ########################################
     # Ensemble Model
     #######################################
@@ -1175,12 +1177,9 @@ def prediction_model_new(df,input_pcc,ideal_weights, path='hardness_model_files\
 
     #ideal_weights = [0.3,0.3, 0.1, 0.3] 
     
-    
- 
     #preds_array = ensemble_model(load_models, test_datasets, y_test)
     #weighted_ensemble(preds_array, ideal_weights,y_test,plot_path="plots\\hardness\\", plot_title="Hardness Ensemble Model",limit_value1=1200,limit_value2=1050,value_gap=200)
     
-
     import sklearn.metrics
     from sklearn.metrics import r2_score
     preds_array=[]
@@ -1197,36 +1196,13 @@ def prediction_model_new(df,input_pcc,ideal_weights, path='hardness_model_files\
     summed = np.sum(preds_array, axis=0)
     ensemble_prediction = np.argmax(summed, axis=1)
     mean_preds = np.mean(preds_array, axis=0)
-    
-
-    '''    
-    y_test = df["Hardness (HV)"]  
-
-    # Weight calculations
-    df = pd.DataFrame([])
-
-    for w1 in range(0, 4):
-        for w2 in range(0,4):
-            for w3 in range(0,4):
-                for w4 in range(0,4):
-                    wts = [w1/10.,w2/10.,w3/10.,w4/10.]
-                    wted_preds1 = np.tensordot(preds_array, wts, axes=((0),(0)))
-                    wted_ensemble_pred = np.mean(wted_preds1, axis=1)
-                    weighted_r2 = r2_score(y_test, wted_ensemble_pred)
-                    df = pd.concat([df,pd.DataFrame({'acc':weighted_r2,'wt1':wts[0],'wt2':wts[1], 
-                                                 'wt3':wts[2],'wt4':wts[3] }, index=[0])], ignore_index=True)
-
-    max_r2_row = df.iloc[df['acc'].idxmax()]
-    print("Max $R^2$ of ", max_r2_row[0], " obained with w1=", max_r2_row[1]," w2=", max_r2_row[2], " w3=", max_r2_row[3], " and w4=", max_r2_row[4]) 
-    '''    
  
-    
     #Use tensordot to sum the products of all elements over specified axes.
     ideal_weighted_preds = np.tensordot(preds_array, ideal_weights, axes=((0),(0)))
     ideal_weighted_ensemble_prediction = np.mean(ideal_weighted_preds, axis=1)
     
     return ideal_weighted_ensemble_prediction
-
+#########################################################################################################################################
 
 # In[ ]:
 
@@ -1306,5 +1282,273 @@ def ternary_plot(df,input_pcc,ideal_weights,element1,element2,fab_cat="CAT-A", p
     fig.show()
 
     return predicted_value
+    
+##########################################################################################
+
+def hardness_predictions_model(df, fab='CAT-A')
+
+    #Import Libraries
+    from pymatgen.core.composition import Composition, Element
+    from pymatgen.core.structure import SiteCollection
+    from matminer.featurizers.composition.alloy import Miedema, WenAlloys,YangSolidSolution
+    from matminer.featurizers.composition import ElementFraction
+    from matminer.featurizers.conversions import StrToComposition
+    from matminer.utils.data import MixingEnthalpy, DemlData
+    from matminer.utils import data_files #for importing "Miedema.csv" present inside package of Matminer library
+    from matplotlib.ticker import MultipleLocator # for minor tick lines
+    import seaborn as sns
+    
+    import pandas as pd
+    pd.set_option('display.max_columns', None)
+    import numpy as np
+    import os
+    import matplotlib.pyplot as plt
+    
+    ef= ElementFraction()
+    stc = StrToComposition()
+    
+    # Import csv files "Midema" to calculte input features
+    elem_prop_data = pd.read_csv('Miedema.csv')
+    VEC_elements = elem_prop_data.set_index('element')['valence_electrons'].to_dict()
+    shear_modulus_g = elem_prop_data.set_index('element')['shear_modulus'].to_dict()
+    bulk_modulus_b = elem_prop_data.set_index('element')['compressibility'].to_dict()
+
+
+    # Load hardness data and Featurization
+    df = pd.read_csv('hardness.csv')
+
+
+    def fab_cluster(df):
+        df.Fabrication_type = df.Fabrication_type.fillna('OTHER')
+        df.Fabrication_type.replace(to_replace=["CAST"], value="CAT-A", inplace= True)
+        df.Fabrication_type.replace(to_replace=["OTHER","Unknown","WROUGHT"], value="CAT-B", inplace= True)    
+        df.Fabrication_type.replace(to_replace=["POWDER"], value="CAT-C", inplace= True) 
+        df.Fabrication_type.replace(to_replace=["ANNEAL"], value="CAT-D", inplace= True)   
+        return(df)
+
+    df = featurization(df)
+    
+    df = df_element_number(df)
+    df = data_elimination(df)
+    df= fab_cluster(df)
+    df, df_input_target = properties_calculation(df)
+
 
     
+get_ipython().run_line_magic('run', 'common_functions.ipynb')
+input_pcc = ['$\delta$', 'Δ$\chi$', 'ΔTm', 'VEC', 'ΔB', 'ΔG', '$\lambda$', 'ΔHmix']
+
+r2_new(df["Hardness (HV)"],prediction_model(df,input_pcc, path='hardness_model_files\\'))
+
+
+# # Ideal weights evaluated from running Train + Test datasets  
+
+# In[8]:
+
+
+ideal_weights = [0.3,0.3,0.1,0.3]
+
+
+# # Additional Evaluation data to test HV predictions
+# ## New data for testing
+# 
+# 
+# ### Out of six data four were used in training and 2 for evaluation. The 2nd and 4th are for evaluation
+
+# In[9]:
+
+
+df_new = pd.read_csv('test_new_hv.csv')
+
+
+# In[10]:
+
+
+get_ipython().run_line_magic('run', 'common_functions.ipynb')
+
+df = df_new
+df = featurization(df)
+
+df = df_element_number(df)
+df = data_elimination(df)
+df= fab_cluster(df)
+df, df_input_target = properties_calculation(df)
+
+
+# In[11]:
+
+
+prediction_model_new(df,input_pcc,ideal_weights, path='hardness_model_files\\')
+
+
+# In[12]:
+
+
+r2_new(df["Hardness (HV)"],prediction_model_new(df,input_pcc,ideal_weights, path='hardness_model_files\\'))
+
+
+# # Ternary Plots for two alloys system
+# ## The element composition is same and just the element is replaced. 
+# ## So, list "element1" & "element2" is valid for all alloy system
+# ##  "element1" & "element2" is confirmed from the  'rhea_plot.csv'.
+
+# In[13]:
+
+
+df_plot = pd.read_csv('rhea_plot.csv')
+
+
+# In[14]:
+
+
+element1=np.array([0,0,0,0,0,0,0,0,0,0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.2,0.2,0.2,0.2,0.2,0.2,0.3,0.4,0.5,0.6,0.7,0.3,0.3,0.3,0.3,0.4,0.5,0.6,0.4,0.4,0.5])
+
+element2 = np.array([0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,0,0,0,0,0,0,0,0,0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.2,0.2,0.2,0.2,0.2,0.3,0.4,0.5,0.6,0.3,0.3,0.3,0.4,0.5,0.4])
+print(len(element1),len(element2))
+df_check= pd.DataFrame()
+df_check["comp"] = 1-element1-element2
+df_check["el1"] = element1
+df_check["el2"] = element2
+
+df_check["Sum"]=df_check.sum(axis=1)
+
+
+# ## Ternary Plots for 8 alloys for 2 base system.
+# ### The Fabrication route "CAT-A" is taken for all.
+
+# In[22]:
+
+
+def ternary_plot(fab_category= 'CAT-A', ternary_result = 'df_result_ternary_CAT-A.csv'):
+    get_ipython().run_line_magic('run', 'common_functions.ipynb')
+
+    # Alloy System-1
+    HV_1g = ternary_plot(df_plot.iloc[:,[2]],input_pcc,ideal_weights,element1,element2,fab_cat=fab_category, pole_labels=[ '(ZrHfNb)','Ti','Ta'],model_of='hv', colorscale='Picnic')
+
+    HV_1e = ternary_plot(df_plot.iloc[:,[3]],input_pcc,ideal_weights,element1,element2,fab_cat=fab_category, pole_labels=[ '(ZrHfNb)','W','Ta'],model_of='hv', colorscale='Viridis')
+
+    HV_1c = ternary_plot(df_plot.iloc[:,[4]],input_pcc,ideal_weights,element1,element2,fab_cat=fab_category, pole_labels=[ '(ZrHfNb)','Mo','Ta'],model_of='hv', colorscale='Rainbow')
+
+    HV_1a = ternary_plot(df_plot.iloc[:,[5]],input_pcc,ideal_weights,element1,element2,fab_cat=fab_category, pole_labels=[ '(ZrHfNb)','Cr','W'],model_of='hv', colorscale='Blackbody')
+
+
+    # Alloy System-2
+    HV_2g = ternary_plot(df_plot.iloc[:,[6]],input_pcc,ideal_weights,element1,element2,fab_cat=fab_category, pole_labels=[ '(VNbTa)','Cr','W'],model_of='hv', colorscale='Jet')
+
+    HV_2e = ternary_plot(df_plot.iloc[:,[7]],input_pcc,ideal_weights,element1,element2,fab_cat=fab_category, pole_labels=[ '(VNbTa)','Zr','W'],model_of='hv', colorscale='Portland')
+
+    HV_2c = ternary_plot(df_plot.iloc[:,[8]],input_pcc,ideal_weights,element1,element2,fab_cat=fab_category, pole_labels=[ '(VNbTa)','Hf','W'],model_of='hv',colorscale='Cividis')
+
+    HV_2a = ternary_plot(df_plot.iloc[:,[9]],input_pcc,ideal_weights,element1,element2,fab_cat=fab_category, pole_labels=[ '(VNbTa)','Mo','Ti'],model_of='hv', colorscale='Electric')
+    
+    
+    df_result_ternary = pd.DataFrame()
+    df_result_ternary['x'] = pd.DataFrame(element1)
+    df_result_ternary['y'] = pd.DataFrame(element2, columns=['x'])
+    df_result_ternary['(ZrHfNb)_Cr_W'] = pd.DataFrame(HV_1a)
+    df_result_ternary['(ZrHfNb)_Mo_Ta'] = pd.DataFrame(HV_1c)
+    df_result_ternary['(ZrHfNb)_W_Ta'] = pd.DataFrame(HV_1e)
+    df_result_ternary['(ZrHfNb)_Ti_Ta'] = pd.DataFrame(HV_1g)
+
+    df_result_ternary['(VNbTa)_Mo_Ti'] = pd.DataFrame(HV_2a)
+    df_result_ternary['(VNbTa)_Hf_W'] = pd.DataFrame(HV_2c)
+    df_result_ternary['(VNbTa)_Zr_W'] = pd.DataFrame(HV_2e)
+    df_result_ternary['(VNbTa)_Cr_W'] = pd.DataFrame(HV_2g)
+    
+    df_result_ternary.to_csv(ternary_result)  
+
+
+# In[16]:
+
+
+ternary_plot(fab_category= 'CAT-A', ternary_result = 'results_csv\\HV_Out_ternary_CAT-A.csv')
+
+
+# In[19]:
+
+
+# Need to run cell 18 [Cell containing define ternary_plot() Function before running this cell]
+ternary_plot(fab_category= 'CAT-B', ternary_result = 'results_csv\\HV_Out_ternary_CAT-B.csv')
+
+
+# In[21]:
+
+
+# Need to run cell 18 [Cell containing define ternary_plot() Function before running this cell]
+ternary_plot(fab_category= 'CAT-C', ternary_result = 'results_csv\\HV_Out_ternary_CAT-C.csv')
+
+
+# In[23]:
+
+
+# Need to run cell 18 [Cell containing define ternary_plot() Function before running this cell]
+ternary_plot(fab_category= 'CAT-D', ternary_result = 'results_csv\\HV_Out_ternary_CAT-D.csv')
+
+
+# In[25]:
+
+
+def md_pred(fab_category = 'CAT-A', plot_name = 'plots\\hardness\\HV_nano_CAT-A.png'):
+    get_ipython().run_line_magic('run', 'common_functions.ipynb')
+    df = pd.read_csv('pred.csv')
+
+    df['Fabrication_type']= fab_category
+    print(df.head())
+    
+    df = featurization(df)
+
+    df = df_element_number(df)
+    df = data_elimination(df)
+    df= fab_cluster(df)
+    df, df_input_target = properties_calculation(df)
+
+    preds = prediction_model_new(df,input_pcc,ideal_weights, path='hardness_model_files\\')
+
+    import matplotlib.ticker as tck
+    plt.figure(figsize=(12,6))
+
+    x = np.arange(0,1.05,0.05)
+    x_label = np.arange(0.1,1.1,0.1)
+
+    plt.xlim(0.01, 1)
+    plt.ylim(0, 830)
+    #values = range(len(x))
+    plt.xticks(x_label)
+
+    plt.rcParams.update({'font.size': 30})
+    plt.gca().yaxis.set_minor_locator(tck.AutoMinorLocator(2))
+    plt.gca().xaxis.set_minor_locator(tck.AutoMinorLocator(2))
+
+    plt.plot(x,preds,'-ok')
+    plt.xlabel("Doping fraction of $Nb$")
+    plt.ylabel("Hardness (HV)")
+    plt.title("a) Hardness study on $CoCrNiNb_x$")
+    plt.grid(alpha=0.25)
+    plt.grid(which='minor',alpha=0.25)
+
+    plt.savefig(plot_name, dpi=1200, bbox_inches='tight')
+    plt.show()
+
+
+# In[26]:
+
+
+md_pred(fab_category = 'CAT-A', plot_name = 'plots\\hardness\\HV_nano_CAT-A.png')
+
+
+# In[27]:
+
+
+md_pred(fab_category = 'CAT-B', plot_name = 'plots\\hardness\\HV_nano_CAT-B.png')
+
+
+# In[28]:
+
+
+md_pred(fab_category = 'CAT-C', plot_name = 'plots\\hardness\\HV_nano_CAT-C.png')
+
+
+# In[29]:
+
+
+md_pred(fab_category = 'CAT-D', plot_name = 'plots\\hardness\\HV_nano_CAT-D.png')
