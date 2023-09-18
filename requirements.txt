@@ -12,3 +12,4 @@ array_to_latex
 setuptools
 scikit-image
 plotly
+scikit-learn
