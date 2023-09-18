@@ -1349,5 +1349,5 @@ def two_dopants_dataframe(base_composition = "(AlN)", element1="Mg", element2="H
         composition = element1 + str(x) + element2 + str(y) + base_composition #"Al"+str(1-x-y)+"N"
         compositions.append(composition)
 
-    df_composition = pd.DataFrame(compositions, columns=["formula_pretty"])
+    df_composition = pd.DataFrame(compositions, columns=["Alloys"])
     return df_composition
