@@ -140,7 +140,7 @@ if selected_tab == "New alloy design":
     
     # Create a list of values (replace this with your actual values)
     values = df_input_target.iloc[0, 1:16].tolist()
-    st.write("XXXXXXXX:::", len(property_names_latex), len(values))
+   
     # # Display the property names and their corresponding values in LaTeX formatting
     # for i in range(len(property_names_latex)):
     #     st.latex("{} : {}".format(property_names_latex[i], values[i]))
