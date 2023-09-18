@@ -136,8 +136,6 @@ if selected_tab == "New alloy design":
         # Display the DataFrame as a beautiful table
         st.dataframe(df, height=400)  # You can adjust the height as needed
 
-Ensure that both lists have the same number of elements, and this code should create a DataFrame and display it as a table in Streamlit without errors.
-
     
     st.write("\t \t \t \t \t    Pugh's Ratio:", round(df_input_target.iloc[0, 8] / df_input_target.iloc[0, 7],3))
 
