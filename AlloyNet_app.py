@@ -126,7 +126,12 @@ if selected_tab == "New alloy design":
     for i in range(len(property_names_latex)):
         st.latex("{} : {:.4g}".format(property_names_latex[i], values[i]))
 
-        
+    # Create a DataFrame with property names and values
+    df = pd.DataFrame({"Property Name": property_names_latex, "Value": values})
+    
+    # Display the DataFrame as a beautiful table
+    st.dataframe(df, height=400)  # You can adjust the height as needed
+    
     st.write("\t \t \t \t \t    Pugh's Ratio:", round(df_input_target.iloc[0, 8] / df_input_target.iloc[0, 7],3))
 
 
