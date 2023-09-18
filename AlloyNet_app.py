@@ -103,8 +103,8 @@ if selected_tab == "New alloy design":
     property_names_latex = [
         r"\text{Mean Atomic Radius difference } (\delta)",
         r"\text{Electronegativity asymmetry } (\Delta \chi)",
-        r"\text{Average Melting Temperature } (T_{m}(K))",
         r"\text{Melting Temperature asymmetry } (\Delta T_m)",
+        r"\text{Average Melting Temperature } (T_{m}(K))",
         r"\text{Valence Electron Concentration } (VEC)",
         r"\text{Average Atomic Number } (AN)",
         r"\text{Thermal Conductivity } (K)",
@@ -113,8 +113,8 @@ if selected_tab == "New alloy design":
         r"\text{Average Shear Modulus } (G)",
         r"\text{Shear Modulus Asymmetry } (\Delta G)",
         r"\text{Entropy of Mixing asymmetry } (\Delta S_{mix})",
-        r"\text{Enthalpy of Mixing asymmetry } (\Delta H_{mix})",
         r"\text{Geometrical Parameter } (\lambda)",
+        r"\text{Enthalpy of Mixing asymmetry } (\Delta H_{mix})",
         r"\text{Dimensionless parameter } (\Omega)",
     ]
     
@@ -123,7 +123,7 @@ if selected_tab == "New alloy design":
     
     # Display the property names and their corresponding values in LaTeX formatting using st.latex()
     for i in range(len(property_names_latex)):
-        st.latex("{} : {}".format(property_names_latex[i], values[i]))
+        st.latex(r"\noindent{} : {}".format(property_names_latex[i], values[i]))
 
 
 
