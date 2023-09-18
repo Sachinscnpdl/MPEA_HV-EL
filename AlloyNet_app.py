@@ -193,14 +193,18 @@ if selected_tab == "Synergy Optimization":
     # Additional code for this tab
     pole_labels=[ base_composition,first_dopant,second_dopant]
     
-    # df_test = two_dopants_dataframe(base_composition = pole_labels[0], element1=pole_labels[1], element2=pole_labels[2])
+    df_test = two_dopants_dataframe(base_composition = pole_labels[0], element1=pole_labels[1], element2=pole_labels[2])
     # st.dataframe(df_test, height=570)
-    ternary, dopant_input, dopant_pred = ternary_plot(fab_cat=fab_type, pole_labels=[ base_composition,first_dopant,second_dopant],model_of='hv', colorscale='Picnic')
-    dopant_input['results'] = dopant_pred
+    ternary_hv, dopant_input, dopant_pred_hv = ternary_plot(fab_cat=fab_type, pole_labels=[ base_composition,first_dopant,second_dopant],model_of='hardness', colorscale='Picnic')
+    ternary_el, dopant_input, dopant_pred_el = ternary_plot(fab_cat=fab_type, pole_labels=[ base_composition,first_dopant,second_dopant],model_of='elongation', colorscale='Jet')
+
+    dopant_input['Alloys'] = df_test
+    dopant_input['Hardness'] = dopant_pred_hv
+    dopant_input['Elongation'] = dopant_pred_el
     # st.write(dopant_pred)
     
     
-    st.plotly_chart(ternary)
-
+    st.plotly_chart(ternary_hv)
+    st.plotly_chart(ternary_el)
 
     st.write(dopant_input)
