@@ -187,6 +187,9 @@ if selected_tab == "Synergy Optimization":
     base_material_options = ["BaTiO3", "AlN"]
     base_composition = st.sidebar.selectbox("Base Piezo-material", base_material_options)
 
+    fabrication_type_options = ["CAST", "POWDER", "ANNEAL", "WROUGHT", "OTHER"]
+    selected_fabrication_type = st.sidebar.selectbox('Select Fabrication Type:', fabrication_type_options)
+
     first_dopants_options = ["Mo", "Mg", "Ti", "Zr", "Hg"]
     first_dopant = st.sidebar.selectbox("First Dopants", first_dopants_options)
 
@@ -194,9 +197,9 @@ if selected_tab == "Synergy Optimization":
     second_dopant = st.sidebar.selectbox("Second Dopants", second_dopants_options)
     
     # Perform actions or display content based on the selected options
-    st.write("Selected Base Piezo-material:", base_composition)
-    st.write("Selected First Dopant:", first_dopant)
-    st.write("Selected Second Dopant:", second_dopant)
+    # st.write("Selected Base Piezo-material:", base_composition)
+    # st.write("Selected First Dopant:", first_dopant)
+    # st.write("Selected Second Dopant:", second_dopant)
     # Additional code for this tab
 
     if second_dopant:
