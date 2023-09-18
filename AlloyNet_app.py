@@ -200,5 +200,5 @@ if selected_tab == "Synergy Optimization":
     st.write(dopant_pred)
     st.write(dopant_input)
     
-    st.pyplot(ternary)
+    st.plotly_chart(ternary)
     
