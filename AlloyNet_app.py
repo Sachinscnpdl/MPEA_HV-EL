@@ -38,23 +38,6 @@ selected_tab = st.sidebar.radio("Select Tab", tab_options)
 # Initialize empty DataFrame to store selected formulas
 df_selected_formulas = pd.DataFrame()
 
-# # Add input block for "New alloy design"
-# if selected_tab == "New alloy design":
-#     # Add a dropdown to select a pre-defined formula
-#     predefined_formulas = ['CoCrNi','CoCrNiNb0.2', 'CoCrNiNb0.3', 'CoCrNiNb0.7']
-#     selected_predefined_formula = st.selectbox('Select a pre-defined formula', predefined_formulas)
-
-#     fabrication_type_options = ["CAST", "POWDER", "ANNEAL", "WROUGHT", "OTHER"]
-#     selected_fabrication_type = st.selectbox('Select Fabrication Type:', fabrication_type_options)
-
-#     # If a pre-defined formula is selected, add it to the DataFrame
-#     if selected_predefined_formula:
-#         df_selected_formulas = pd.concat([df_selected_formulas, pd.DataFrame({'S.N': [len(df_selected_formulas) + 1], 'Alloys': [selected_predefined_formula]})], ignore_index=True)
-
-#     # Update the DataFrame df_selected with the selected Fabrication_type
-#     if selected_fabrication_type:
-#         df_selected_formulas.loc[len(df_selected)] = [len(df_selected) + 1, selected_fabrication_type]
-#     ################################################################
 
 # Add input block for "New alloy design"
 if selected_tab == "New alloy design":
@@ -78,7 +61,7 @@ if selected_tab == "New alloy design":
         df_selected_formulas.at[len(df_selected_formulas)-1, 'Fabrication_type'] = selected_fabrication_type
 
 
-
+################################################################################################
 
     # Display the selected formulas
     if not df_selected_formulas.empty:
@@ -110,8 +93,9 @@ if selected_tab == "New alloy design":
     
     """
     
-    st.write("The hardness is :", hardness)
-    st.write("The elongation is :", elongation)
+    st.write("The hardness is :", hardness[0])
+    st.write("The elongation is :", elongation[0])
+    st.write("The elongation is :", df_input_target)
     #####################################################################
     # In[15]:
     print("Tensor Predictionsin Progress")
