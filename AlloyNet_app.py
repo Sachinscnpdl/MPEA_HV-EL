@@ -116,6 +116,12 @@ if selected_tab == "New alloy design":
         r"\text{Geometrical Parameter } (\lambda)",
         r"\text{Dimensionless parameter } (\Omega)",
     ]
+
+    data = {
+        "Property": property_names_latex,
+        "Value": [8.3, 3.98, 63.1, 4.16, 21.48, 18.55, 5.55, 16.55, 7.5, 3.32, 3.9, 1.22, 4.8, 2.2, 1.17]
+    }
+    df_input_target = pd.DataFrame(data)
     
     # Display the property names in LaTeX formatting using st.latex()
     # for property_name_latex in property_names_latex:
