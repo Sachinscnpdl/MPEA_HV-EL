@@ -97,6 +97,34 @@ if selected_tab == "New alloy design":
     # Display other content as needed
     st.markdown("<h3 style='color:red;'>Additional Information:</h3>", unsafe_allow_html=True)
     st.write(df_input_target)
+    import streamlit as st
+
+    # Define the property names
+    property_names = [
+        "Mean Atomic Radius difference ($\delta$)",
+        "Electronegativity asymmetry ($\Delta \chi$)",
+        "Average Melting Temperature ($T_{m}(K)$)",
+        "Melting Temperature asymmetry ($\Delta T_m$)",
+        "Valence Electron Concentration (VEC)",
+        "Average Atomic Number (AN)",
+        "Thermal Conductivity (K)",
+        "Average Bulk Modulus (B)",
+        "Bulk Modulus Asymmetry ($\Delta B$)",
+        "Average Shear Modulus (G)",
+        "Shear Modulus Asymmetry ($\Delta G$)",
+        "Entropy of Mixing asymmetry ($\Delta S_{mix}$)",
+        "Enthalpy of Mixing asymmetry ($\Delta H_{mix}$)",
+        "Geometrical Parameter ($\lambda$)",
+        "Dimensionless parameter ($\Omega$)",
+    ]
+    
+    # Define the indices to include
+    indices_to_include = [1, 2]  # Include values at indices 1 and 2
+    
+    # Display the selected property names with specific indices in Streamlit format
+    for index in indices_to_include:
+        st.latex("{} : df_input_target[0][{}]".format(property_names[index], index))
+
        
 #####################################################################
     # In[15]:
