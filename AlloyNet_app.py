@@ -126,15 +126,18 @@ if selected_tab == "New alloy design":
     for i in range(len(property_names_latex)):
         st.latex("{} : {}".format(property_names_latex[i], values[i]))
 
-    # Ensure that property_names_latex and values have the same length
-    if len(property_names_latex) != len(values):
-        st.error("The number of property names and values should be the same.")
-    else:
-        # Create a DataFrame with property names and values
-        df = pd.DataFrame({"Property Name": property_names_latex, "Value": values})
-    
-        # Display the DataFrame as a beautiful table
-        st.dataframe(df, height=1200)  # You can adjust the height as needed
+    # Display the table with custom CSS styling
+        table_style = (
+            "<style>"
+            "table {border-collapse: collapse; width: 100%;}"
+            "th, td {border: 1px solid #dddddd; text-align: left; padding: 8px;}"
+            "th {background-color: #f2f2f2;}"
+            "tr:nth-child(even) {background-color: #f2f2f2;}"
+            "</style>"
+        )
+        st.markdown(table_style, unsafe_allow_html=True)
+        st.dataframe(df, height=400)  # You can adjust the height as needed
+
 
     
     st.write("\t \t \t \t \t    Pugh's Ratio:", round(df_input_target.iloc[0, 8] / df_input_target.iloc[0, 7],3))
