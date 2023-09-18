@@ -235,15 +235,15 @@ if selected_tab == "Synergy Optimization":
         type="line",
         x0=22.16,
         x1=22.16,
-        y0=min(dopant_pred_el),
-        y1=max(dopant_pred_el),
+        y0=min(dopant_pred_hv),
+        y1=max(dopant_pred_hv),
         line=dict(color="red", width=3, dash="dash"),
     )
     
     fig.add_shape(
         type="line",
-        x0=min(dopant_pred_hv),
-        x1=max(dopant_pred_hv),
+        x0=min(dopant_pred_el),
+        x1=max(dopant_pred_el),
         y0=495.3,
         y1=495.3,
         line=dict(color="blue", width=3, dash="dash"),
