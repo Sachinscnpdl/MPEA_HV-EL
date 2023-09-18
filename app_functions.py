@@ -971,6 +971,14 @@ def weighted_ensemble(preds_array, ideal_weights,y_test,plot_path="plots\\hardne
 
 # In[1]:
 
+def fab_cluster(df):
+
+    df.Fabrication_type = df.Fabrication_type.fillna('OTHER')
+    df.Fabrication_type.replace(to_replace=["CAST"], value="CAT-A", inplace= True)
+    df.Fabrication_type.replace(to_replace=["OTHER","Unknown","WROUGHT"], value="CAT-B", inplace= True)    
+    df.Fabrication_type.replace(to_replace=["POWDER"], value="CAT-C", inplace= True) 
+    df.Fabrication_type.replace(to_replace=["ANNEAL"], value="CAT-D", inplace= True)   
+    return(df)
 
 def prediction_model(df,input_pcc,prop="Hardness (HV)", path='hardness_model_files\\'):    
     input_name = ['$\delta$', 'Δ$\chi$', 'ΔTm','Tm(K)', 'VEC', 'AN', 'K', 'B', 'ΔB', 'G', 'ΔG','ΔSmix','$\lambda$', 'ΔHmix','$\Omega$']
