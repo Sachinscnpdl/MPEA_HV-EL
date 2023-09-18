@@ -96,6 +96,15 @@ if selected_tab == "New alloy design":
     st.write(df_input_target)
 
 
+    # Define the text style for hardness and elongation
+    hardness_style = "<h2 style='color:blue; font-size:24px;'>{}</h2>".format(hardness[0])
+    elongation_style = "<h2 style='color:green; font-size:24px;'>{}</h2>".format(elongation[0])
+    
+    # Display the styled text using st.markdown
+    st.markdown(hardness_style, unsafe_allow_html=True)
+    st.markdown(elongation_style, unsafe_allow_html=True)
+    
+
     #####################################################################
     # In[15]:
     print("Tensor Predictionsin Progress")
