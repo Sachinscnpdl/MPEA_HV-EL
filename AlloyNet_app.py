@@ -31,6 +31,9 @@ from app_functions import *
 st.markdown('<h1 style="color:purple;">Optimizing Synergy Between Hardness and Ductility in MPEAs </h1>', unsafe_allow_html=True)
 # Add a dropdown to select a pre-defined formula
 
+import streamlit as st
+import pandas as pd
+
 # Create two tabs in the sidebar
 tab_options = ["New alloy design", "Synergy Optimization"]
 selected_tab = st.sidebar.radio("Select Tab", tab_options)
@@ -38,14 +41,14 @@ selected_tab = st.sidebar.radio("Select Tab", tab_options)
 # Initialize empty DataFrame to store selected formulas
 df_selected_formulas = pd.DataFrame()
 
-# Add input block for "New alloy design"
+# Check the selected tab
 if selected_tab == "New alloy design":
-    # Add a dropdown to select a pre-defined formula
-    predefined_formulas = ['CoCrNi','CoCrNiNb0.2', 'CoCrNiNb0.3', 'CoCrNiNb0.7']
-    selected_predefined_formula = st.selectbox('Select a pre-defined formula', predefined_formulas)
+    # Add a dropdown to select a pre-defined formula in the sidebar
+    predefined_formulas = ['CoCrNi', 'CoCrNiNb0.2', 'CoCrNiNb0.3', 'CoCrNiNb0.7']
+    selected_predefined_formula = st.sidebar.selectbox('Select a pre-defined formula', predefined_formulas)
 
     fabrication_type_options = ["CAST", "POWDER", "ANNEAL", "WROUGHT", "OTHER"]
-    selected_fabrication_type = st.selectbox('Select Fabrication Type:', fabrication_type_options)
+    selected_fabrication_type = st.sidebar.selectbox('Select Fabrication Type:', fabrication_type_options)
 
     # If a pre-defined formula is selected, add it to the DataFrame
     if selected_predefined_formula:
@@ -58,6 +61,9 @@ if selected_tab == "New alloy design":
     # Update the Fabrication_Type column of the last row with the selected Fabrication_type
     if selected_fabrication_type:
         df_selected_formulas.at[len(df_selected_formulas)-1, 'Fabrication_type'] = selected_fabrication_type
+
+
+
 
 ################################################################################################
 
