@@ -199,4 +199,5 @@ if selected_tab == "Synergy Optimization":
     dopant_input['results'] = dopant_pred
     st.write(dopant_pred)
     st.write(dopant_input)
+    st.pyplot(ternary)
     
