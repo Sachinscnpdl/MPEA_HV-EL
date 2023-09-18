@@ -85,8 +85,9 @@ if selected_tab == "New alloy design":
     elongation_style = "<h2 style='color:green; font-size:24px;'>{} %</h2>".format(elongation)
     
     # Display the styled text using st.markdown
-    st.markdown("<h2 style='color:blue;'>The hardness is:                   The elongation is:</h2> {}".format(hardness_style), unsafe_allow_html=True)
+    st.markdown("<h2 style='color:blue;'>The hardness is:      </h2> {}".format(hardness_style), unsafe_allow_html=True)
     st.markdown("<h2 style='color:green;'>The elongation is:</h2> {}".format(elongation_style), unsafe_allow_html=True)
+    st.markdown("<h2 style='color:blue;'>The hardness is:      </h2> {}", hardness, unsafe_allow_html=True)
 
     
     # Display other content as needed
