@@ -224,7 +224,7 @@ if selected_tab == "Synergy Optimization":
     predicted_value = np.array([10, 20, 15, 30])
     
     # Create a Scatter Plot using Plotly Express
-    fig = px.scatter(x=comp, y=predicted_value, labels={'x':'comp', 'y':'predicted_value'})
+    fig = px.scatter(x=dopant_pred_el, y=dopant_pred_hv, labels={'x':'comp', 'y':'predicted_value'})
     
     # Set the plot title
     fig.update_layout(title='Scatter Plot of comp vs. predicted_value')
