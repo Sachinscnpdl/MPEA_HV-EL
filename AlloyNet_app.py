@@ -126,6 +126,14 @@ if selected_tab == "New alloy design":
     for i in range(len(property_names_latex)):
         st.latex("{} : {}".format(property_names_latex[i], values[i]))
 
+
+     # Ensure that property_names_latex and values have the same length
+    if len(property_names_latex) != len(values):
+        st.error("The number of property names and values should be the same.")
+    else:
+        # Create a DataFrame with property names and values
+        df = pd.DataFrame({"Property Name": property_names_latex, "Value": values})
+       
     # Display the table with custom CSS styling
         table_style = (
             "<style>"
