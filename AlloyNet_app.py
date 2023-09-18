@@ -61,10 +61,10 @@ if selected_tab == "New alloy design":
 
 ################################################################################################
 
-    # Display the selected formulas
-    if not df_selected_formulas.empty:
-        st.write('Selected Formulas:')
-        st.dataframe(df_selected_formulas)
+    # # Display the selected formulas
+    # if not df_selected_formulas.empty:
+    #     st.write('Selected Formulas:')
+    #     st.dataframe(df_selected_formulas)
     
     df_mpea = df_selected_formulas
     df_mpea = featurization(df_mpea)
@@ -87,24 +87,19 @@ if selected_tab == "New alloy design":
     elongation_style = "<h2 style='color:green; font-size:24px;'>{} %</h2>".format(elongation)
     
     # Display the styled text using st.markdown
-    st.markdown("<h2 style='color:blue;'>The hardness is:</h2> {}".format(hardness_style), unsafe_allow_html=True)
+    st.markdown("<h2 style='color:blue;'>The hardness is:                   The elongation is:</h2> {}".format(hardness_style), unsafe_allow_html=True)
     st.markdown("<h2 style='color:green;'>The elongation is:</h2> {}".format(elongation_style), unsafe_allow_html=True)
 
     
     # Display other content as needed
     st.markdown("<h3 style='color:red;'>Additional Information:</h3>", unsafe_allow_html=True)
     st.write(df_input_target)
-    
-    
-
-    #####################################################################
+       
+#####################################################################
     # In[15]:
     print("Tensor Predictionsin Progress")
-    
-    
+     
 ###############################################
-
-
 
 if selected_tab == "Synergy Optimization":
     """
