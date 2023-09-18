@@ -196,6 +196,7 @@ if selected_tab == "Synergy Optimization":
     df_test = two_dopants_dataframe(base_composition = pole_labels[0], element1=pole_labels[1], element2=pole_labels[2])
     st.dataframe(df_test, height=570)
     dopant_input, dopant_pred = ternary_plot(fab_cat=fab_type, pole_labels=[ base_composition,first_dopant,second_dopant],model_of='hv', colorscale='Picnic')
-    
+    dopant_input['results'] = dopant_pred
     st.write(dopant_pred)
     st.write(dopant_input)
+    
