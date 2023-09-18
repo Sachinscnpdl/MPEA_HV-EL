@@ -100,7 +100,7 @@ if selected_tab == "New alloy design":
     import streamlit as st
 
     property_names_latex = [
-        r"Mean Atomic Radius difference ($\delta$)",
+        r"Mean Atomic Radius difference (\delta)",
         r"Electronegativity asymmetry ($\Delta \chi$)",
         r"Average Melting Temperature ($T_{m}(K)$)",
         r"Melting Temperature asymmetry ($\Delta T_m$)",
