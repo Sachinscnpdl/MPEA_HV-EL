@@ -1304,7 +1304,7 @@ def ternary_plot(fab_cat="CAT-A", pole_labels=['Al','Ti', '(CrFeNi)'],model_of='
 
     
 
-    return predicted_value
+    return df_input_target, predicted_value
     
 ##########################################################################################
 
