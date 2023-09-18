@@ -127,7 +127,7 @@ if selected_tab == "New alloy design":
         formatted_value = "{:.3f}".format(values[i])  # Format value to 4 decimal places
         st.latex("\quad {} : {}".format(property_names_latex[i], formatted_value))
 
-    st.write("Pugh's Ratio:", df_input_target[0][8]/df_input_target[0][7]
+    st.write("Pugh's Ratio:", df_input_target[0][8] / df_input_target[0][7])
 
 
        
