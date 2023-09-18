@@ -137,16 +137,20 @@ if selected_tab == "New alloy design":
         # Add an index starting from 1
         df.index = range(1, len(df) + 1)
     
-        # Define custom CSS styles for the table cells (increased font size)
+        # Define custom CSS styles for the table cells (no vertical lines, top and bottom horizontal rules)
         cell_style = (
             "<style>"
-            "table.dataframe th, table.dataframe td {font-size: 26px;}"  # Adjust font size as needed
+            "table.dataframe {border-collapse: collapse; width: 100%;}"
+            "table.dataframe th, table.dataframe td {border: none; border-bottom: 1px solid #ddd; text-align: left; padding: 8px;}"
+            "table.dataframe th {background-color: #f2f2f2;}"
+            "table.dataframe tr:nth-child(even) {background-color: #f2f2f2;}"
             "</style>"
         )
         st.markdown(cell_style, unsafe_allow_html=True)
     
         # Display the DataFrame as a beautiful table
-        st.dataframe(df, height=700)  # You can adjust the height as needed
+        st.dataframe(df, height=400)  # You can adjust the height as needed
+    
 
        
 #####################################################################
