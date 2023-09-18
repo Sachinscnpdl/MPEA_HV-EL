@@ -1285,7 +1285,41 @@ def ternary_plot(fab_cat="CAT-A", pole_labels=['Al','Ti', '(CrFeNi)'],model_of='
     #     ideal_weights=[0.3,0.3,0.2,0.3]
     #     input_pcc = ['$\delta$', 'ΔTm', 'VEC', 'ΔB', 'ΔG', 'ΔSmix', 'ΔHmix']
 
+    fig = ff.create_ternary_contour(np.array([comp,element1,element2]), predicted_value,
+                                    pole_labels=pole_labels,
+                                    interp_mode='cartesian',
+                                    ncontours=12,
+                                    colorscale=colorscale,
+                                    showscale=True,
+                                    width=500, height=400)
 
+    fig.update_ternaries(baxis_nticks=5)
+    fig.update_ternaries(aaxis_nticks=5)
+    fig.update_ternaries(caxis_nticks=5)
+
+    fig.update_layout(
+        #title=title,
+        title_font_size=20,
+        xaxis_title="X Axis Title",
+        yaxis_title="Y Axis Title",
+        legend_title="Legend Title",
+        #value_title = "a"
+        font=dict(
+            #family="Courier New, monospace",
+            size=24,
+            color="black"
+        )
+    )
+    fig.update_ternaries(sum=1, baxis_min=baxis_min);
+
+    fig.update_layout(coloraxis_colorbar=dict(yanchor="top", y=0.05, x=1, 
+                  ticks="outside", ticksuffix=ticksuffix))
+
+    # Axis labels. (See below for corner labels.)
+    fontsize = 28
+    offset = 0.08
+
+    fig.show()
 
     df_prop, df_input_target = properties_calculation(df)
     
@@ -1304,7 +1338,7 @@ def ternary_plot(fab_cat="CAT-A", pole_labels=['Al','Ti', '(CrFeNi)'],model_of='
 
     
 
-    return df_input_target, predicted_value
+    return fig, df_input_target, predicted_value
     
 ##########################################################################################
 
@@ -1313,24 +1347,8 @@ def two_dopants_dataframe(base_composition = "(AlN)", element1="Mg", element2="H
     import pandas as pd
     import numpy as np
 
-    x_array = np.array([0, 0, 0, 0, 0, 0, 0, 0,0, 
-                        0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8,  
-                        0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1,
-                        0.2, 0.3, 0.4, 0.5, 0.6, 0.7,
-                        0.2, 0.2, 0.2, 0.2, 0.2,
-                        0.3, 0.4, 0.5, 0.6,
-                        0.3, 0.3, 0.3,
-                        0.4, 0.5,
-                       0.4])
-    y_array = np.array([0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 
-                        0, 0, 0, 0, 0, 0, 0,0,
-                        0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7,
-                        0.1, 0.1, 0.1, 0.1, 0.1, 0.1,
-                        0.2, 0.3, 0.4, 0.5, 0.6,
-                        0.2, 0.2, 0.2, 0.2,
-                        0.3, 0.4, 0.5,
-                        0.3, 0.3,
-                       0.4])
+    x_array = np.array([0,0,0,0,0,0,0,0,0,0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.2,0.2,0.2,0.2,0.2,0.2,0.3,0.4,0.5,0.6,0.7,0.3,0.3,0.3,0.3,0.4,0.5,0.6,0.4,0.4,0.5])
+    y_array = np.array([0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,0,0,0,0,0,0,0,0,0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.2,0.2,0.2,0.2,0.2,0.3,0.4,0.5,0.6,0.3,0.3,0.3,0.4,0.5,0.4])
 
     compositions = []
     for x, y in zip(x_array, y_array):
