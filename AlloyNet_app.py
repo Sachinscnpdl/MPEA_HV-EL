@@ -167,7 +167,7 @@ if selected_tab == "New alloy design":
     
         # Display the DataFrame as a beautiful table
         st.dataframe(df, height=570)  # You can adjust the height as needed
-        st.write("Pugh's Ratio:", round(df_input_target[0][8] / df_input_target[0][7],2))
+        st.write("Pugh's Ratio:", round(df_input_target.iloc[0, 8] / df_input_target.iloc[0, 7],2))
 
     
        
