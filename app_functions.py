@@ -1248,7 +1248,7 @@ def prediction_model_new(df, predict='hardness'):
 # In[ ]:
 
 
-def ternary_plot(fab_cat="CAT-A", pole_labels=['Al','Ti', '(CrFeNi)'],model_of='hv',colorscale='Jet'):
+def ternary_plot(fab_cat="CAT-A", pole_labels=['Al','Ti', '(CrFeNi)'],model_of='hardness',colorscale='Jet'):
     import numpy as np
     import plotly.figure_factory as ff
 
@@ -1271,25 +1271,10 @@ def ternary_plot(fab_cat="CAT-A", pole_labels=['Al','Ti', '(CrFeNi)'],model_of='
     df["Fabrication_type"]=fab_cat
     baxis_min=0.1
     df = featurization(df)
-    #colorscale='Jet'
-    # if model_of=="hv":
-    #     model_path='hardness_model_files/'
-    #     ticksuffix=""
-    #     #colorscale='Blackbody'
-    #     baxis_min=0.1
-    #     input_pcc = ['$\delta$', 'Δ$\chi$', 'ΔTm', 'VEC', 'ΔB', 'ΔG', '$\lambda$', 'ΔHmix']
-    #     ideal_weights = [0.3,0.3,0.1,0.3]
-    # else:
-    #     model_path='elongation_model_files/'
-    #     ticksuffix="%"
-    #     #colorscale="Jet"
-    #     baxis_min=0.1
-    #     ideal_weights=[0.3,0.3,0.2,0.3]
-    #     input_pcc = ['$\delta$', 'ΔTm', 'VEC', 'ΔB', 'ΔG', 'ΔSmix', 'ΔHmix']
     
     comp = 1 - element1 - element2
     df_prop, df_input_target = properties_calculation(df)
-    predicted_value =prediction_model_new(df_prop, predict='hardness')
+    predicted_value =prediction_model_new(df_prop, predict=model_of)
     df_result_ternary = pd.DataFrame(predicted_value)
 
 
@@ -1307,7 +1292,7 @@ def ternary_plot(fab_cat="CAT-A", pole_labels=['Al','Ti', '(CrFeNi)'],model_of='
     fig.update_ternaries(caxis_nticks=5)
 
     fig.update_layout(
-        #title=title,
+        title=model_of,
         title_font_size=20,
         xaxis_title="X Axis Title",
         yaxis_title="Y Axis Title",
