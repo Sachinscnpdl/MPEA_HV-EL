@@ -63,7 +63,7 @@ if selected_tab == "New alloy design":
         df_selected_formulas.at[len(df_selected_formulas)-1, 'Fabrication_type'] = selected_fabrication_type
 
 ################################################################################################
-    
+    from io import StringIO
     df_mpea = df_selected_formulas
     df_mpea = featurization(df_mpea)
     
@@ -150,7 +150,29 @@ if selected_tab == "New alloy design":
     
     st.write("\t \t \t \t \t    Pugh's Ratio:", round(df_input_target.iloc[0, 8] / df_input_target.iloc[0, 7],3))
 
-
+        # Ensure that property_names_latex and values have the same length
+    if len(property_names_latex) != len(values):
+        st.error("The number of property names and values should be the same.")
+    else:
+        # Create a DataFrame with property names and values
+        df = pd.DataFrame({"Property Name": property_names_latex, "Value": values})
+    
+        # Add an index starting from 1
+        df.index = range(1, len(df) + 1)
+    
+        # Display the table with custom CSS styling
+        table_style = (
+            "<style>"
+            "table.dataframe {border-collapse: collapse; width: 100%;}"
+            "table.dataframe th, table.dataframe td {border: 1px solid #dddddd; text-align: left; padding: 8px;}"
+            "table.dataframe th {background-color: #f2f2f2;}"
+            "table.dataframe tr:nth-child(even) {background-color: #f2f2f2;}"
+            "</style>"
+        )
+        st.markdown(table_style, unsafe_allow_html=True)
+    
+        # Display the DataFrame as a beautiful table
+        st.dataframe(df, height=400)  # You can adjust the height as needed
        
 #####################################################################
 
