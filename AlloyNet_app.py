@@ -133,7 +133,10 @@ if selected_tab == "New alloy design":
             f'<span style="font-family: Times New Roman; color: red;"> : {formatted_value}</span>',
             unsafe_allow_html=True
         )
-
+    # Display the property names and their corresponding values in LaTeX formatting
+    for i in range(len(property_names_latex)):
+        st.latex("{} : {:.4f}".format(property_names_latex[i], values[i]))
+        
     st.write("\t \t \t \t  Pugh's Ratio:", round(df_input_target.iloc[0, 8] / df_input_target.iloc[0, 7],3))
 
 
