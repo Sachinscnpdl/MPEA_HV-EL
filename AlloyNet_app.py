@@ -174,7 +174,7 @@ if selected_tab == "New alloy design":
 
 if selected_tab == "Synergy Optimization":
     
-    base_material_options = ["ZrHfNb", "VNbTa"]
+    base_material_options = ["(ZrHfNb)", "(VNbTa)"]
     base_composition = st.sidebar.selectbox("Base Piezo-material", base_material_options)
 
     fabrication_type_options = ["CAST", "POWDER", "ANNEAL", "WROUGHT", "OTHER"]
