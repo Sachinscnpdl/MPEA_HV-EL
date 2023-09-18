@@ -109,113 +109,12 @@ if selected_tab == "New alloy design":
     
     """
     
-    st.write("Crystal Structure is :", subcategories[0][0])
+    st.write("The hardness is :", hardness)
     #####################################################################
     # In[15]:
     print("Tensor Predictionsin Progress")
     
-    my_tensor = np.array(y_tensor[0])
     
-    ####################################################################
-    """
-    ## The Piezo Tensor is
-    
-    """
-    
-    # Display LaTeX matrix using st.latex()
-    st.latex(latex_tensor_visual(my_tensor))
-    #####################################################################
-    
-    # Piezo Tensor Representations
-    if subcategories[0][0]=='cubic':
-        image = "plots/CAT_A.png"
-    elif subcategories[0][0]=='tetra42m':
-        image = "plots/CAT_A.png"    
-    elif subcategories[0][0]=='ortho222':
-        image = "plots/CAT_A.png"
-        
-    elif subcategories[0][0]=='orthomm2':
-        image = "plots/orthomm2.png"
-    elif subcategories[0][0]=='hextetramm':
-        image = "plots/hextetra.png"
-    
-    caption = "Piezoelectric Tensor Visualization"
-    size = (300, 200)  # Custom size in pixels
-    position = "right"  # Options: "left", "centered", "right"
-    
-    st.image(image,width=200, caption=caption)
-    
-    # st.image(image, caption="Image Caption", width=10, use_column_width=True)
-    
-    #####################################################################
-    
-    
-    ######################################################################################################
-    
-    import subprocess
-    
-    # Define the path to the file
-    file_path = "~/Sachin Research/Piezoelectric_Research/Piezoelectric_codes/Codes_May 1/Piezoelectric Tensors/"
-    
-    # Create a NumPy array
-    # my_array = np.array([1, 2, 3, 4, 5])
-    
-    # Save the NumPy array as a tensor file
-    tensor_path = 'my_tensor.npy'
-    np.save(tensor_path, my_tensor)
-    
-    # Add a download button to the Streamlit app
-    if st.button("Download NumPy Array as Tensor"):
-        with open(tensor_path, "rb") as file:
-            contents = file.read()
-            st.download_button(label="Click here to download", data=contents, file_name="my_array.npy")
-            
-    #####################################################################################################
-    # Crystal Rotations
-    from crystal_rotation import *
-    
-    # Take an input from the user
-    crystal_rotations = st.sidebar.checkbox("Perform Crystal rotation for rotated tensor")
-    if crystal_rotations:
-       # Create input fields in a compact and aligned layout
-        cols = st.sidebar.columns([1, 1, 1, 1])
-        cols[0].write('<p style="margin-bottom: -0.2em;">Euler Angle:</p>', unsafe_allow_html=True)  
-        cols[1].write("Psi ")
-        cols[2].write("Theta")
-        cols[3].write("Phi")
-        psi = cols[1].text_input("", value="30")
-        theta = cols[2].text_input("", value="90")
-        phi = cols[3].text_input("", value="150")
-    
-        # Perform tensor rotation with crystal rotations
-        tensor_prime = tensor_rotation(my_tensor, psi=float(psi), theta=float(theta), phi=float(phi))
-    
-    #     tensor_rotation_plot(my_tensor, phi_vals = 30,order=[1,1])
-    
-        # Display LaTeX matrix using st.latex()
-        st.latex(latex_tensor_visual(tensor_prime))
-        
-        phi = st.sidebar.slider("Enter angle phi:", min_value=0.0, max_value=360.0, value=0.0, step=10.0)
-    
-        block = st.sidebar.columns([1, 1, 1])
-        block[0].write('<p style="margin-bottom: -0.2em;">Show plot of Rotated tensor:</p>', unsafe_allow_html=True)
-        block[1].write("Row element", unsafe_allow_html=True)
-        block[2].write("Column element", unsafe_allow_html=True)
-    
-        i = block[1].text_input("Row", value="1", key="row_element")
-        j = block[2].text_input("Column", value="1", key="column_element")
-    
-        i = int(i)
-        j = int(j)
-    
-        crystal_plot, max_e, max_theta, max_psi, phi_vals = tensor_rotation_plot(my_tensor, phi = phi, order=[i-1,j-1])
-        st.plotly_chart(crystal_plot)
-        
-        rot_optimization = tensor_rotation_optimization(my_tensor, order=[i-1,j-1])
-        st.pyplot(rot_optimization)
-    
-
-####################################################
 ###############################################
 
 
