@@ -55,14 +55,14 @@ if selected_tab == "New alloy design":
         st.dataframe(df_selected_formulas)
     
     df_mpea = df_selected_formulas
-    df = featurization(df)
+    df_mpea = featurization(df_mpea)
     
-    df = df_element_number(df)
-    df = data_elimination(df)
-    df= fab_cluster(df)
-    df, df_input_target = properties_calculation(df)
+    df_mpea = df_element_number(df_mpea)
+    df_mpea = data_elimination(df_mpea)
+    df_mpea = fab_cluster(df_mpea)
+    df_mpea, df_input_target = properties_calculation(df_mpea)
     print("Properties Calculated")
-    hardness = prediction_model_new(df, predict='hardness')
+    hardness = prediction_model_new(df_mpea, predict='hardness')
 
 
 
