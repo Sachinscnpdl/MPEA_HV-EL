@@ -67,11 +67,15 @@ if selected_tab == "New alloy design":
 
     # If a pre-defined formula is selected, add it to the DataFrame
     if selected_predefined_formula:
-        df_selected_formulas = pd.concat([df_selected_formulas, pd.DataFrame({'S.N': [len(df_selected_formulas) + 1], 'Alloys': [selected_predefined_formula]})], ignore_index=True)
+        # Check if the DataFrame is empty
+        if df_selected_formulas.empty:
+            df_selected_formulas = pd.DataFrame({'S.N': [1], 'Alloys': [selected_predefined_formula], 'Fabrication_Type': [None]})
+        else:
+            df_selected_formulas.at[len(df_selected_formulas)-1, 'Alloys'] = selected_predefined_formula
 
-    # Update the DataFrame df_selected_formulas with the selected Fabrication_type
+    # Update the Fabrication_Type column of the last row with the selected Fabrication_type
     if selected_fabrication_type:
-        df_selected_formulas.loc[len(df_selected_formulas)] = [len(df_selected_formulas) + 1, selected_fabrication_type]
+        df_selected_formulas.at[len(df_selected_formulas)-1, 'Fabrication_Type'] = selected_fabrication_type
 
 
 
