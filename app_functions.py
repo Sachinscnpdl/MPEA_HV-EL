@@ -1246,18 +1246,18 @@ def ternary_plot(df,element1,element2,fab_cat="CAT-A", pole_labels=['Al','Ti', '
     df = df.set_axis(['Alloys'], axis=1, inplace=False)
     element1=np.array([0,0,0,0,0,0,0,0,0,0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.2,0.2,0.2,0.2,0.2,0.2,0.3,0.4,0.5,0.6,0.7,0.3,0.3,0.3,0.3,0.4,0.5,0.6,0.4,0.4,0.5])
     element2 = np.array([0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,0,0,0,0,0,0,0,0,0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.2,0.2,0.2,0.2,0.2,0.3,0.4,0.5,0.6,0.3,0.3,0.3,0.4,0.5,0.4])
-    
+    df = two_dopants_dataframe(base_composition = pole_labels[0], element1=pole_labels[1], element2=pole_labels[2])
     df["Fabrication_type"]=fab_cat
     
     df = featurization(df)
     #colorscale='Jet'
     if model_of=="hv":
-        model_path='hardness_model_files\\'
+        model_path='hardness_model_files/'
         ticksuffix=""
         #colorscale='Blackbody'
         baxis_min=0.1
     else:
-        model_path='elongation_model_files\\'
+        model_path='elongation_model_files/'
         ticksuffix="%"
         #colorscale="Jet"
         baxis_min=0.1
@@ -1313,12 +1313,41 @@ def ternary_plot(df,element1,element2,fab_cat="CAT-A", pole_labels=['Al','Ti', '
     fontsize = 28
     offset = 0.08
 
-    plot_fig_loc = ('plots\\predictions\\Test_ternary_plot.pdf')
 
-    #plt.savefig('plots\\predictions\\Test_ternary_plot.pdf')
     fig.show()
 
     return predicted_value
     
 ##########################################################################################
 
+
+def two_dopants_dataframe(base_composition = "(AlN)", element1="Mg", element2="Hg"):
+    import pandas as pd
+    import numpy as np
+
+    x_array = np.array([0, 0, 0, 0, 0, 0, 0, 0,0, 
+                        0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8,  
+                        0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1,
+                        0.2, 0.3, 0.4, 0.5, 0.6, 0.7,
+                        0.2, 0.2, 0.2, 0.2, 0.2,
+                        0.3, 0.4, 0.5, 0.6,
+                        0.3, 0.3, 0.3,
+                        0.4, 0.5,
+                       0.4])
+    y_array = np.array([0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 
+                        0, 0, 0, 0, 0, 0, 0,0,
+                        0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7,
+                        0.1, 0.1, 0.1, 0.1, 0.1, 0.1,
+                        0.2, 0.3, 0.4, 0.5, 0.6,
+                        0.2, 0.2, 0.2, 0.2,
+                        0.3, 0.4, 0.5,
+                        0.3, 0.3,
+                       0.4])
+
+    compositions = []
+    for x, y in zip(x_array, y_array):
+        composition = element1 + str(x) + element2 + str(y) + base_composition #"Al"+str(1-x-y)+"N"
+        compositions.append(composition)
+
+    df_composition = pd.DataFrame(compositions, columns=["formula_pretty"])
+    return df_composition
