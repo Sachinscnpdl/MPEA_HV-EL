@@ -161,14 +161,14 @@ if selected_tab == "New alloy design":
             "<style>"
             "table.dataframe {border-collapse: collapse; width: 100%;}"
             "table.dataframe th, table.dataframe td {border: none; border-bottom: 1px solid #ddd; text-align: left; padding: 8px;}"
-            "table.dataframe th {background-color: #f2f2f2;}"
+            "table.dataframe th {background-color: #f2f2f1;}"
             "table.dataframe tr:nth-child(even) {background-color: #f2f2f2;}"
             "</style>"
         )
         st.markdown(cell_style, unsafe_allow_html=True)
     
         # Display the DataFrame as a beautiful table
-        st.dataframe(df, height=550)  # You can adjust the height as needed
+        st.dataframe(df, height=560)  # You can adjust the height as needed
     
         
 
