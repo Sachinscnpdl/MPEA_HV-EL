@@ -28,7 +28,7 @@ from app_functions import *
 #st.header(':blue[Optimizing Synergy Between Hardness and Ductility in MPEAs] ')
 #st.header('Toolkit for Exploratory Design and Discovery of Piezoelectric Materials ')
 # Using HTML formatting to add color to the font in st.header
-st.markdown('<h1 style="color:purple;">Optimizing Synergy Between Hardness and Ductility in MPEAs </h1>', unsafe_allow_html=True)
+st.markdown('<h1 style="color:purple;">Mechanical Properties Prediction of MPEAs </h1>', unsafe_allow_html=True)
 # Add a dropdown to select a pre-defined formula
 
 import streamlit as st
@@ -62,15 +62,7 @@ if selected_tab == "New alloy design":
     if selected_fabrication_type:
         df_selected_formulas.at[len(df_selected_formulas)-1, 'Fabrication_type'] = selected_fabrication_type
 
-
-
-
 ################################################################################################
-
-    # # Display the selected formulas
-    # if not df_selected_formulas.empty:
-    #     st.write('Selected Formulas:')
-    #     st.dataframe(df_selected_formulas)
     
     df_mpea = df_selected_formulas
     df_mpea = featurization(df_mpea)
@@ -79,15 +71,15 @@ if selected_tab == "New alloy design":
     df_mpea = data_elimination(df_mpea)
     df_mpea = fab_cluster(df_mpea)
     df_mpea, df_input_target = properties_calculation(df_mpea)
-    print("Properties Calculated")
+
     hardness = prediction_model_new(df_mpea, predict='hardness')
     elongation = prediction_model_new(df_mpea, predict='elongation')
     hardness = round(hardness[0],2)
     elongation = round(elongation[0],2)
     
-    """ 
-    # Prediction Results!
-    """
+    # """ 
+    # # Prediction Results!
+    # """
     # Define the text style for hardness and elongation with values and units
     hardness_style = "<h2 style='color:blue; font-size:24px;'>{} HV</h2>".format(hardness)
     elongation_style = "<h2 style='color:green; font-size:24px;'>{} %</h2>".format(elongation)
