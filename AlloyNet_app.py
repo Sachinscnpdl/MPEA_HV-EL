@@ -24,7 +24,6 @@ import matplotlib.pyplot as plt
 from app_functions import *
 # from prediction_ML import *
 #############################################################################
-#Header for the website
 # Header for the Website
 #st.header(':blue[Optimizing Synergy Between Hardness and Ductility in MPEAs] ')
 #st.header('Toolkit for Exploratory Design and Discovery of Piezoelectric Materials ')
@@ -33,16 +32,16 @@ st.markdown('<h1 style="color:purple;">Optimizing Synergy Between Hardness and D
 # Add a dropdown to select a pre-defined formula
 
 # Create two tabs in the sidebar
-tab_options = ["New piezoelectric design", "Rapid Piezo-performance design"]
+tab_options = ["New alloy design", "Synergy Optimization"]
 selected_tab = st.sidebar.radio("Select Tab", tab_options)
 
 # Initialize empty DataFrame to store selected formulas
 df_selected_formulas = pd.DataFrame()
 
-# Add input block for "New piezoelectric design"
-if selected_tab == "New piezoelectric design":
+# Add input block for "New alloy design"
+if selected_tab == "New alloy design":
     # Add a dropdown to select a pre-defined formula
-    predefined_formulas = ['Ba0.85Ca0.15Ti0.92Zr0.07Hf0.01O3', 'Ba0.84Ca0.15Sr0.01Ti0.90Zr0.10O3', 'BaTiO3']
+    predefined_formulas = ['CoCrNi','CoCrNiNb0.2', 'CoCrNiNb0.3', 'CoCrNiNb0.7']
     selected_predefined_formula = st.selectbox('Select a pre-defined formula', predefined_formulas)
 
     # If a pre-defined formula is selected, add it to the DataFrame
@@ -58,8 +57,13 @@ if selected_tab == "New piezoelectric design":
     
     df_piezo = df_selected_formulas
 
-# if selected_tab == "New piezoelectric design":
+# if selected_tab == "New alloy design":
     cat, subcategories, y_tensor = prediction_model(df_piezo, cat = 'B', point='')
+
+
+
+
+
     
     """
     
@@ -178,7 +182,7 @@ if selected_tab == "New piezoelectric design":
 
 
 
-if selected_tab == "Rapid Piezo-performance design":
+if selected_tab == "Synergy Optimization":
     """
     
     # Welcome to PiezoTensorNet - Piezoelectric performance finetuning!
