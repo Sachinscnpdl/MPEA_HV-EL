@@ -185,6 +185,14 @@ if selected_tab == "Synergy Optimization":
 
     second_dopants_options = ["Ta", "Mg", "Ti", "Zr", "Hg"]
     second_dopant = st.sidebar.selectbox("Second Dopants", second_dopants_options)
+
+
+
+    colorset_1 = ['Picnic', 'Viridis', 'Rainbow', 'Blackbody', 'Jet', 'Portland', 'Cividis', 'Electric']
+    hv_colorset = st.sidebar.selectbox('Select Fabrication Type:', colorset_1)
+
+    colorset_2 = ['Jet', 'Picnic', 'Viridis', 'Rainbow', 'Blackbody',  'Portland', 'Cividis', 'Electric']
+    el_colorset = st.sidebar.selectbox('Select Fabrication Type:', colorset_1)
     
     # Perform actions or display content based on the selected options
     # st.write("Selected Base Piezo-material:", base_composition)
@@ -195,8 +203,8 @@ if selected_tab == "Synergy Optimization":
     
     df_test = two_dopants_dataframe(base_composition = pole_labels[0], element1=pole_labels[1], element2=pole_labels[2])
     # st.dataframe(df_test, height=570)
-    ternary_hv, dopant_input, dopant_pred_hv = ternary_plot(fab_cat=fab_type, pole_labels=[ base_composition,first_dopant,second_dopant],model_of='hardness', colorscale='Picnic')
-    ternary_el, dopant_input, dopant_pred_el = ternary_plot(fab_cat=fab_type, pole_labels=[ base_composition,first_dopant,second_dopant],model_of='elongation', colorscale='Jet')
+    ternary_hv, dopant_input, dopant_pred_hv = ternary_plot(fab_cat=fab_type, pole_labels=[ base_composition,first_dopant,second_dopant],model_of='hardness', colorscale=hv_colorset)
+    ternary_el, dopant_input, dopant_pred_el = ternary_plot(fab_cat=fab_type, pole_labels=[ base_composition,first_dopant,second_dopant],model_of='elongation', colorscale=el_colorset)
 
     dopant_input['Alloys'] = df_test
     dopant_input['Hardness'] = dopant_pred_hv
