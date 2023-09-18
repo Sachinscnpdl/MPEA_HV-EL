@@ -1243,11 +1243,23 @@ def prediction_model_new(df, predict='hardness'):
 
 
 def ternary_plot(fab_cat="CAT-A", pole_labels=['Al','Ti', '(CrFeNi)'],model_of='hv',colorscale='Jet'):
+    import numpy as np
+    
     df = two_dopants_dataframe(base_composition = pole_labels[0], element1=pole_labels[1], element2=pole_labels[2])
     df = df.set_axis(['Alloys'], axis=1, inplace=False)
     element1=np.array([0,0,0,0,0,0,0,0,0,0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.2,0.2,0.2,0.2,0.2,0.2,0.3,0.4,0.5,0.6,0.7,0.3,0.3,0.3,0.3,0.4,0.5,0.6,0.4,0.4,0.5])
     element2 = np.array([0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,0,0,0,0,0,0,0,0,0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.2,0.2,0.2,0.2,0.2,0.3,0.4,0.5,0.6,0.3,0.3,0.3,0.4,0.5,0.4])
-    
+    if fab_cat=="CAST":
+        fab_cat="CAT-A"
+    elif fab_cat=="WROUGHT":
+        fab_cat="CAT-B"
+    elif fab_cat=="OTHER":
+        fab_cat="CAT-B"
+    elif fab_cat=="POWDER":
+        fab_cat="CAT-C"
+    elif fab_cat=="ANNEAL":
+        fab_cat="CAT-D"
+
     df["Fabrication_type"]=fab_cat
     
     df = featurization(df)
