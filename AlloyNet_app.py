@@ -94,6 +94,7 @@ if selected_tab == "New alloy design":
     df_mpea, df_input_target = properties_calculation(df_mpea)
     print("Properties Calculated")
     hardness = prediction_model_new(df_mpea, predict='hardness')
+    elongation = prediction_model_new(df_mpea, predict='elongation')
 
 
 # Add a dropdown to select Fabrication_type
@@ -110,6 +111,7 @@ if selected_tab == "New alloy design":
     """
     
     st.write("The hardness is :", hardness)
+    st.write("The elongation is :", elongation)
     #####################################################################
     # In[15]:
     print("Tensor Predictionsin Progress")
