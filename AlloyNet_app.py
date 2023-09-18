@@ -236,7 +236,7 @@ if selected_tab == "Synergy Optimization":
         x0=22.16,
         x1=22.16,
         y0=min(dopant_pred_hv),
-        y1=max(dopant_pred_hv),
+        y1=600,
         line=dict(color="red", width=3, dash="dash"),
     )
     
@@ -246,7 +246,7 @@ if selected_tab == "Synergy Optimization":
         x1=max(dopant_pred_el),
         y0=495.3,
         y1=495.3,
-        line=dict(color="blue", width=3, dash="dash"),
+        line=dict(color="red", width=3, dash="dash"),
     )
 
 
