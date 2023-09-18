@@ -26,10 +26,10 @@ from app_functions import *
 #############################################################################
 #Header for the website
 # Header for the Website
-#st.header(':blue[Toolkit for Exploratory Design and Discovery of Piezoelectric Materials] ')
+#st.header(':blue[Optimizing Synergy Between Hardness and Ductility in MPEAs] ')
 #st.header('Toolkit for Exploratory Design and Discovery of Piezoelectric Materials ')
 # Using HTML formatting to add color to the font in st.header
-st.markdown('<h1 style="color:blue;">Toolkit for Exploratory Design and Discovery of Piezoelectric Materials </h1>', unsafe_allow_html=True)
+st.markdown('<h1 style="color:purple;">Optimizing Synergy Between Hardness and Ductility in MPEAs </h1>', unsafe_allow_html=True)
 # Add a dropdown to select a pre-defined formula
 
 # Create two tabs in the sidebar
