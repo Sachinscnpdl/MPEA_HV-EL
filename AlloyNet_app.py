@@ -127,7 +127,7 @@ if selected_tab == "New alloy design":
         st.latex("{} : {:.4g}".format(property_names_latex[i], values[i]))
 
         
-    st.write("\t \t \t \t \ Pugh's Ratio:", round(df_input_target.iloc[0, 8] / df_input_target.iloc[0, 7],3))
+    st.write("\t \t \t \t \t    Pugh's Ratio:", round(df_input_target.iloc[0, 8] / df_input_target.iloc[0, 7],3))
 
 
        
