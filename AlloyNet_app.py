@@ -174,13 +174,13 @@ if selected_tab == "New alloy design":
 
 if selected_tab == "Synergy Optimization":
     
-    base_material_options = ["BaTiO3", "AlN"]
+    base_material_options = ["ZrHfNb", "VNbTa"]
     base_composition = st.sidebar.selectbox("Base Piezo-material", base_material_options)
 
     fabrication_type_options = ["CAST", "POWDER", "ANNEAL", "WROUGHT", "OTHER"]
     fab_type = st.sidebar.selectbox('Select Fabrication Type:', fabrication_type_options)
 
-    first_dopants_options = ["Mo", "Mg", "Ti", "Zr", "Hg"]
+    first_dopants_options = ["Cr", "W", "Ti", "Zr", "Hg"]
     first_dopant = st.sidebar.selectbox("First Dopants", first_dopants_options)
 
     second_dopants_options = ["Mo", "Mg", "Ti", "Zr", "Hg"]
