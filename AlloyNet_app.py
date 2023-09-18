@@ -116,7 +116,7 @@ if selected_tab == "New alloy design":
         r"\text{Geometrical Parameter } (\lambda) ",
         r"\text{Enthalpy of Mixing asymmetry } (\Delta H_{mix}) ",
         r"\text{Dimensionless parameter } (\Omega) ",
-     
+        r"\text{Dimensionless parameter } (\Omega) ",
     ]
     
     # Create a list of values (replace this with your actual values)
