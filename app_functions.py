@@ -1242,9 +1242,11 @@ def prediction_model_new(df, predict='hardness'):
 # In[ ]:
 
 
-def ternary_plot(df,input_pcc,ideal_weights,element1,element2,fab_cat="CAT-A", pole_labels=['Al','Ti', '(CrFeNi)'],model_of='hv',colorscale='Jet'):
+def ternary_plot(df,element1,element2,fab_cat="CAT-A", pole_labels=['Al','Ti', '(CrFeNi)'],model_of='hv',colorscale='Jet'):
     df = df.set_axis(['Alloys'], axis=1, inplace=False)
-
+    element1=np.array([0,0,0,0,0,0,0,0,0,0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.2,0.2,0.2,0.2,0.2,0.2,0.3,0.4,0.5,0.6,0.7,0.3,0.3,0.3,0.3,0.4,0.5,0.6,0.4,0.4,0.5])
+    element2 = np.array([0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,0,0,0,0,0,0,0,0,0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.2,0.2,0.2,0.2,0.2,0.3,0.4,0.5,0.6,0.3,0.3,0.3,0.4,0.5,0.4])
+    
     df["Fabrication_type"]=fab_cat
     
     df = featurization(df)
