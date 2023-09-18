@@ -69,13 +69,13 @@ if selected_tab == "New alloy design":
     if selected_predefined_formula:
         # Check if the DataFrame is empty
         if df_selected_formulas.empty:
-            df_selected_formulas = pd.DataFrame({'S.N': [1], 'Alloys': [selected_predefined_formula], 'Fabrication_Type': [None]})
+            df_selected_formulas = pd.DataFrame({'S.N': [1], 'Alloys': [selected_predefined_formula], 'Fabrication_type': [None]})
         else:
             df_selected_formulas.at[len(df_selected_formulas)-1, 'Alloys'] = selected_predefined_formula
 
     # Update the Fabrication_Type column of the last row with the selected Fabrication_type
     if selected_fabrication_type:
-        df_selected_formulas.at[len(df_selected_formulas)-1, 'Fabrication_Type'] = selected_fabrication_type
+        df_selected_formulas.at[len(df_selected_formulas)-1, 'Fabrication_type'] = selected_fabrication_type
 
 
 
