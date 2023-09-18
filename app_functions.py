@@ -1288,7 +1288,7 @@ def ternary_plot(fab_cat="CAT-A", pole_labels=['Al','Ti', '(CrFeNi)'],model_of='
     #     input_pcc = ['$\delta$', 'ΔTm', 'VEC', 'ΔB', 'ΔG', 'ΔSmix', 'ΔHmix']
     
     comp = 1 - element1 - element2
-
+    df_prop, df_input_target = properties_calculation(df)
     predicted_value =prediction_model_new(df_prop, predict='hardness')
     df_result_ternary = pd.DataFrame(predicted_value)
 
@@ -1330,7 +1330,7 @@ def ternary_plot(fab_cat="CAT-A", pole_labels=['Al','Ti', '(CrFeNi)'],model_of='
 
     fig.show()
 
-    df_prop, df_input_target = properties_calculation(df)
+    
     
     #print(df_plot.head())
 
