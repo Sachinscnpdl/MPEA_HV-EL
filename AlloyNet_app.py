@@ -81,12 +81,16 @@ if selected_tab == "New alloy design":
     # # Prediction Results!
     # """
     # Define the text style for hardness and elongation with values and units
+
+    
+    # Define the text style for hardness and elongation with values and units
     hardness_style = "<h2 style='color:green; font-size:24px;'>{} HV</h2>".format(hardness)
     elongation_style = "<h2 style='color:green; font-size:24px;'>{} %</h2>".format(elongation)
     
-    # Display the styled text using st.markdown
-    st.markdown("<h2 style='color:blue;; font-size:24px'>The hardness is:      </h2> {}".format(hardness_style), unsafe_allow_html=True)
-    st.markdown("<h2 style='color:blue;; font-size:24px'>The elongation is:</h2> {}".format(elongation_style), unsafe_allow_html=True)
+    # Display the styled text using st.markdown on the same line
+    st.markdown("<h2 style='color:blue; font-size:24px; display: inline;'>The hardness is:</h2> {}".format(hardness_style), unsafe_allow_html=True)
+    st.markdown("<h2 style='color:blue; font-size:24px; display: inline;'>The elongation is:</h2> {}".format(elongation_style), unsafe_allow_html=True)
+
 
 
     
