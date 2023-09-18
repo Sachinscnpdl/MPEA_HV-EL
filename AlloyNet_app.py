@@ -123,7 +123,7 @@ if selected_tab == "New alloy design":
     
     # Display the property names with left alignment and values rounded to 4 decimal places
     for i in range(len(property_names_latex)):
-        formatted_value = "{:.4f}".format(values[i])  # Format value to 4 decimal places
+        formatted_value = "{:.3g}".format(values[i])  # Format value to 4 decimal places
         st.latex(r"\noindent {} : {}".format(property_names_latex[i], formatted_value))
 
 
