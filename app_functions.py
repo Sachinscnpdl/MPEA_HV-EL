@@ -1250,6 +1250,8 @@ def prediction_model_new(df, predict='hardness'):
 
 def ternary_plot(fab_cat="CAT-A", pole_labels=['Al','Ti', '(CrFeNi)'],model_of='hv',colorscale='Jet'):
     import numpy as np
+    import plotly.figure_factory as ff
+
     
     df = two_dopants_dataframe(base_composition = pole_labels[0], element1=pole_labels[1], element2=pole_labels[2])
     df = df.set_axis(['Alloys'], axis=1, inplace=False)
