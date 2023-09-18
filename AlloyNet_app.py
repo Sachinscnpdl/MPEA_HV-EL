@@ -220,15 +220,19 @@ if selected_tab == "Synergy Optimization":
     import plotly.express as px
     
     # Sample data (replace with your actual data)
-    comp = np.array([0.2, 0.4, 0.6, 0.8])
-    predicted_value = np.array([10, 20, 15, 30])
-    
+
     # Create a Scatter Plot using Plotly Express
-    fig = px.scatter(x=dopant_pred_el, y=dopant_pred_hv, labels={'x':'comp', 'y':'predicted_value'})
+    fig = px.scatter(x=dopant_pred_el, y=dopant_pred_hv, labels={'x':'Elongation', 'y':'Hardness'})
+    
+    # Create custom hover text that includes the index value
+    hover_text = [f"Index: {i}<br>Elongation: {x}<br>Hardness: {y}" for i, (x, y) in enumerate(zip(dopant_pred_el, dopant_pred_hv))]
+    
+    # Assign the custom hover text to the figure
+    fig.update_traces(text=hover_text, hoverinfo="text")
     
     # Set the plot title
     fig.update_layout(title='Scatter Plot of comp vs. predicted_value')
-    
+
     # Display the plot in Streamlit
     st.plotly_chart(fig)
 
