@@ -135,8 +135,6 @@ if selected_tab == "New alloy design":
         r"Enthalpy of Mixing asymmetry  (Δ H) ",
         r"Dimensionless parameter  (Ω) ",
     ]
-
-    
     
     # Create a list of values (replace this with your actual values)
     values = df_input_target.iloc[0, 1:16].tolist()
@@ -170,19 +168,12 @@ if selected_tab == "New alloy design":
         # Display the DataFrame as a beautiful table
         st.dataframe(df, height=570)  # You can adjust the height as needed
     
-        
-
        
 #####################################################################
-
      
 ###############################################
 
 if selected_tab == "Synergy Optimization":
-    """
-    
-    # Welcome to PiezoTensorNet - Piezoelectric performance finetuning!
-    """
     
     base_material_options = ["BaTiO3", "AlN"]
     base_composition = st.sidebar.selectbox("Base Piezo-material", base_material_options)
