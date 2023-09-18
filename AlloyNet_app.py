@@ -215,4 +215,22 @@ if selected_tab == "Synergy Optimization":
     st.plotly_chart(ternary_hv)
     st.plotly_chart(ternary_el)
 
+
+    import numpy as np
+    import plotly.express as px
+    
+    # Sample data (replace with your actual data)
+    comp = np.array([0.2, 0.4, 0.6, 0.8])
+    predicted_value = np.array([10, 20, 15, 30])
+    
+    # Create a Scatter Plot using Plotly Express
+    fig = px.scatter(x=comp, y=predicted_value, labels={'x':'comp', 'y':'predicted_value'})
+    
+    # Set the plot title
+    fig.update_layout(title='Scatter Plot of comp vs. predicted_value')
+    
+    # Display the plot in Streamlit
+    st.plotly_chart(fig)
+
+    
     st.write(dopant_input)
