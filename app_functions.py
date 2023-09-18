@@ -1270,20 +1270,20 @@ def ternary_plot(fab_cat="CAT-A", pole_labels=['Al','Ti', '(CrFeNi)'],model_of='
     
     df = featurization(df)
     #colorscale='Jet'
-    if model_of=="hv":
-        model_path='hardness_model_files/'
-        ticksuffix=""
-        #colorscale='Blackbody'
-        baxis_min=0.1
-        input_pcc = ['$\delta$', 'Δ$\chi$', 'ΔTm', 'VEC', 'ΔB', 'ΔG', '$\lambda$', 'ΔHmix']
-        ideal_weights = [0.3,0.3,0.1,0.3]
-    else:
-        model_path='elongation_model_files/'
-        ticksuffix="%"
-        #colorscale="Jet"
-        baxis_min=0.1
-        ideal_weights=[0.3,0.3,0.2,0.3]
-        input_pcc = ['$\delta$', 'ΔTm', 'VEC', 'ΔB', 'ΔG', 'ΔSmix', 'ΔHmix']
+    # if model_of=="hv":
+    #     model_path='hardness_model_files/'
+    #     ticksuffix=""
+    #     #colorscale='Blackbody'
+    #     baxis_min=0.1
+    #     input_pcc = ['$\delta$', 'Δ$\chi$', 'ΔTm', 'VEC', 'ΔB', 'ΔG', '$\lambda$', 'ΔHmix']
+    #     ideal_weights = [0.3,0.3,0.1,0.3]
+    # else:
+    #     model_path='elongation_model_files/'
+    #     ticksuffix="%"
+    #     #colorscale="Jet"
+    #     baxis_min=0.1
+    #     ideal_weights=[0.3,0.3,0.2,0.3]
+    #     input_pcc = ['$\delta$', 'ΔTm', 'VEC', 'ΔB', 'ΔG', 'ΔSmix', 'ΔHmix']
 
 
 
