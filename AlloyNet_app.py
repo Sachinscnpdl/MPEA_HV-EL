@@ -52,8 +52,7 @@ def add_logo():
         """,
         unsafe_allow_html=True,
     )
-import streamlit as st
-import pandas as pd
+st.image("plots/logo.png",width=200)
 add_logo()
 # Create two tabs in the sidebar
 tab_options = ["New alloy design", "HV-EL Synergy Optimization"]
