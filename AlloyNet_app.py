@@ -166,8 +166,8 @@ if selected_tab == "Synergy Optimization":
     second_dopants_options = ["W", "Ta", "Mg", "Ti", "Zr", "Hg"]
     second_dopant = st.sidebar.selectbox("Second Dopants", second_dopants_options)
 
-    elongation_test_synergy = ["Default", "Tensile", "Compression"]
-    el_test_synergy = st.sidebar.selectbox('Test for Ductility:', elongation_test_synergy)
+    # elongation_test_synergy = ["Default", "Tensile", "Compression"]
+    # el_test_synergy = st.sidebar.selectbox('Test for Ductility:', elongation_test_synergy)
 
     colorset_1 = ['Picnic', 'Viridis', 'Rainbow', 'Blackbody', 'Jet', 'Portland', 'Cividis', 'Electric']
     hv_colorset = st.sidebar.selectbox('Select Colorset for HV:', colorset_1)
