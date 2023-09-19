@@ -35,7 +35,7 @@ import streamlit as st
 import pandas as pd
 
 # Create two tabs in the sidebar
-tab_options = ["New alloy design", "Synergy Optimization"]
+tab_options = ["New alloy design", "HV-EL Synergy Optimization"]
 selected_tab = st.sidebar.radio("Select Tab", tab_options)
 
 # Initialize empty DataFrame to store selected formulas
@@ -175,7 +175,7 @@ if selected_tab == "New alloy design":
 if selected_tab == "Synergy Optimization":
     
     base_material_options = ["(VNbTa)", "(ZrHfNb)", "(MoNbTa)", "(CrFeCoNi)", "(CoCrNi)"]
-    base_composition = st.sidebar.selectbox("Base Piezo-material", base_material_options)
+    base_composition = st.sidebar.selectbox("Base MPEA", base_material_options)
 
     fabrication_type_options = ["CAST", "POWDER", "ANNEAL", "WROUGHT", "OTHER"]
     fab_type = st.sidebar.selectbox('Select Fabrication Type:', fabrication_type_options)
