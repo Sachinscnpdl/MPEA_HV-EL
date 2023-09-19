@@ -73,8 +73,8 @@ if selected_tab == "New alloy design":
     df_mpea = fab_cluster(df_mpea)
     df_mpea, df_input_target = properties_calculation(df_mpea)
 
-    hardness = prediction_model_new(df_mpea, predict='hardness'el_test=el_test)
-    elongation = prediction_model_new(df_mpea, predict='elongation',el_test=el_test)
+    hardness = prediction_model_new(df_mpea, predict='hardness', el_test=el_test)
+    elongation = prediction_model_new(df_mpea, predict='elongation', el_test=el_test)
     hardness = round(hardness[0],2)
     elongation = round(elongation[0],2)
 
