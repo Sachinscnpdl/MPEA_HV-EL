@@ -153,7 +153,6 @@ if selected_tab == "New alloy design":
 ###############################################
 
 if selected_tab == "Synergy Optimization":
-    
     base_material_options = ["(VNbTa)", "(ZrHfNb)", "(MoNbTa)", "(CrFeCoNi)", "(CoCrNi)"]
     base_composition = st.sidebar.selectbox("Base MPEA", base_material_options)
 
@@ -176,8 +175,7 @@ if selected_tab == "Synergy Optimization":
     el_colorset = st.sidebar.selectbox('Select Colorset for EL:', colorset_2)
     
     pole_labels=[ base_composition,first_dopant,second_dopant]
-
-        
+     
     # st.dataframe(df_test, height=570)
     ternary_hv, dopant_input,df_alloy, dopant_pred_hv = ternary_plot(fab_cat=fab_type, pole_labels=[ base_composition,first_dopant,second_dopant],model_of='hardness', colorscale=hv_colorset,el_test=el_test)
     ternary_el, dopant_input,df_alloy, dopant_pred_el = ternary_plot(fab_cat=fab_type, pole_labels=[ base_composition,first_dopant,second_dopant],model_of='elongation', colorscale=el_colorset,el_test=el_test)
@@ -220,7 +218,7 @@ if selected_tab == "Synergy Optimization":
     fig.add_shape(
         type="line",
         x0=min(dopant_pred_el),
-        x1=max(dopant_pred_el),
+        x1=32,
         y0=495.3,
         y1=495.3,
         line=dict(color="red", width=3, dash="dash"),
