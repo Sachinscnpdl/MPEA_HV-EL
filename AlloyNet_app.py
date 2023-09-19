@@ -43,13 +43,7 @@ df_selected_formulas = pd.DataFrame()
 
 # Check the selected tab
 if selected_tab == "New alloy design":
-    # Add a dropdown to select a pre-defined formula in the sidebar
-    predefined_formulas = ['CoCrNi', 'CoCrNiNb0.2', 'CoCrNiNb0.3', 'CoCrNiNb0.7']
-    selected_predefined_formula = st.sidebar.selectbox('Select a pre-defined formula', predefined_formulas)
-
-    fabrication_type_options = ["CAST", "POWDER", "ANNEAL", "WROUGHT", "OTHER"]
-    selected_fabrication_type = st.sidebar.selectbox('Select Fabrication Type:', fabrication_type_options)
-
+    
     # If a pre-defined formula is selected, add it to the DataFrame
     if selected_predefined_formula:
         # Check if the DataFrame is empty
@@ -95,7 +89,7 @@ if selected_tab == "New alloy design":
 
     
     # Display other content as needed
-    st.markdown("<h3 style='color:red;'>Composition-based feature vector</h3>", unsafe_allow_html=True)
+    st.markdown("<h3 style='color:red;'>Composition-based feature vector:</h3>", unsafe_allow_html=True)
     # st.write(df_input_target)
 
 
