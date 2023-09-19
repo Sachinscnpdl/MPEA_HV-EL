@@ -205,7 +205,7 @@ if selected_tab == "Synergy Optimization":
     ternary_hv, dopant_input,df_alloy, dopant_pred_hv = ternary_plot(fab_cat=fab_type, pole_labels=[ base_composition,first_dopant,second_dopant],model_of='hardness', colorscale=hv_colorset)
     ternary_el, dopant_input,df_alloy, dopant_pred_el = ternary_plot(fab_cat=fab_type, pole_labels=[ base_composition,first_dopant,second_dopant],model_of='elongation', colorscale=el_colorset)
 
-    dopant_input['Alloys'] = df_test
+    dopant_input['Alloys'] = df_alloy
     dopant_input['Hardness'] = dopant_pred_hv
     dopant_input['Elongation'] = dopant_pred_el
     # st.write(dopant_pred)
