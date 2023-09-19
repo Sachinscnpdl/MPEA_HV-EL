@@ -1248,7 +1248,7 @@ def prediction_model_new(df, predict='hardness'):
 # In[ ]:
 
 
-def ternary_plot(fab_cat="CAT-A", pole_labels=['Al','Ti', '(CrFeNi)'],model_of='hardness',colorscale='Jet'):
+def ternary_plot(fab_cat="CAT-A", pole_labels=['(CrFeNi)', 'Al','Ti'],model_of='hardness',colorscale='Jet'):
     import numpy as np
     import plotly.figure_factory as ff
 
