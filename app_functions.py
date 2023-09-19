@@ -986,7 +986,7 @@ def fab_cluster(df):
     df.Fabrication_type.replace(to_replace=["ANNEAL"], value="CAT-D", inplace= True)   
     return(df)
 
-def prediction_model(df,input_pcc,prop="Hardness (HV)", path='hardness_model_files\\'):    
+def prediction_model(df,input_pcc,prop="Hardness (HV)", path='hardness_model_files\\', el_test=='Tensile'):    
     input_name = ['$\delta$', 'Δ$\chi$', 'ΔTm','Tm(K)', 'VEC', 'AN', 'K', 'B', 'ΔB', 'G', 'ΔG','ΔSmix','$\lambda$', 'ΔHmix','$\Omega$']
     datasets = df.iloc[:,[-15,-14,-13,-12,-11,-10, -9, -8, -7, -6,-5, -4, -3, -2, -1]]
 
@@ -1139,11 +1139,17 @@ def prediction_model_new(df, predict='hardness'):
         input_pcc = ['$\delta$', 'Δ$\chi$', 'ΔTm', 'VEC', 'ΔB', 'ΔG', '$\lambda$', 'ΔHmix']
         path='hardness_model_files/'
         ideal_weights = [0.3,0.3,0.1,0.3]
+        el_factor=1
     elif predict =='elongation':
         ideal_weights=[0.3,0.3,0.2,0.3]
         input_pcc = ['$\delta$', 'ΔTm', 'VEC', 'ΔB', 'ΔG', 'ΔSmix', 'ΔHmix']
         path='elongation_model_files/'
-
+        if el_test=='Tensile':
+            el_factor=0.905
+        elif el_test=='Compression':
+            el_factor=1.0948
+        else:
+            el_factor=1
 
         
     input_name = ['$\delta$', 'Δ$\chi$', 'ΔTm','Tm(K)', 'VEC', 'AN', 'K', 'B', 'ΔB', 'G', 'ΔG','ΔSmix','$\lambda$', 'ΔHmix','$\Omega$']
@@ -1241,14 +1247,14 @@ def prediction_model_new(df, predict='hardness'):
     #Use tensordot to sum the products of all elements over specified axes.
     ideal_weighted_preds = np.tensordot(preds_array, ideal_weights, axes=((0),(0)))
     ideal_weighted_ensemble_prediction = np.mean(ideal_weighted_preds, axis=1)
-    
+    ideal_weighted_ensemble_prediction = ideal_weighted_ensemble_prediction*el_factor
     return ideal_weighted_ensemble_prediction
 #########################################################################################################################################
 
 # In[ ]:
 
 
-def ternary_plot(fab_cat="CAT-A", pole_labels=['(CrFeNi)', 'Al','Ti'],model_of='hardness',colorscale='Jet'):
+def ternary_plot(fab_cat="CAT-A", pole_labels=['(CrFeNi)', 'Al','Ti'],model_of='hardness',colorscale='Jet', el_test=='Tensile'):
     import numpy as np
     import plotly.figure_factory as ff
 
@@ -1274,7 +1280,8 @@ def ternary_plot(fab_cat="CAT-A", pole_labels=['(CrFeNi)', 'Al','Ti'],model_of='
     
     comp = 1 - element1 - element2
     df_prop, df_input_target = properties_calculation(df)
-    predicted_value =prediction_model_new(df_prop, predict=model_of)
+    predicted_value =prediction_model_new(df_prop, predict=model_of,el_test=el_test)
+    
     df_result_ternary = pd.DataFrame(predicted_value)
 
 
