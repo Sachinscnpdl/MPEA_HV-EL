@@ -215,7 +215,7 @@ if selected_tab == "Synergy Optimization":
     st.plotly_chart(ternary_el)
     ################# Add design chart ############################
    
-    st.image("plots/synergy.png",width=200)
+    st.image("plots/synergy.png",width=400)
     #######################################################
     import numpy as np
     import plotly.express as px
@@ -254,7 +254,7 @@ if selected_tab == "Synergy Optimization":
 
     
     # Set the plot title
-    fig.update_layout(title='Scatter Plot of comp vs. predicted_value')
+    fig.update_layout(title='Hardness-Elongation Synergy Optimization')
 
     # Display the plot in Streamlit
     st.plotly_chart(fig)
