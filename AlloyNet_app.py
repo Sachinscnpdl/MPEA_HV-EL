@@ -82,7 +82,9 @@ if selected_tab == "New alloy design":
     # """
     # Define the text style for hardness and elongation with values and units
 
-    
+    # Display the selected options
+    st.write("Multi-principal element alloy:", selected_predefined_formula)
+    st.write("Fabrication Type:", selected_fabrication_type)
     # Define the text style for hardness and elongation with values and units
     hardness_style = "<h2 style='color:green; font-size:24px;'>{} HV</h2>".format(hardness)
     elongation_style = "<h2 style='color:green; font-size:24px;'>{} %</h2>".format(elongation)
