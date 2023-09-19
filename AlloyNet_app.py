@@ -73,14 +73,11 @@ if selected_tab == "New alloy design":
     df_mpea = fab_cluster(df_mpea)
     df_mpea, df_input_target = properties_calculation(df_mpea)
 
-    hardness = prediction_model_new(df_mpea, predict='hardness')
-    elongation = prediction_model_new(df_mpea, predict='elongation')
+    hardness = prediction_model_new(df_mpea, predict='hardness'el_test=el_test)
+    elongation = prediction_model_new(df_mpea, predict='elongation',el_test=el_test)
     hardness = round(hardness[0],2)
     elongation = round(elongation[0],2)
-    if el_test=='Tensile':
-        elongation = round(0.905*elongation, 2)
-    elif el_test=='Compression':
-        elongation = round(1.0948*elongation, 2)
+
     
     # """ 
     # # Prediction Results!
@@ -180,16 +177,10 @@ if selected_tab == "Synergy Optimization":
     
     pole_labels=[ base_composition,first_dopant,second_dopant]
 
-    if el_test=='Tensile':
-        el_factor=0.905
-    elif el_test=='Compression':
-        el_factor=1.0948
-    else:
-        el_factor=1
         
     # st.dataframe(df_test, height=570)
-    ternary_hv, dopant_input,df_alloy, dopant_pred_hv = ternary_plot(fab_cat=fab_type, pole_labels=[ base_composition,first_dopant,second_dopant],model_of='hardness', colorscale=hv_colorset,el_factor=el_factor)
-    ternary_el, dopant_input,df_alloy, dopant_pred_el = ternary_plot(fab_cat=fab_type, pole_labels=[ base_composition,first_dopant,second_dopant],model_of='elongation', colorscale=el_colorset,el_factor=el_factor)
+    ternary_hv, dopant_input,df_alloy, dopant_pred_hv = ternary_plot(fab_cat=fab_type, pole_labels=[ base_composition,first_dopant,second_dopant],model_of='hardness', colorscale=hv_colorset,el_test=el_test)
+    ternary_el, dopant_input,df_alloy, dopant_pred_el = ternary_plot(fab_cat=fab_type, pole_labels=[ base_composition,first_dopant,second_dopant],model_of='elongation', colorscale=el_colorset,el_test=el_test)
 
     dopant_input['Alloys'] = df_alloy
     dopant_input['Hardness'] = dopant_pred_hv
