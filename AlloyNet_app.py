@@ -47,6 +47,9 @@ if selected_tab == "New alloy design":
 
     fabrication_type_options = ["CAST", "POWDER", "ANNEAL", "WROUGHT", "OTHER"]
     selected_fabrication_type = st.sidebar.selectbox('Select Fabrication Type:', fabrication_type_options)
+
+    elongation_test_options = ["Default", "Tensile", "Compression"]
+    el_test = st.sidebar.selectbox('Test for Ductility:', elongation_test_options)
     
     # If a pre-defined formula is selected, add it to the DataFrame
     if selected_predefined_formula:
@@ -74,58 +77,34 @@ if selected_tab == "New alloy design":
     elongation = prediction_model_new(df_mpea, predict='elongation')
     hardness = round(hardness[0],2)
     elongation = round(elongation[0],2)
+    if el_test=='Tensile':
+        elongation = round(0.905*elongation, 2)
+    elif el_test=='Compression':
+        elongation = round(1.0948*elongation, 2)
     
     # """ 
     # # Prediction Results!
     # """
     # Define the text style for hardness and elongation with values and units
-    # Display the selected options
-    # Define the text style for hardness and elongation with values and units
+
     alloy_style = "<h2 style='color:green; font-size:24px;'>{} </h2>".format(selected_predefined_formula)
     manufacturing_style = "<h2 style='color:green; font-size:24px;'>{} </h2>".format(selected_fabrication_type)
     # Display the styled text using st.markdown on the same line
     st.markdown("<h2 style='color:blue; font-size:24px; display: inline;'>Multi-principal Element Alloy:</h2> {}".format(alloy_style), unsafe_allow_html=True)
     st.markdown("<h2 style='color:blue; font-size:24px; display: inline;'>Fabrication Type:</h2> {}".format(manufacturing_style), unsafe_allow_html=True)
-    #st.write("Multi-principal element alloy:", selected_predefined_formula)
-    #st.write("Fabrication Type:", selected_fabrication_type)
-    # Display the selected options
-    #st.write("Multi-principal element alloy:", selected_predefined_formula)
-    #st.write("Fabrication Type:", selected_fabrication_type)
+
     # Define the text style for hardness and elongation with values and units
     hardness_style = "<h2 style='color:green; font-size:24px;'>{} HV</h2>".format(hardness)
     elongation_style = "<h2 style='color:green; font-size:24px;'>{} %</h2>".format(elongation)
     
     # Display the styled text using st.markdown on the same line
     st.markdown("<h2 style='color:blue; font-size:24px; display: inline;'>Hardness:</h2> {}".format(hardness_style), unsafe_allow_html=True)
-    st.markdown("<h2 style='color:blue; font-size:24px; display: inline;'>Ducitility:</h2> {}".format(elongation_style), unsafe_allow_html=True)
-
-
-
+    st.markdown("<h2 style='color:blue; font-size:24px; display: inline;'>Ductility:</h2> {}".format(elongation_style), unsafe_allow_html=True)
 
     
     # Display other content as needed
     st.markdown("<h3 style='color:red;'>Composition-based feature vector:</h3>", unsafe_allow_html=True)
     # st.write(df_input_target)
-
-
-    # Define the property names in LaTeX format
-    # property_names_latex = [
-    #     r"\text{Mean Atomic Radius difference } (\delta) ",
-    #     r"\text{Electronegativity asymmetry } (\Delta \chi ",
-    #     r"\text{Melting Temperature asymmetry } (\Delta T_m) ",
-    #     r"\text{Average Melting Temperature } (T_{m}(K)) ",
-    #     r"\text{Valence Electron Concentration } (VEC) ",
-    #     r"\text{Average Atomic Number } (AN) ",
-    #     r"\text{Thermal Conductivity } (K) ",
-    #     r"\text{Average Bulk Modulus } (B) ",
-    #     r"\text{Bulk Modulus Asymmetry } (\Delta B) ",
-    #     r"\text{Average Shear Modulus } (G) ",
-    #     r"\text{Shear Modulus Asymmetry } (\Delta G) ",
-    #     r"\text{Entropy of Mixing asymmetry } (\Delta S_{mix}) ",
-    #     r"\text{Geometrical Parameter } (\lambda) ",
-    #     r"\text{Enthalpy of Mixing asymmetry } (\Delta H_{mix}) ",
-    #     r"\text{Dimensionless parameter } (\Omega) ",
-    # ]
 
     property_names_latex = [
         r"Mean Atomic Radius difference (δ) ",
@@ -147,11 +126,6 @@ if selected_tab == "New alloy design":
     
     # Create a list of values (replace this with your actual values)
     values = df_input_target.iloc[0, 1:16].tolist()
-   
-    # # Display the property names and their corresponding values in LaTeX formatting
-    # for i in range(len(property_names_latex)):
-    #     st.latex("{} : {}".format(property_names_latex[i], values[i]))
-
     
     # Ensure that property_names_latex and values have the same length
     if len(property_names_latex) != len(values):
@@ -195,7 +169,8 @@ if selected_tab == "Synergy Optimization":
     second_dopants_options = ["W", "Ta", "Mg", "Ti", "Zr", "Hg"]
     second_dopant = st.sidebar.selectbox("Second Dopants", second_dopants_options)
 
-
+    elongation_test_options = ["Default", "Tensile", "Compression"]
+    el_test = st.sidebar.selectbox('Test for Ductility:', elongation_test_options)
 
     colorset_1 = ['Picnic', 'Viridis', 'Rainbow', 'Blackbody', 'Jet', 'Portland', 'Cividis', 'Electric']
     hv_colorset = st.sidebar.selectbox('Select Colorset for HV:', colorset_1)
@@ -203,22 +178,23 @@ if selected_tab == "Synergy Optimization":
     colorset_2 = ['Jet', 'Picnic', 'Viridis', 'Rainbow', 'Blackbody',  'Portland', 'Cividis', 'Electric']
     el_colorset = st.sidebar.selectbox('Select Colorset for EL:', colorset_2)
     
-    # Perform actions or display content based on the selected options
-    # st.write("Selected Base Piezo-material:", base_composition)
-    # st.write("Selected First Dopant:", first_dopant)
-    # st.write("Selected Second Dopant:", second_dopant)
-    # Additional code for this tab
     pole_labels=[ base_composition,first_dopant,second_dopant]
-    
+
+    if el_test=='Tensile':
+        el_factor=0.905
+    elif el_test=='Compression':
+        el_factor=1.0948
+    else:
+        el_factor=1
+        
     # st.dataframe(df_test, height=570)
-    ternary_hv, dopant_input,df_alloy, dopant_pred_hv = ternary_plot(fab_cat=fab_type, pole_labels=[ base_composition,first_dopant,second_dopant],model_of='hardness', colorscale=hv_colorset)
-    ternary_el, dopant_input,df_alloy, dopant_pred_el = ternary_plot(fab_cat=fab_type, pole_labels=[ base_composition,first_dopant,second_dopant],model_of='elongation', colorscale=el_colorset)
+    ternary_hv, dopant_input,df_alloy, dopant_pred_hv = ternary_plot(fab_cat=fab_type, pole_labels=[ base_composition,first_dopant,second_dopant],model_of='hardness', colorscale=hv_colorset,el_factor=el_factor)
+    ternary_el, dopant_input,df_alloy, dopant_pred_el = ternary_plot(fab_cat=fab_type, pole_labels=[ base_composition,first_dopant,second_dopant],model_of='elongation', colorscale=el_colorset,el_factor=el_factor)
 
     dopant_input['Alloys'] = df_alloy
     dopant_input['Hardness'] = dopant_pred_hv
     dopant_input['Elongation'] = dopant_pred_el
     # st.write(dopant_pred)
-    
     
     st.plotly_chart(ternary_hv)
     st.plotly_chart(ternary_el)
@@ -258,9 +234,6 @@ if selected_tab == "Synergy Optimization":
         y1=495.3,
         line=dict(color="red", width=3, dash="dash"),
     )
-
-
-
     
     # Set the plot title
     fig.update_layout(title='Hardness-Elongation Synergy Optimization')
@@ -268,5 +241,4 @@ if selected_tab == "Synergy Optimization":
     # Display the plot in Streamlit
     st.plotly_chart(fig)
 
-    
     st.write(dopant_input)
