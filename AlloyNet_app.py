@@ -54,7 +54,7 @@ def add_logo():
     )
 import streamlit as st
 import pandas as pd
-
+add_logo()
 # Create two tabs in the sidebar
 tab_options = ["New alloy design", "HV-EL Synergy Optimization"]
 selected_tab = st.sidebar.radio("Select Tab", tab_options)
