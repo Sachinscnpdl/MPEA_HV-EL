@@ -28,7 +28,7 @@ from app_functions import *
 #st.header(':blue[Optimizing Synergy Between Hardness and Ductility in MPEAs] ')
 #st.header('Toolkit for Exploratory Design and Discovery of Piezoelectric Materials ')
 # Using HTML formatting to add color to the font in st.header
-st.image("plots/logo.png",width=200)
+st.image("plots/logo.png",width=150)
 st.markdown('<h1 style="color:purple;">AlloyManufacturingNet </h1>', unsafe_allow_html=True)
 # Add a dropdown to select a pre-defined formula
 
