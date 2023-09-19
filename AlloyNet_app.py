@@ -153,7 +153,7 @@ if selected_tab == "New alloy design":
 ###############################################
 
 if selected_tab == "Synergy Optimization":
-    st.image("plots/synergy.png",width=600)
+
     base_material_options = ["(VNbTa)", "(ZrHfNb)", "(MoNbTa)", "(CrFeCoNi)", "(CoCrNi)"]
     base_composition = st.sidebar.selectbox("Base MPEA", base_material_options)
 
