@@ -986,7 +986,7 @@ def fab_cluster(df):
     df.Fabrication_type.replace(to_replace=["ANNEAL"], value="CAT-D", inplace= True)   
     return(df)
 
-def prediction_model(df,input_pcc,prop="Hardness (HV)", path='hardness_model_files\\', el_test=='Tensile'):    
+def prediction_model(df,input_pcc,prop="Hardness (HV)", path='hardness_model_files\\', el_test='Tensile'):    
     input_name = ['$\delta$', 'Δ$\chi$', 'ΔTm','Tm(K)', 'VEC', 'AN', 'K', 'B', 'ΔB', 'G', 'ΔG','ΔSmix','$\lambda$', 'ΔHmix','$\Omega$']
     datasets = df.iloc[:,[-15,-14,-13,-12,-11,-10, -9, -8, -7, -6,-5, -4, -3, -2, -1]]
 
@@ -1254,7 +1254,7 @@ def prediction_model_new(df, predict='hardness'):
 # In[ ]:
 
 
-def ternary_plot(fab_cat="CAT-A", pole_labels=['(CrFeNi)', 'Al','Ti'],model_of='hardness',colorscale='Jet', el_test=='Tensile'):
+def ternary_plot(fab_cat="CAT-A", pole_labels=['(CrFeNi)', 'Al','Ti'],model_of='hardness',colorscale='Jet', el_test='Tensile'):
     import numpy as np
     import plotly.figure_factory as ff
 
