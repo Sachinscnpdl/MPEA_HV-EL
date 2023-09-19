@@ -102,10 +102,18 @@ if selected_tab == "New alloy design":
     # # Prediction Results!
     # """
     # Define the text style for hardness and elongation with values and units
-
     # Display the selected options
-    st.write("Multi-principal element alloy:", selected_predefined_formula)
-    st.write("Fabrication Type:", selected_fabrication_type)
+    # Define the text style for hardness and elongation with values and units
+    alloy_style = "<h2 style='color:green; font-size:24px;'>{} </h2>".format(selected_predefined_formula)
+    manufacturing_style = "<h2 style='color:green; font-size:24px;'>{} </h2>".format(selected_fabrication_type)
+    # Display the styled text using st.markdown on the same line
+    st.markdown("<h2 style='color:blue; font-size:24px; display: inline;'>Multi-principal element alloy:</h2> {}".format(alloy_style), unsafe_allow_html=True)
+    st.markdown("<h2 style='color:blue; font-size:24px; display: inline;'>Fabrication Type:</h2> {}".format(manufacturing_style), unsafe_allow_html=True)
+    #st.write("Multi-principal element alloy:", selected_predefined_formula)
+    #st.write("Fabrication Type:", selected_fabrication_type)
+    # Display the selected options
+    #st.write("Multi-principal element alloy:", selected_predefined_formula)
+    #st.write("Fabrication Type:", selected_fabrication_type)
     # Define the text style for hardness and elongation with values and units
     hardness_style = "<h2 style='color:green; font-size:24px;'>{} HV</h2>".format(hardness)
     elongation_style = "<h2 style='color:green; font-size:24px;'>{} %</h2>".format(elongation)
