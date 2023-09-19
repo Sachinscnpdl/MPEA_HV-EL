@@ -1253,8 +1253,8 @@ def ternary_plot(fab_cat="CAT-A", pole_labels=['(CrFeNi)', 'Al','Ti'],model_of='
     import plotly.figure_factory as ff
 
     
-    df = two_dopants_dataframe(base_composition = pole_labels[0], element1=pole_labels[1], element2=pole_labels[2])
-    df = df.set_axis(['Alloys'], axis=1, inplace=False)
+    df_alloy = two_dopants_dataframe(base_composition = pole_labels[0], element1=pole_labels[1], element2=pole_labels[2])
+    df = df_alloy.set_axis(['Alloys'], axis=1, inplace=False)
     element1=np.array([0,0,0,0,0,0,0,0,0,0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.2,0.2,0.2,0.2,0.2,0.2,0.3,0.4,0.5,0.6,0.7,0.3,0.3,0.3,0.3,0.4,0.5,0.6,0.4,0.4,0.5])
     element2 = np.array([0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,0,0,0,0,0,0,0,0,0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.2,0.2,0.2,0.2,0.2,0.3,0.4,0.5,0.6,0.3,0.3,0.3,0.4,0.5,0.4])
     if fab_cat=="CAST":
@@ -1331,7 +1331,7 @@ def ternary_plot(fab_cat="CAT-A", pole_labels=['(CrFeNi)', 'Al','Ti'],model_of='
 
     
 
-    return fig, df_input_target, predicted_value
+    return fig, df_input_target,df_alloy, predicted_value
     
 ##########################################################################################
 
