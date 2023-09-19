@@ -856,16 +856,10 @@ def r2_plot(model,input_datasets,target_datasets,name,model_name,plot_path="plot
     listOf_Yticks = np.arange(0, 1400, 200)
     plt.yticks(listOf_Yticks)
     plt.xticks(listOf_Yticks)
-    
-    
-    
+  
     ax.yaxis.set_minor_locator(tck.AutoMinorLocator(2))
 
-
     test_r2.figure.savefig('r2_hardness_'+str(name)+'.png',dpi=1200, bbox_inches='tight')
-
-
-# In[ ]:
 
 
 def ensemble_model(models, test_datasets,y_test):    
@@ -888,7 +882,6 @@ def ensemble_model(models, test_datasets,y_test):
     r2_mean = r2_score(y_test,mean_preds)
     print("Average:",r2_mean )
 
-
     # Weight calculations
     df = pd.DataFrame([])
 
@@ -906,10 +899,6 @@ def ensemble_model(models, test_datasets,y_test):
     max_r2_row = df.iloc[df['acc'].idxmax()]
     print("Max $R^2$ of ", max_r2_row[0], " obained with w1=", max_r2_row[1]," w2=", max_r2_row[2], " w3=", max_r2_row[3], " and w4=", max_r2_row[4])  
     return(preds_array)
-
-
-# In[ ]:
-
 
 def weighted_ensemble(preds_array, ideal_weights,y_test,plot_path="plots\\hardness\\", plot_title="Hardness Ensemble Model",limit_value1=1200,limit_value2=1050,value_gap=200):    
     import sklearn.metrics
@@ -1133,7 +1122,7 @@ import matplotlib.pyplot as plt
 ef= ElementFraction()
 stc = StrToComposition()
 #########################################################################################################
-def prediction_model_new(df, predict='hardness'): 
+def prediction_model_new(df, predict='hardness', el_test='Default'): 
     # For hardness
     if predict=='hardness':
         input_pcc = ['$\delta$', 'Δ$\chi$', 'ΔTm', 'VEC', 'ΔB', 'ΔG', '$\lambda$', 'ΔHmix']
