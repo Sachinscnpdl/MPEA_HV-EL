@@ -247,3 +247,5 @@ st.markdown(
     st.plotly_chart(fig)
 
     st.write(dopant_input)
+
+st.write(" NOTE: The elongation model is trained with the datasets characterized with the experimental parameters : cylindrical (compression test specimens) and rectangular geometries (tensile test specimens ), specimen dimension in the magnitude of several mm, strain rate in the range 1-10 X 10-4 s-1 and, loading time of 10-15 s.")
