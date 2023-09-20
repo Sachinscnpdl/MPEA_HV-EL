@@ -215,6 +215,21 @@ if selected_tab == "HV-EL Synergy Optimization":
         y1=600,
         line=dict(color="red", width=3, dash="dash"),
     )
+
+st.markdown(
+    """
+    <style>
+    .red-text {
+        color: red;
+        font-weight: bold;
+    }
+    </style>
+    <div class="red-text">
+    This is a disclaimer with red highlighting.
+    </div>
+    """
+)
+
     
     fig.add_shape(
         type="line",
