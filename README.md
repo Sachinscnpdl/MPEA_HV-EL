@@ -1,4 +1,5 @@
 # MPEA_HV-EL
+The codes used for the work AlloyManufacturingNet for discovery and design of hardness-elongation synergy in multi-principal element alloys. The work mainly includes application of Machine Learning/ AI in the Hardness-Elongation feature optimization of MPEAs by data processing and analysis
 ## Notebook files (.ipynb)
  1. "common_functions.ipynb": notebook file consisting all the common codes from elongation and hardness training, prediction and probablistic model
  2. "Hardness_Train_model.ipynb" and "Elongation_Train_Model.ipynb": codes for training hardness and elongation models. Calls function from #1.
