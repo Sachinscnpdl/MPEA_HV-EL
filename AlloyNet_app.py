@@ -240,7 +240,12 @@ if selected_tab == "HV-EL Synergy Optimization":
 # st.write(" NOTE: The elongation model is trained with the datasets characterized with the experimental parameters : cylindrical (compression test specimens) and rectangular geometries (tensile test specimens ), specimen dimension in the magnitude of several mm, strain rate in the range 1-10 X e-4 /s and, loading time of 10-15 s.")
 # st.write("LIMITATION: This software app is validated only for ductile and highly ductile MPEAs. Not recommended for use in materials with ductility less than 5 % .")
 
-st.markdown('<h1 style="color:purple;">How to Cite AlloyManufacturingNet </h1>', unsafe_allow_html=True)
+cite_style = "<h2 style='color:blue; font-size:18px;'>{} </h2>".format()
+howto_style = "<h2 style='color:red; font-size:20px;'>{} </h2>".format()
+# Display the styled text using st.markdown on the same line
+
+st.markdown("<h2 style='color:blue; font-size:24px; display: inline;'>How to Cite AlloyManufacturingNet:</h2> {}".format(howto_style), unsafe_allow_html=True)
+
 # st.write("How to Cite AlloyManufacturingNet ")
 st.write("If you use AlloyManufacturingNet in your work, please cite: "
          "S. Poudel et al., AlloyManufacturingNet for discovery and design "
