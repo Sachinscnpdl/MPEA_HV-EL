@@ -240,6 +240,7 @@ if selected_tab == "HV-EL Synergy Optimization":
 st.write(" NOTE: The elongation model is trained with the datasets characterized with the experimental parameters : cylindrical (compression test specimens) and rectangular geometries (tensile test specimens ), specimen dimension in the magnitude of several mm, strain rate in the range 1-10 X e-4 /s and, loading time of 10-15 s.")
 st.write("LIMITATION: This software app is validated only for ductile and highly ductile MPEAs. Not recommended for use in materials with ductility less than 5 % .")
 
-st.write("How to Cite ")
-st.write("... ")
+st.write("How to Cite AlloyManufacturingNet ")
+st.write("If you use AlloyManufacturingNet in your work, please cite: S. Poudel et al., AlloyManufacturingNet for discovery and design of hardness-elongation synergy in multi-principal element alloys
+Author links open overlay panel, Engineering Applications of Artificial Intelligence, 132 (2024) 107902 ")
 
