@@ -241,6 +241,9 @@ st.write(" NOTE: The elongation model is trained with the datasets characterized
 st.write("LIMITATION: This software app is validated only for ductile and highly ductile MPEAs. Not recommended for use in materials with ductility less than 5 % .")
 
 st.write("How to Cite AlloyManufacturingNet ")
-st.write("If you use AlloyManufacturingNet in your work, please cite: S. Poudel et al., AlloyManufacturingNet for discovery and design of hardness-elongation synergy in multi-principal element alloys
-          , Engineering Applications of Artificial Intelligence, 132 (2024) 107902 ")
+st.write("If you use AlloyManufacturingNet in your work, please cite: "
+         "S. Poudel et al., AlloyManufacturingNet for discovery and design "
+         "of hardness-elongation synergy in multi-principal element alloys"
+        ", Engineering Applications of Artificial Intelligence, 132 (2024) 107902 ")
+
 
