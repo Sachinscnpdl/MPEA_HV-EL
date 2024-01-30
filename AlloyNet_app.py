@@ -242,5 +242,5 @@ st.write("LIMITATION: This software app is validated only for ductile and highly
 
 st.write("How to Cite AlloyManufacturingNet ")
 st.write("If you use AlloyManufacturingNet in your work, please cite: S. Poudel et al., AlloyManufacturingNet for discovery and design of hardness-elongation synergy in multi-principal element alloys
-Author links open overlay panel, Engineering Applications of Artificial Intelligence, 132 (2024) 107902 ")
+          , Engineering Applications of Artificial Intelligence, 132 (2024) 107902 ")
 
