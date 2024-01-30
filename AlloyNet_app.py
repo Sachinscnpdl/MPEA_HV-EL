@@ -242,8 +242,7 @@ if selected_tab == "HV-EL Synergy Optimization":
 
 
 
-st.markdown("<h2 style='color:blue; font-size:24px; display: inline;'>How to Cite AlloyManufacturingNet:</h2> {}".format(alloy_style), unsafe_allow_html=True)
-
+st.markdown("<h2 style='color:red; font-size:24px; display: inline;'>How to Cite AlloyManufacturingNet:</h2> {}".format(alloy_style), unsafe_allow_html=True)
 # st.write("How to Cite AlloyManufacturingNet ")
 st.write("If you use AlloyManufacturingNet in your work, please cite: "
          "S. Poudel et al., AlloyManufacturingNet for discovery and design "
