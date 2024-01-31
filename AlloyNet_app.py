@@ -247,5 +247,5 @@ st.write("If you use AlloyManufacturingNet in your work, please cite: "
          "of hardness-elongation synergy in multi-principal element alloys"
         ", Engineering Applications of Artificial Intelligence, 132 (2024) 107902 ")
 
-link='check out this [link](https://doi.org/10.1016/j.engappai.2024.107902)'
-st.markdown(link,unsafe_allow_html=True)
+link='DOI: [https://doi.org/10.1016/j.engappai.2024.107902](https://doi.org/10.1016/j.engappai.2024.107902)'
+st.markdown(https://doi.org/10.1016/j.engappai.2024.107902,unsafe_allow_html=True)
