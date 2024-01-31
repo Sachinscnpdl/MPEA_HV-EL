@@ -248,4 +248,4 @@ st.write("If you use AlloyManufacturingNet in your work, please cite: "
         ", Engineering Applications of Artificial Intelligence, 132 (2024) 107902 ")
 
 link='DOI: [https://doi.org/10.1016/j.engappai.2024.107902](https://doi.org/10.1016/j.engappai.2024.107902)'
-st.markdown(https://doi.org/10.1016/j.engappai.2024.107902,unsafe_allow_html=True)
+st.markdown(link,unsafe_allow_html=True)
