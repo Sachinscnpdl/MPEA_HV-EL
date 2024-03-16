@@ -13,7 +13,7 @@ The codes used for the work AlloyManufacturingNet for discovery and design of ha
  4. "rhea_plot.csv": HEA/MPEA composition for hardness and elongation prediction on ternary plots.
  5. "pred.csv": Alloy compositions inputs for predictions used molecular dynamics analysis.
 
-## Folder files
+## Folders consisting of Saved Models and Visual Representations of Results
  1. "elongation_model_files": consists of .h5 files and pickle files of ensemble elongation models and standarization and feature selections.
  2. "hardness_model_files": consists of .h5 files and pickle files of ensemble hardness models and standarization and feature selections.
  3. "plots" and "triangular plots": consists of plots and graphs of both elongation and hardness design.
