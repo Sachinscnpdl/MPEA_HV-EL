@@ -50,7 +50,7 @@ if selected_tab == "New alloy design":
 
 
 ####################################
-    # Initialize DataFrame to store selected formulas
+    # Initialize DataFrame to store selected formulas if not already initialized
     if 'df_selected_formulas' not in st.session_state:
         st.session_state.df_selected_formulas = pd.DataFrame(columns=['S.N', 'Alloys', 'Fabrication_type'])
     
@@ -105,8 +105,8 @@ if selected_tab == "New alloy design":
             
             st.write('Defined new alloy:', alloy_string)
     
-    # Display the DataFrame only if it has additional columns (like Fabrication_type)
-    if 'Fabrication_type' in st.session_state.df_selected_formulas.columns:
+    # Display the DataFrame only if it has necessary columns
+    if 'Alloys' in st.session_state.df_selected_formulas.columns and 'Fabrication_type' in st.session_state.df_selected_formulas.columns:
         st.write(st.session_state.df_selected_formulas)
     
     # Additional sidebar options
@@ -117,11 +117,12 @@ if selected_tab == "New alloy design":
     el_test = st.sidebar.selectbox('Test for Ductility:', elongation_test_options)
     
     # Update the Fabrication_Type column of the last row with the selected Fabrication_type
-    if selected_fabrication_type and not st.session_state.df_selected_formulas.empty:
-        st.session_state.df_selected_formulas.at[len(st.session_state.df_selected_formulas)-1, 'Fabrication_type'] = selected_fabrication_type
+    if 'Fabrication_type' in st.session_state.df_selected_formulas.columns:
+        if selected_fabrication_type and not st.session_state.df_selected_formulas.empty:
+            st.session_state.df_selected_formulas.at[len(st.session_state.df_selected_formulas)-1, 'Fabrication_type'] = selected_fabrication_type
     
     # Display updated DataFrame
-    if 'Fabrication_type' in st.session_state.df_selected_formulas.columns:
+    if 'Alloys' in st.session_state.df_selected_formulas.columns and 'Fabrication_type' in st.session_state.df_selected_formulas.columns:
         st.write(st.session_state.df_selected_formulas)
 ################################################################################################
     from io import StringIO
