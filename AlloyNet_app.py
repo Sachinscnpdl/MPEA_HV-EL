@@ -52,7 +52,11 @@ if selected_tab == "New alloy design":
 
 ################################
 
- # List of elements to be included in the dropdowns
+ # Initialize DataFrame to store selected formulas
+    if 'df_selected_formulas' not in st.session_state:
+        st.session_state.df_selected_formulas = pd.DataFrame(columns=['S.N', 'Alloys', 'Fabrication_type'])
+    
+    # List of elements to be included in the dropdowns
     elements_list = ["Sc", "Pd", "Re", "Ca", "Y", "Li", "Zn", "Mg", "C", "Sn", "W", "Si", "Hf", "Ta", 
                      "Mn", "Cu", "V", "Zr", "Mo", "Nb", "Co", "Al", "Ti", "Cr", "Fe", "Ni"]
     
@@ -64,8 +68,15 @@ if selected_tab == "New alloy design":
         predefined_formulas = ['CoCrNi', 'CoCrNiNb0.2', 'CoCrNiNb0.3', 'CoCrNiNb0.6', 'CoCrNiNb0.7']
         selected_predefined_formula = st.sidebar.selectbox('Select a pre-defined formula', predefined_formulas)
         
-        # Pass the selected predefined formula for further use
-        st.write('Selected predefined formula:', selected_predefined_formula)
+        # If a pre-defined formula is selected, add it to the DataFrame
+        if selected_predefined_formula:
+            if st.session_state.df_selected_formulas.empty:
+                st.session_state.df_selected_formulas = pd.DataFrame({'S.N': [1], 'Alloys': [selected_predefined_formula], 'Fabrication_type': [None]})
+            else:
+                new_row = {'S.N': len(st.session_state.df_selected_formulas) + 1, 'Alloys': selected_predefined_formula, 'Fabrication_type': None}
+                st.session_state.df_selected_formulas = st.session_state.df_selected_formulas.append(new_row, ignore_index=True)
+            
+            st.write('Selected predefined formula:', selected_predefined_formula)
     else:
         # Add inputs to define a new alloy within the sidebar
         st.sidebar.write('Define a new alloy')
@@ -92,8 +103,19 @@ if selected_tab == "New alloy design":
         # Concatenate elements and compositions into a single string
         alloy_string = ''.join([f'{el}{comp}' for el, comp in zip(elements, compositions)])
         
-        # Pass the new alloy string for further use
-        st.write('Defined new alloy:', alloy_string)
+        # If a new alloy is defined, add it to the DataFrame
+        if alloy_string:
+            if st.session_state.df_selected_formulas.empty:
+                st.session_state.df_selected_formulas = pd.DataFrame({'S.N': [1], 'Alloys': [alloy_string], 'Fabrication_type': [None]})
+            else:
+                new_row = {'S.N': len(st.session_state.df_selected_formulas) + 1, 'Alloys': alloy_string, 'Fabrication_type': None}
+                st.session_state.df_selected_formulas = st.session_state.df_selected_formulas.append(new_row, ignore_index=True)
+            
+            st.write('Defined new alloy:', alloy_string)
+    
+    # Display the DataFrame
+    st.write(st.session_state.df_selected_formulas)
+
 
 ##########################################
     fabrication_type_options = ["CAST", "POWDER", "ANNEAL", "WROUGHT", "OTHER"]
@@ -102,13 +124,13 @@ if selected_tab == "New alloy design":
     elongation_test_options = ["Default", "Tensile", "Compression"]
     el_test = st.sidebar.selectbox('Test for Ductility:', elongation_test_options)
     
-    # If a pre-defined formula is selected, add it to the DataFrame
-    if selected_predefined_formula:
-        # Check if the DataFrame is empty
-        if df_selected_formulas.empty:
-            df_selected_formulas = pd.DataFrame({'S.N': [1], 'Alloys': [selected_predefined_formula], 'Fabrication_type': [None]})
-        else:
-            df_selected_formulas.at[len(df_selected_formulas)-1, 'Alloys'] = selected_predefined_formula
+    # # If a pre-defined formula is selected, add it to the DataFrame
+    # if selected_predefined_formula:
+    #     # Check if the DataFrame is empty
+    #     if df_selected_formulas.empty:
+    #         df_selected_formulas = pd.DataFrame({'S.N': [1], 'Alloys': [selected_predefined_formula], 'Fabrication_type': [None]})
+    #     else:
+    #         df_selected_formulas.at[len(df_selected_formulas)-1, 'Alloys'] = selected_predefined_formula
 
     # Update the Fabrication_Type column of the last row with the selected Fabrication_type
     if selected_fabrication_type:
