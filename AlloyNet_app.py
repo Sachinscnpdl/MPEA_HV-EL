@@ -52,10 +52,10 @@ if selected_tab == "New alloy design":
 
 ################################
 
-    # Add radio buttons for user to choose between predefined formula and new alloy
-    choice = st.sidebar.radio('Choose an option:', ['Select a predefined formula', 'Define new alloy'])
+    # Add a dropdown for user to choose between predefined formula and new alloy
+    option = st.sidebar.selectbox('Choose an option:', ['Select a predefined formula', 'Define new alloy'])
     
-    if choice == 'Select a predefined formula':
+    if option == 'Select a predefined formula':
         # Add a dropdown to select a pre-defined formula in the sidebar
         predefined_formulas = ['CoCrNi', 'CoCrNiNb0.2', 'CoCrNiNb0.3', 'CoCrNiNb0.6', 'CoCrNiNb0.7']
         selected_predefined_formula = st.sidebar.selectbox('Select a pre-defined formula', predefined_formulas)
