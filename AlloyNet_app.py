@@ -105,8 +105,9 @@ if selected_tab == "New alloy design":
             
             st.write('Defined new alloy:', alloy_string)
     
-    # Display the DataFrame
-    st.write(st.session_state.df_selected_formulas)
+    # Display the DataFrame only if it has additional columns (like Fabrication_type)
+    if 'Fabrication_type' in st.session_state.df_selected_formulas.columns:
+        st.write(st.session_state.df_selected_formulas)
     
     # Additional sidebar options
     fabrication_type_options = ["CAST", "POWDER", "ANNEAL", "WROUGHT", "OTHER"]
@@ -120,7 +121,8 @@ if selected_tab == "New alloy design":
         st.session_state.df_selected_formulas.at[len(st.session_state.df_selected_formulas)-1, 'Fabrication_type'] = selected_fabrication_type
     
     # Display updated DataFrame
-    st.write(st.session_state.df_selected_formulas)
+    if 'Fabrication_type' in st.session_state.df_selected_formulas.columns:
+        st.write(st.session_state.df_selected_formulas)
 ################################################################################################
     from io import StringIO
     df_mpea = df_selected_formulas
