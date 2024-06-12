@@ -47,6 +47,42 @@ if selected_tab == "New alloy design":
     predefined_formulas = ['CoCrNi', 'CoCrNiNb0.2', 'CoCrNiNb0.3', 'CoCrNiNb0.6', 'CoCrNiNb0.7']
     selected_predefined_formula = st.sidebar.selectbox('Select a pre-defined formula', predefined_formulas)
 
+
+
+
+################################
+
+    # Add radio buttons for user to choose between predefined formula and new alloy
+    choice = st.sidebar.radio('Choose an option:', ['Select a predefined formula', 'Define new alloy'])
+    
+    if choice == 'Select a predefined formula':
+        # Add a dropdown to select a pre-defined formula in the sidebar
+        predefined_formulas = ['CoCrNi', 'CoCrNiNb0.2', 'CoCrNiNb0.3', 'CoCrNiNb0.6', 'CoCrNiNb0.7']
+        selected_predefined_formula = st.sidebar.selectbox('Select a pre-defined formula', predefined_formulas)
+        
+        # Pass the selected predefined formula for further use
+        st.write('Selected predefined formula:', selected_predefined_formula)
+    else:
+        # Add inputs to define a new alloy
+        st.write('Define a new alloy')
+        
+        elements = []
+        compositions = []
+        
+        num_elements = st.number_input('Number of elements', min_value=1, max_value=10, step=1, value=1)
+        
+        for i in range(num_elements):
+            element = st.text_input(f'Element {i+1}', key=f'element_{i+1}')
+            composition = st.text_input(f'Composition {i+1}', key=f'composition_{i+1}')
+            elements.append(element)
+            compositions.append(composition)
+        
+        # Concatenate elements and compositions into a single string
+        alloy_string = ''.join([f'{el}{comp}' for el, comp in zip(elements, compositions)])
+        
+        # Pass the new alloy string for further use
+        st.write('Defined new alloy:', alloy_string)
+##########################################
     fabrication_type_options = ["CAST", "POWDER", "ANNEAL", "WROUGHT", "OTHER"]
     selected_fabrication_type = st.sidebar.selectbox('Select Fabrication Type:', fabrication_type_options)
 
