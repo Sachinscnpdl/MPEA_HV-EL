@@ -101,9 +101,10 @@ if selected_tab == "New alloy design":
         # If a new alloy is defined, add it to the DataFrame
         if alloy_string:
             new_row = {'S.N': len(st.session_state.df_selected_formulas) + 1, 'Alloys': alloy_string, 'Fabrication_type': None}
+            st.write('Defined new alloy:', alloy_string)
     st.session_state.df_selected_formulas = st.session_state.df_selected_formulas.append(new_row, ignore_index=True)
     
-    st.write('Defined new alloy:', alloy_string)
+    
     
     # Display the DataFrame only if it has necessary columns
     # if 'Alloys' in st.session_state.df_selected_formulas.columns and 'Fabrication_type' in st.session_state.df_selected_formulas.columns:
