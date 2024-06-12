@@ -40,7 +40,7 @@ selected_tab = st.sidebar.radio("Select Tab", tab_options)
 
 # Initialize empty DataFrame to store selected formulas
 df_selected_formulas = pd.DataFrame()
-
+st.session_state.clear()
 # Check the selected tab
 if selected_tab == "New alloy design":
     # Add a dropdown to select a pre-defined formula in the sidebar
