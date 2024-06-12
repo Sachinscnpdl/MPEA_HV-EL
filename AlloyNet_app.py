@@ -45,7 +45,7 @@ df_selected_formulas = pd.DataFrame()
 if selected_tab == "New alloy design":
     # Add a dropdown to select a pre-defined formula in the sidebar
     predefined_formulas = ['CoCrNi', 'CoCrNiNb0.2', 'CoCrNiNb0.3', 'CoCrNiNb0.6', 'CoCrNiNb0.7']
-    selected_predefined_formula = st.sidebar.selectbox('Select a pre-defined formula', predefined_formulas)
+    # selected_predefined_formula = st.sidebar.selectbox('Select a pre-defined formula', predefined_formulas)
 
 
 
