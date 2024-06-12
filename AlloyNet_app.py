@@ -49,10 +49,8 @@ if selected_tab == "New alloy design":
 
 
 
-
-################################
-
- # Initialize DataFrame to store selected formulas
+####################################
+    # Initialize DataFrame to store selected formulas
     if 'df_selected_formulas' not in st.session_state:
         st.session_state.df_selected_formulas = pd.DataFrame(columns=['S.N', 'Alloys', 'Fabrication_type'])
     
@@ -70,11 +68,8 @@ if selected_tab == "New alloy design":
         
         # If a pre-defined formula is selected, add it to the DataFrame
         if selected_predefined_formula:
-            if st.session_state.df_selected_formulas.empty:
-                st.session_state.df_selected_formulas = pd.DataFrame({'S.N': [1], 'Alloys': [selected_predefined_formula], 'Fabrication_type': [None]})
-            else:
-                new_row = {'S.N': len(st.session_state.df_selected_formulas) + 1, 'Alloys': selected_predefined_formula, 'Fabrication_type': None}
-                st.session_state.df_selected_formulas = st.session_state.df_selected_formulas.append(new_row, ignore_index=True)
+            new_row = {'S.N': len(st.session_state.df_selected_formulas) + 1, 'Alloys': selected_predefined_formula, 'Fabrication_type': None}
+            st.session_state.df_selected_formulas = st.session_state.df_selected_formulas.append(new_row, ignore_index=True)
             
             st.write('Selected predefined formula:', selected_predefined_formula)
     else:
@@ -105,37 +100,27 @@ if selected_tab == "New alloy design":
         
         # If a new alloy is defined, add it to the DataFrame
         if alloy_string:
-            if st.session_state.df_selected_formulas.empty:
-                st.session_state.df_selected_formulas = pd.DataFrame({'S.N': [1], 'Alloys': [alloy_string], 'Fabrication_type': [None]})
-            else:
-                new_row = {'S.N': len(st.session_state.df_selected_formulas) + 1, 'Alloys': alloy_string, 'Fabrication_type': None}
-                st.session_state.df_selected_formulas = st.session_state.df_selected_formulas.append(new_row, ignore_index=True)
+            new_row = {'S.N': len(st.session_state.df_selected_formulas) + 1, 'Alloys': alloy_string, 'Fabrication_type': None}
+            st.session_state.df_selected_formulas = st.session_state.df_selected_formulas.append(new_row, ignore_index=True)
             
             st.write('Defined new alloy:', alloy_string)
     
     # Display the DataFrame
     st.write(st.session_state.df_selected_formulas)
-
-
-##########################################
+    
+    # Additional sidebar options
     fabrication_type_options = ["CAST", "POWDER", "ANNEAL", "WROUGHT", "OTHER"]
     selected_fabrication_type = st.sidebar.selectbox('Select Fabrication Type:', fabrication_type_options)
-
+    
     elongation_test_options = ["Default", "Tensile", "Compression"]
     el_test = st.sidebar.selectbox('Test for Ductility:', elongation_test_options)
     
-    # # If a pre-defined formula is selected, add it to the DataFrame
-    # if selected_predefined_formula:
-    #     # Check if the DataFrame is empty
-    #     if df_selected_formulas.empty:
-    #         df_selected_formulas = pd.DataFrame({'S.N': [1], 'Alloys': [selected_predefined_formula], 'Fabrication_type': [None]})
-    #     else:
-    #         df_selected_formulas.at[len(df_selected_formulas)-1, 'Alloys'] = selected_predefined_formula
-
     # Update the Fabrication_Type column of the last row with the selected Fabrication_type
-    if selected_fabrication_type:
-        df_selected_formulas.at[len(df_selected_formulas)-1, 'Fabrication_type'] = selected_fabrication_type
-
+    if selected_fabrication_type and not st.session_state.df_selected_formulas.empty:
+        st.session_state.df_selected_formulas.at[len(st.session_state.df_selected_formulas)-1, 'Fabrication_type'] = selected_fabrication_type
+    
+    # Display updated DataFrame
+    st.write(st.session_state.df_selected_formulas)
 ################################################################################################
     from io import StringIO
     df_mpea = df_selected_formulas
