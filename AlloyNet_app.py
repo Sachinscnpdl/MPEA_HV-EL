@@ -105,8 +105,6 @@ if selected_tab == "New alloy design":
             
             st.write('Defined new alloy:', alloy_string)
     
-    # Display the updated DataFrame with necessary columns
-    if 'Alloys' in st.session_state.df_selected_formulas.columns and 'Fabrication_type' in st.session_state.df_selected_formulas.columns:
     
     # Additional sidebar options
     fabrication_type_options = ["CAST", "POWDER", "ANNEAL", "WROUGHT", "OTHER"]
@@ -119,9 +117,6 @@ if selected_tab == "New alloy design":
     if 'Fabrication_type' in st.session_state.df_selected_formulas.columns:
         if selected_fabrication_type and not st.session_state.df_selected_formulas.empty:
             st.session_state.df_selected_formulas.at[len(st.session_state.df_selected_formulas)-1, 'Fabrication_type'] = selected_fabrication_type
-    
-    # Display updated DataFrame again, ensuring all necessary columns are present
-    if 'Alloys' in st.session_state.df_selected_formulas.columns and 'Fabrication_type' in st.session_state.df_selected_formulas.columns:
 
     df_selected_formulas = st.session_state.df_selected_formulas
 
