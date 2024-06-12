@@ -32,6 +32,7 @@ st.image("plots/logo.png",width=150)
 st.markdown('<h1 style="color:purple;">AlloyManufacturingNet </h1>', unsafe_allow_html=True)
 # Add a dropdown to select a pre-defined formula
 
+st.set_page_config(layout="wide")
 # Create two tabs in the sidebar
 tab_options = ["New alloy design", "HV-EL Synergy Optimization"]
 selected_tab = st.sidebar.radio("Select Tab", tab_options)
