@@ -24,6 +24,8 @@ import matplotlib.pyplot as plt
 from app_functions import *
 # from prediction_ML import *
 #############################################################################
+
+st.set_page_config(layout="wide")
 # Header for the Website
 #st.header(':blue[Optimizing Synergy Between Hardness and Ductility in MPEAs] ')
 #st.header('Toolkit for Exploratory Design and Discovery of Piezoelectric Materials ')
@@ -32,7 +34,6 @@ st.image("plots/logo.png",width=150)
 st.markdown('<h1 style="color:purple;">AlloyManufacturingNet </h1>', unsafe_allow_html=True)
 # Add a dropdown to select a pre-defined formula
 
-st.set_page_config(layout="wide")
 # Create two tabs in the sidebar
 tab_options = ["New alloy design", "HV-EL Synergy Optimization"]
 selected_tab = st.sidebar.radio("Select Tab", tab_options)
