@@ -52,7 +52,7 @@ if selected_tab == "New alloy design":
 
 ################################
 
-    # Add a dropdown for user to choose between predefined formula and new alloy
+  # Add a dropdown for the user to choose between predefined formula and new alloy in the sidebar
     option = st.sidebar.selectbox('Choose an option:', ['Select a predefined formula', 'Define new alloy'])
     
     if option == 'Select a predefined formula':
@@ -63,17 +63,17 @@ if selected_tab == "New alloy design":
         # Pass the selected predefined formula for further use
         st.write('Selected predefined formula:', selected_predefined_formula)
     else:
-        # Add inputs to define a new alloy
-        st.write('Define a new alloy')
+        # Add inputs to define a new alloy within the sidebar
+        st.sidebar.write('Define a new alloy')
         
         elements = []
         compositions = []
         
-        num_elements = st.number_input('Number of elements', min_value=1, max_value=10, step=1, value=1)
+        num_elements = st.sidebar.number_input('Number of elements', min_value=1, max_value=10, step=1, value=1)
         
         for i in range(num_elements):
-            element = st.text_input(f'Element {i+1}', key=f'element_{i+1}')
-            composition = st.text_input(f'Composition {i+1}', key=f'composition_{i+1}')
+            element = st.sidebar.text_input(f'Element {i+1}', key=f'element_{i+1}')
+            composition = st.sidebar.text_input(f'Composition {i+1}', key=f'composition_{i+1}')
             elements.append(element)
             compositions.append(composition)
         
