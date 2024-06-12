@@ -7,7 +7,7 @@ matminer
 seaborn
 pymatgen==2022.0.8
 tensorflow
-keras
+keras==2.12.0
 array_to_latex
 setuptools
 scikit-image
