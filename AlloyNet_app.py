@@ -52,7 +52,7 @@ if selected_tab == "New alloy design":
 
 ################################
 
-  # List of elements to be included in the dropdowns
+ # List of elements to be included in the dropdowns
     elements_list = ["Sc", "Pd", "Re", "Ca", "Y", "Li", "Zn", "Mg", "C", "Sn", "W", "Si", "Hf", "Ta", 
                      "Mn", "Cu", "V", "Zr", "Mo", "Nb", "Co", "Al", "Ti", "Cr", "Fe", "Ni"]
     
@@ -73,12 +73,19 @@ if selected_tab == "New alloy design":
         elements = []
         compositions = []
         
-        num_elements = st.sidebar.number_input('Number of elements', min_value=1, max_value=10, step=1, value=1)
+        num_elements = st.sidebar.number_input('Number of elements', min_value=3, max_value=10, step=1, value=3)
+        
+        default_elements = ['Co', 'Cr', 'Ni']
+        default_compositions = ['1', '1', '1']
         
         for i in range(num_elements):
             col1, col2 = st.sidebar.columns(2)
-            element = col1.selectbox(f'Element {i+1}', elements_list, key=f'element_{i+1}')
-            composition = col2.text_input(f'Composition {i+1}', key=f'composition_{i+1}')
+            if i < 3:
+                element = col1.selectbox(f'Element {i+1}', elements_list, index=elements_list.index(default_elements[i]), key=f'element_{i+1}')
+                composition = col2.text_input(f'Composition {i+1}', default_compositions[i], key=f'composition_{i+1}')
+            else:
+                element = col1.selectbox(f'Element {i+1}', elements_list, key=f'element_{i+1}')
+                composition = col2.text_input(f'Composition {i+1}', '1', key=f'composition_{i+1}')
             elements.append(element)
             compositions.append(composition)
         
