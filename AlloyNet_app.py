@@ -71,7 +71,7 @@ if selected_tab == "New alloy design":
             new_row = {'S.N': len(st.session_state.df_selected_formulas) + 1, 'Alloys': selected_predefined_formula, 'Fabrication_type': None}
             st.session_state.df_selected_formulas = st.session_state.df_selected_formulas.append(new_row, ignore_index=True)
             
-            st.write('Selected predefined formula:', selected_predefined_formula)
+            # st.write('Selected predefined formula:', selected_predefined_formula)
     else:
         # Add inputs to define a new alloy within the sidebar
         st.sidebar.write('Define a new alloy')
